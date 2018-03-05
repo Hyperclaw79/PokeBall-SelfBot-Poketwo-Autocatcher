@@ -1,5 +1,5 @@
 import sys
-import secret
+from secret import alter_config
 from pokeball import PokeBall
 
 if __name__ == "__main__":
@@ -12,5 +12,6 @@ if __name__ == "__main__":
         guild_path = 'guilds.json'
         pokelist_path = 'pokelist.log'
 
+    alter_config(config_path)
     bot = PokeBall(config_path, guild_path, pokelist_path)
     bot.run()
