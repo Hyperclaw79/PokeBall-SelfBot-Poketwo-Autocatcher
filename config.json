@@ -1,0 +1,15 @@
+{
+   "token": "",
+   "command_prefix": "P^",
+   "priority": [
+      "Groudon"
+   ],
+   "safe_list": [
+      "Mew",
+      "Machop",
+      "Staryu"
+   ],
+   "catch_rate": 90,
+   "delay": 3,
+   "delay_on_priority": false
+}
