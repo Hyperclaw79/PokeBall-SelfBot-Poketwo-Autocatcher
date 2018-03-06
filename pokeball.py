@@ -31,9 +31,9 @@ class PokeBall(discord.Client):
     async def on_message(self, message):
 
         if message.author.id == 365975655608745985 and message.embeds:
-            async with message.channel.typing():
-                emb = message.embeds[0]
-                if emb.title.startswith('A wild'):
+            emb = message.embeds[0]
+            if emb.title.startswith('A wild'):
+                async with message.channel.typing():
                     name = self.p.search(emb.image.url.split('/')[-1]).group()
                     proc = random.randint(1, 100)
                     if name in self.configs['priority'] or proc <= self.configs['catch_rate']:
@@ -41,12 +41,15 @@ class PokeBall(discord.Client):
                             self.configs['priority'].pop(name)
                         pref = emb.description.split()[5]
                         self.new_guild(message, pref)        
-                        print(f'Caught "{name}" in {message.guild.name} in #{message.channel.name}')
-                        if self.configs['delay_on_priority']:
+                        if self.configs['delay_on_priority'] or name not in self.configs["priority"]:
                             await asyncio.sleep(self.configs['delay'])
                         await message.channel.send(f"{pref} {name}")
+                        reply = await self.wait_for('message', check=pokecord_reply)
+                        if self.user.mentioned_in(reply):
+                            print(f'Caught "{name}" in {message.guild.name} in #{message.channel.name}')
+                        
 
-        if message.content.startswith(self.prefix):
+        if message.content.startswith(self.prefix) and message.author.id == self.user.id:
             detokenized = message.content.split(' ')
             cmd = detokenized[0]
             args = None
@@ -84,7 +87,18 @@ class PokeBall(discord.Client):
             reply = await self.wait_for('message', check=pokecord_reply)
             pokemons = reply.embeds[0].description.split('\n')
             pokelist = [log_formatter(pokemon) for pokemon in pokemons]
-            with open(self.pokelist_path, 'w') as f:
+            await asyncio.sleep(random.randint(3,5))
+            while True:
+                await message.channel.send(f"{pref}n")
+                try:
+                    reply = await self.wait_for('message', check=pokecord_reply, timeout=10.0)
+                    pokemons = reply.embeds[0].description.split('\n')
+                    pokelist += [log_formatter(pokemon) for pokemon in pokemons]
+                    await asyncio.sleep(random.randint(5,7))
+                except Exception as e:
+                    print(str(e))
+                    break
+            with open(self.pokelist_path, 'w', encoding='utf-8') as f:
                 f.write('\n'.join(pokelist))
             print('Logged all the pokemon successfully.\n')
 
@@ -112,7 +126,7 @@ class PokeBall(discord.Client):
         user = mentions[0]
         pref = self.prefix_dict.get(str(message.guild.id), None)
         if pref:
-            with open(self.pokelist_path,'r') as f:
+            with open(self.pokelist_path,'r', encoding='utf-8') as f:
                 pokelist = f.read().splitlines()
             numbers = [pokemon.split(' -> ')[1] for pokemon in pokelist if safe_filter(pokemon)]
             for number in numbers:    
@@ -136,7 +150,15 @@ class PokeBall(discord.Client):
                 
             print('Successfully traded away all pokemon.')    
             await self.cmd_pokelog(message)    
-            
+
+    async def cmd_poke_exec(self, message, args=['']):
+        pref = self.prefix_dict.get(str(message.guild.id), None)
+        if pref:
+            command = args.pop(0)
+            pokeargs = ' '.join(args)
+            pokecmd = f"{pref}{command} {pokeargs}"
+            await message.channel.send(pokecmd)        
+
 
     async def on_ready(self):
         print("Logged in.\n---PokeBall SelfBot v1.0----\n"

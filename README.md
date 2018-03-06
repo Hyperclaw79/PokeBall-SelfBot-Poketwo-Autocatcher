@@ -16,8 +16,10 @@ This selfbot is an extension of [PokecordCatcher](https://github.com/xKynn/Pokec
 ## Setup
 
 1. First replace the `os.environ["DISCORD_BOT_TOKEN"]` in `secret.py` with your bot token. Refer the tutorial below to get the token.
-2. Then simply run `run.bat` to get your bot live.
-3. If you are on a mac or linux, directly launch `launcer.py` instead of running the bat file.
+2. Run `setup.bat` to install the requirements.
+3. Then simply run `run.bat` to get your bot live.
+
+> If you are on a mac or linux, directly launch `launcer.py` instead of running the bat file. And use `pip install -r requirements.txt` instead to setup.
 
 ## Fine-Tuning
 

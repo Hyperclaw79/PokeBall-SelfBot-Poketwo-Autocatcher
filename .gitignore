@@ -1,2 +1,6 @@
 __pycache__
 *.pyc
+secret.py
+config.json
+guilds.json
+pokelist.log
