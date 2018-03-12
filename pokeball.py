@@ -18,6 +18,8 @@ class PokeBall(discord.Client):
             self.configs = json.load(f)
         self.prefix = self.configs['command_prefix']
         super().__init__()
+        with open(self.pokelist_path) as f:
+            self.pokelist = f.read().splitlines()
 
     def run(self):
         super().run(self.configs['token'], bot=False)
@@ -98,6 +100,7 @@ class PokeBall(discord.Client):
                 except Exception as e:
                     print(str(e))
                     break
+            self.pokelist = pokelist        
             with open(self.pokelist_path, 'w', encoding='utf-8') as f:
                 f.write('\n'.join(pokelist))
             print('Logged all the pokemon successfully.\n')
@@ -159,6 +162,21 @@ class PokeBall(discord.Client):
             pokecmd = f"{pref}{command} {pokeargs}"
             await message.channel.send(pokecmd)        
 
+    async def cmd_id(self, message, args=['']):
+        def assert_name(pokemon):
+            return pokemon.split(' -> ')[0].lower() == pokename.lower()
+
+        pref = self.prefix_dict.get(str(message.guild.id), None)
+        if pref and len(args) > 0:
+            pokename = args[0]
+            ids = [
+                pokemon.split(' -> ')[1] for pokemon in self.pokelist if assert_name(pokemon)
+            ]
+        content = ''
+        embed = discord.Embed(title=pokename, description="\u200B", color=15728640)    
+        for id_val in ids:
+            embed.add_field(name=id_val, value="\u200B", inline=False)
+        await message.channel.send(content=None, embed=embed)
 
     async def on_ready(self):
         print("Logged in.\n---PokeBall SelfBot v1.0----\n"
