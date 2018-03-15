@@ -22,7 +22,7 @@ This selfbot is an extension of [PokecordCatcher](https://github.com/xKynn/Pokec
 > If you are on a mac or linux, directly launch `launcer.py` instead of running the bat file. And use `pip install -r requirements.txt` instead to setup.
 
 ## Fine-Tuning
-
+* To find out how to get your token visit [Token Tutorial](https://github.com/TheRacingLion/Discord-SelfBot/wiki/Discord-Token-Tutorial).
 * Keep the `catch rate` **low** and `delay` **high** for it to act normally.  
 * `Priority` pokemon <u>bypass</u> catch rate.
 If a priority pokemon is caught, it will be removed from priority list in the current session, manually remove it from config if you restart.
