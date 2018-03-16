@@ -31,38 +31,56 @@ class PokeBall(discord.Client):
                 f.write(json.dumps(self.prefix_dict))
     
     async def on_message(self, message):
-
+        def pokecord_reply(msg):
+            return msg.author.id == 365975655608745985
+        
+        prefix_checks = [
+            message.content.startswith(self.prefix),
+            message.author.id == self.user.id
+        ]    
+                
         if message.author.id == 365975655608745985 and message.embeds:
             emb = message.embeds[0]
             if emb.title.startswith('A wild'):
-                async with message.channel.typing():
-                    name = self.p.search(emb.image.url.split('/')[-1]).group()
-                    proc = random.randint(1, 100)
-                    if name in self.configs['priority'] or proc <= self.configs['catch_rate']:
+                name = self.p.search(emb.image.url.split('/')[-1]).group()
+                name = name.split('_')[0]
+                proc = random.randint(1, 100)
+                if name in self.configs['priority'] or proc <= self.configs['catch_rate']:
+                    async with message.channel.typing():
                         if name in self.configs['priority']:
                             self.configs['priority'].pop(name)
                         pref = emb.description.split()[5]
                         self.new_guild(message, pref)        
                         if self.configs['delay_on_priority'] or name not in self.configs["priority"]:
                             await asyncio.sleep(self.configs['delay'])
-                        await message.channel.send(f"{pref} {name}")
-                        reply = await self.wait_for('message', check=pokecord_reply)
-                        if self.user.mentioned_in(reply):
-                            print(f'Caught "{name}" in {message.guild.name} in #{message.channel.name}')
-                        
+                    await message.channel.send(f"{pref} {name}")
+                reply = await self.wait_for('message', check=pokecord_reply)
+                if self.user.mentioned_in(reply):
+                    print(f'Caught **{name}** in *{message.guild.name}* in #{message.channel.name}')
 
-        if message.content.startswith(self.prefix) and message.author.id == self.user.id:
+        if all(prefix_checks):
+            def arg_check(arg):
+                if not message.raw_mentions:
+                    return True
+                checks = [
+                    message.raw_mentions,
+                    arg != f"<@{message.raw_mentions.pop(0)}>"
+                ]
+                return all(checks)
+
             detokenized = message.content.split(' ')
             cmd = detokenized[0]
             args = None
             if len(detokenized) > 1:
-                args = detokenized[1:]
+                args = [
+                    arg for arg in detokenized[1:] if arg_check(arg)
+                ]
             cmd = cmd.replace(self.prefix,'cmd_')
             method = self.__getattribute__(cmd)
             kwargs = {'message':message}
-            if message.raw_mentions:
-                kwargs['mentions'] = list(map(message.guild.get_member, message.raw_mentions))
-            elif args:
+            if message.mentions:
+                kwargs['mentions'] = message.mentions
+            if args:
                 kwargs['args'] = args
             required = inspect.signature(method)
             required = set(required.parameters.copy())
@@ -71,12 +89,14 @@ class PokeBall(discord.Client):
 
     async def cmd_pokelog(self, message):
         def pokecord_reply(msg):
-            checks = [
-                msg.author.id == 365975655608745985,
-                msg.embeds,
-                msg.embeds[0].title.startswith('Your pokémon:')
-            ]
-            return  all(checks) 
+            if msg.embeds:
+                checks = [
+                    msg.author.id == 365975655608745985,
+                    msg.embeds[0].title.startswith('Your pokémon:')
+                ]
+                return  all(checks)
+            else:
+                return False 
         def log_formatter(pokemon):
             params = pokemon.split(' | ')
             name = params[0].replace('**','')
@@ -105,7 +125,7 @@ class PokeBall(discord.Client):
                 f.write('\n'.join(pokelist))
             print('Logged all the pokemon successfully.\n')
 
-    async def cmd_trade(self, message, mentions):
+    async def cmd_trade(self, message, mentions, args=[]):
         def safe_filter(pokemon):
             checks = [
                 pokemon.split(' -> ')[1]!='1',
@@ -121,17 +141,17 @@ class PokeBall(discord.Client):
             return all(checks)
 
         def pokecord_reply(msg):
-            checks = [
-                msg.author.id == 365975655608745985,
-            ]
-            return  all(checks)
+            return msg.author.id == 365975655608745985
 
         user = mentions[0]
         pref = self.prefix_dict.get(str(message.guild.id), None)
         if pref:
-            with open(self.pokelist_path,'r', encoding='utf-8') as f:
-                pokelist = f.read().splitlines()
-            numbers = [pokemon.split(' -> ')[1] for pokemon in pokelist if safe_filter(pokemon)]
+            if args:
+                numbers = args[0:1]
+            else:
+                with open(self.pokelist_path,'r', encoding='utf-8') as f:
+                    pokelist = f.read().splitlines()
+                numbers = [pokemon.split(' -> ')[1] for pokemon in pokelist if safe_filter(pokemon)]
             for number in numbers:    
                 await message.channel.send(f"{pref}trade {user.mention}")    
                 word = f"{pref}accept"
@@ -154,28 +174,55 @@ class PokeBall(discord.Client):
             print('Successfully traded away all pokemon.')    
             await self.cmd_pokelog(message)    
 
-    async def cmd_poke_exec(self, message, args=['']):
+    async def cmd_poke_exec(self, message, args=[]):
         pref = self.prefix_dict.get(str(message.guild.id), None)
-        if pref:
+        if pref and args:
             command = args.pop(0)
             pokeargs = ' '.join(args)
             pokecmd = f"{pref}{command} {pokeargs}"
             await message.channel.send(pokecmd)        
 
-    async def cmd_id(self, message, args=['']):
+    async def cmd_echo(self, message, args=[]):
+        await message.channel.send(' '.join(args))
+
+    async def cmd_id(self, message, args=[]):
         def assert_name(pokemon):
             return pokemon.split(' -> ')[0].lower() == pokename.lower()
-
+        def search_name(pokemon):
+            return pokename.lower() in pokemon.split(' -> ')[0].lower()
         pref = self.prefix_dict.get(str(message.guild.id), None)
-        if pref and len(args) > 0:
-            pokename = args[0]
+        if pref and args:
+            if len(args) > 1 and args[0] == 'search':
+                pokename = args[1]
+                results = [
+                    pokemon.split(' -> ') for pokemon in self.pokelist if search_name(pokemon)
+                ]
+                embed = discord.Embed(title="Search Results", description="\u200B", color=15728640)
+                for name, id_val in results:
+                    embed.add_field(name=name, value=id_val, inline=False)
+            else:
+                pokename = args[0]
+                ids = [
+                    pokemon.split(' -> ')[1] for pokemon in self.pokelist if assert_name(pokemon)
+                ]
+                embed = discord.Embed(title=pokename, description="\u200B", color=15728640)    
+                for id_val in ids:
+                    embed.add_field(name=id_val, value="\u200B", inline=False) 
+            await message.channel.send(content=None, embed=embed)
+
+    async def cmd_duplicates(self, message):
+        def get_id(pokename):
+            def assert_name(pokemon):
+                return pokemon.split(' -> ')[0].lower() == pokename.lower()
             ids = [
-                pokemon.split(' -> ')[1] for pokemon in self.pokelist if assert_name(pokemon)
-            ]
-        content = ''
-        embed = discord.Embed(title=pokename, description="\u200B", color=15728640)    
-        for id_val in ids:
-            embed.add_field(name=id_val, value="\u200B", inline=False)
+                    pokemon.split(' -> ')[1] for pokemon in self.pokelist if assert_name(pokemon)
+                ]
+            return '\n'.join(ids)    
+        pokemons = [pokemon.split(' -> ')[0] for pokemon in self.pokelist]
+        dups = {dup for dup in pokemons if pokemons.count(dup) > 1}
+        embed = discord.Embed(title="Here's the list of duplicate pokemon", description="\u200B", color=15728640)
+        for dup in dups:
+            embed.add_field(name=dup, value=get_id(dup), inline=False)
         await message.channel.send(content=None, embed=embed)
 
     async def on_ready(self):
