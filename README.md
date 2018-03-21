@@ -57,3 +57,18 @@ If you find any bugs or would like to add new features or somehow improve the co
 ## Acknowledgements
 * xKynn for the [PokeCordCatcher](https://github.com/xKynn/PokecordCatcher).
 * Rapptz for [Discord.py](https://github.com/Rapptz/discord.py)
+
+## Updates
+* Added Legendary Command.
+* Added Stealth Mode if you're in PokeCord Official Server.
+* MultiTrade using args.
+* `{prefix}poke_exec command args` is now `{prefix}command args`.
+  So you can easily use pokecord commands.
+* Major Code Refactoring.
+* Added Pagination to embeds.
+* Multiple bug fixes.
+
+## Future Plans
+* Whitelist/Blacklist Channels
+* Mass release command
+* Auto duel for credits
