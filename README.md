@@ -6,7 +6,10 @@ This selfbot is an extension of [PokecordCatcher](https://github.com/xKynn/Pokec
 2. Delay and catch rates to finesse the behaviour of the selfbot.
 3. A log command to log all your pokemon along with their numbers.
 4. A trade command to bulk trade the pokemon to your main account.
-5. Priority and Safe List to control the pokemon you catch and trade.
+5. Priority List to control the pokemon you catch and trade.
+6. Toggle catching of dupliactes.
+7. Mass release of thrash pokemon.
+8. Toggle autocatching to use in Command_Only mode.
 
 ## Requirements
 * Python 3.6+
@@ -29,9 +32,12 @@ If a priority pokemon is caught, it will be removed from priority list in the cu
 * Use the `Safe List` to prevent trading some pokemon to your main account in case you want them on the selfbot's account.  
 * `Catch Rate` is a percentage out of 100.  
 * `Delay` is in seconds.  
-* `delay_on_priority` can be set to **true** or **false**, false means it won't wait and will instantly catch a pokemon if its in priority.  
-* Preferably run this on an alt and then trade them to you main account.
+* `delay_on_priority` can be set to **true** or **false**, false means it won't wait and will instantly catch a pokemon if its in priority.
+* `restrict_duplicates` can be set to **false** to catch unlimited number of duplicates. If **true**, use `max_duplicates` to control the number of duplicates you can catch. 
 * Use the `pokelog` command before performing a trade in order to sync up all your newly caught pokemon.
+* Regularly run `pokelog` to keep the list synchronized. Especially, before `clean_trash` as it might result in releasing the wrong pokemon.
+* For args based trading/releasing, always provide the ids in a descending order.
+* Preferably run this on an alt and then trade them to you main account.
 
 Example config:
 ```json
@@ -67,8 +73,15 @@ If you find any bugs or would like to add new features or somehow improve the co
 * Major Code Refactoring.
 * Added Pagination to embeds.
 * Multiple bug fixes.
+* Merged safe_list into priority.
+* Added Mass Release command.
+* Added Total command.
+* Altered pokelog to wait for embed edits.
+* Altered on_ready display messages.
+* Added priority_only mode.
+* Added toggler for autocatcher.
+
 
 ## Future Plans
 * Whitelist/Blacklist Channels
-* Mass release command
 * Auto duel for credits
