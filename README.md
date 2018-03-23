@@ -45,10 +45,11 @@ Example config:
   "token": "<your token>",
   "command_prefix": "P^",
   "priority": ["Groudon", "Geodude"],
-  "safe_list": ["Mew"],
   "catch_rate": 90,
   "delay": 2,
-  "delay_on_priority": true
+  "delay_on_priority": true,
+  "restrict_duplicates": true,
+  "max_duplicates": 2
 }
 ```
 
