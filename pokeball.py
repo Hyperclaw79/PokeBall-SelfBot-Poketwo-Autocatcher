@@ -176,16 +176,18 @@ class PokeBall(discord.Client):
                 cmd = cmd.replace('cmd_', '')
                 args.insert(0, cmd)
                 method = self.cmd_poke_exec
-            kwargs = {'message':message}
+            kwargs = {
+                'message':message,
+                'args': args,
+                'mentions': []
+            }
             if message.mentions:
                 kwargs['mentions'] = message.mentions
-            kwargs['args'] = args
             required = inspect.signature(method)
             required = set(required.parameters.copy())
-            if 'args' not in required:
-                    kwargs.pop('args', None)
-            if 'mentions' not in required:
-                kwargs.pop('mentions', None)        
+            for key in list(kwargs):
+                if key not in required:
+                    kwargs.pop(key, None)
             if required == set(kwargs):
                 await method(**kwargs)
 
@@ -305,8 +307,9 @@ class PokeBall(discord.Client):
             pokeargs = ' '.join(args)
             pokementions = ''
             if mentions:
-                pokementions = ' @'.join(mentions)
-            pokecmd = f"{pref}{command} @{pokementions} {pokeargs}"
+                for mention in mentions:
+                    pokementions += f"@{mention} "
+            pokecmd = f"{pref}{command} {pokementions}{pokeargs}"
             await message.channel.send(pokecmd)
 
     async def cmd_echo(self, message, args=[]):
@@ -458,7 +461,7 @@ class PokeBall(discord.Client):
             ', '.join(priorities[i:i+5]) for i in range(0, len(priorities), 5)
         ])
         print(
-            "\n---PokeBall SelfBot v1.9----\n\n"
+            "\n---PokeBall SelfBot v1.92----\n\n"
             f"Command Prefix: {self.configs['command_prefix']}\n\n"
             f"Priority:\n~~~~~~~~~\n{prio_list}\n\n"
             f"Catch Rate: {self.configs['catch_rate']}%\n\n"
