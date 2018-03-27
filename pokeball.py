@@ -102,17 +102,19 @@ class PokeBall(discord.Client):
             message.content.startswith(self.prefix),
             message.author.id == self.user.id
         ]    
-                
+        if message.guild is None: #Skip DMs to avoid AttributeError
+            return
+        else:
+            if self.stealth and message.guild.id == 382316968394620938: #PokeCord Official Server
+                return        
         if all(pokeball_checks):
             emb = message.embeds[0]
             try:
                 embcheck = emb.title.startswith('A wild')
             except AttributeError:
-                print('Ignoring _EmptyEmbed object.')
+                print(f"Ignoring _EmptyEmbed object.\nCheck {message.channel} in {message.guild}.")
                 return    
             if embcheck:
-                if self.stealth and message.guild.id == 382316968394620938: #PokeCord Official Server
-                    return
                 name = self.p.search(emb.image.url.split('/')[-1]).group()
                 name = name.replace('_', ' ')
                 duplicate_checks = [
@@ -219,23 +221,31 @@ class PokeBall(discord.Client):
         
         pref = self.prefix_dict.get(str(message.guild.id), None)
         if pref:
+            page = 1
+            pokelist = []
             if args:
+                page = int(args[0])
+                if len(args) > 1 and args[1] == 'continue':
+                    with open(self.pokelist_path, 'r', encoding='utf-8') as f:
+                        pokelist = f.read().splitlines()
                 await message.channel.send(f"{pref}pokemon {args[0]}")
             else:
                 await message.channel.send(f"{pref}pokemon")
             reply = await self.wait_for('message', check=pokecord_reply)
             pokemons = reply.embeds[0].description.split('\n')
-            pokelist = [log_formatter(pokemon) for pokemon in pokemons]
+            pokelist += [log_formatter(pokemon) for pokemon in pokemons]
             await asyncio.sleep(random.randint(2,3))
             while True:
                 delme = await message.channel.send(f"{pref}n")
+                page += 1
                 try:
                     before, reply = await self.wait_for('message_edit', check=pokecord_edit, timeout=10.0)
                 except:
                     try:
                         await message.channel.send(f"{pref}ping")
-                        before, reply = await self.wait_for('message_edit', check=pokecord_edit, timeout=10.0)    
+                        before, reply = await self.wait_for('message_edit', check=pokecord_edit, timeout=10.0)
                     except:
+                        await message.channel.send(f"Logged up to page {page}.")
                         break
                 pokemons = reply.embeds[0].description.split('\n')
                 try:
@@ -461,7 +471,7 @@ class PokeBall(discord.Client):
             ', '.join(priorities[i:i+5]) for i in range(0, len(priorities), 5)
         ])
         print(
-            "\n---PokeBall SelfBot v1.92----\n\n"
+            "\n---PokeBall SelfBot v1.93----\n\n"
             f"Command Prefix: {self.configs['command_prefix']}\n\n"
             f"Priority:\n~~~~~~~~~\n{prio_list}\n\n"
             f"Catch Rate: {self.configs['catch_rate']}%\n\n"

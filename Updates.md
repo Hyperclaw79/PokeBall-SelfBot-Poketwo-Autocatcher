@@ -41,3 +41,10 @@
 * User mentions can now be passed to poke_exec.
 * Page Number as args for pokelog.
 * Rewrote Trade command. Additionally, you can now provide pokemon names as args along with known ids.
+
+**27 March 2018**
+
+* Added continue mode for pokelog.
+  >Use `{prefix}pokelog {page_number} continue` to resume the pokelog from that page instead of from the start.
+* Fixed DMChannel bug which pops up when the user is DMed.
+* Slightly refactored code for better efficiency.
