@@ -11,5 +11,7 @@
    "delay": 3,
    "delay_on_priority": false,
    "restrict_duplicates": true,
-   "max_duplicates": 2
+   "max_duplicates": 2,
+   "blacklists": [],
+   "whitelists": []
 }

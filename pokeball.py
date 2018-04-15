@@ -6,9 +6,10 @@ import random
 import json
 import inspect
 from paginator import Paginator
+from math import ceil
 
 class PokeBall(discord.Client):
-    def __init__(self, config_path: str, guild_path: str, pokelist_path: str, *args, **kwargs):
+    def __init__(self, config_path: str, guild_path: str, pokelist_path: str, pokenames_path: str, *args, **kwargs):
         self.config_path = config_path
         self.guild_path = guild_path
         self.pokelist_path = pokelist_path
@@ -19,31 +20,35 @@ class PokeBall(discord.Client):
             self.configs = json.load(f)
         self.prefix = self.configs['command_prefix']
         super().__init__()
-        with open(self.pokelist_path) as f:
+        with open(self.pokelist_path, 'r', encoding='utf-8') as f:
             self.pokelist = f.read().splitlines()
         self.stealth = True
         self.legendaries = [
-            'Arceus', 'Articuno', 'Azelf', 'Celebi', 'Cresselia',
-            'Darkrai', 'Deoxys', 'Dialga', 'Entei', 'Genesect',
-            'Giratina', 'Groudon', 'Heatran', 'Ho-Oh', 'Jirachi',
-            'Keldeo', 'Kyogre', 'Kyurem', 'Landorus', 'Latias',
-            'Latios', 'Lugia', 'Manaphy', 'Meloetta', 'Mespirit',
-            'Mew', 'Mewtwo', 'Moltres', 'Palkia', 'Raikou',
-            'Rayquaza', 'Regice', 'Regirock', 'Registeel', 'Reshiram',
-            'Shaymin', 'Suicune', 'Terrakion', 'Thunderus', 'Tornadus',
-            'Uxie', 'Victini', 'Virizion', 'Zapdos', 'Zekrom'
+            'Arceus', 'Articuno', 'Azelf', 'Celebi', 'Cobalion', 'Cosmoem', 'Cosmog', 'Cresselia',
+            'Darkrai', 'Deoxys', 'Dialga', 'Diancie', 'Entei', 'Genesect', 'Giratina', 'Groudon',
+            'Heatran', 'Ho-Oh', 'Hoopa', 'Jirachi', 'Keldeo', 'Kyogre', 'Kyurem', 'Landorus',
+            'Latias', 'Latios', 'Lugia', 'Lunala', 'Magearna', 'Manaphy', 'Marshadow', 'Meloetta',
+            'Mespirit', 'Mew', 'Mewtwo', 'Moltres', 'Necrozma', 'Palkia', 'Phione', 'Raikou',
+            'Rayquaza', 'Regice', 'Regigigas', 'Regirock', 'Registeel', 'Reshiram', 'Shaymin', 'Silvally',
+            'Solgaleo', 'Suicune', 'Tapu Bulu', 'Tapu Fini', 'Tapu Koko', 'Tapu Lele', 'Terrakion', 'Thunderus',
+            'Tornadus', 'Type: Null', 'Uxie', 'Victini', 'Virizion', 'Volcanion', 'Xerneas', 'YveItaI',
+            'Zapdos', 'Zekrom', 'Zeraora', 'Zygarde'
         ]
         pokemons = [pokemon.split(' -> ')[0] for pokemon in self.pokelist]
         self.trash = list({dup for dup in pokemons if pokemons.count(dup) > int(self.configs["max_duplicates"]) - 1})
         self.priority_only = False
-        self.auto_catcher = True
+        self.auto_catcher = False
+        self.mode = "blacklist"
+        self.ready = False
+        with open(pokenames_path, 'r', encoding='utf-8') as f:
+            self.pokenames = json.load(f)
 
     def run(self):
         super().run(self.configs['token'], bot=False)
 
     def refresh_trash(self):
         pokemons = [pokemon.split(' -> ')[0] for pokemon in self.pokelist]
-        self.trash = list({dup for dup in pokemons if pokemons.count(dup) > int(self.configs["max_duplicates"])})
+        self.trash = list({dup for dup in pokemons if pokemons.count(dup) > int(self.configs["max_duplicates"]) - 1})
 
     def junky_trash(self):
         def safe_filter(pokemon):
@@ -57,12 +62,21 @@ class PokeBall(discord.Client):
                 names.count(pokemon.split(' -> ')[0]) > int(self.configs["max_duplicates"])
             ]
             return all(checks)
-        ids = [pokemon.split(' -> ')[1] for pokemon in self.pokelist if safe_filter(pokemon)]
-        return ids
-
-    def get_name(self, id):
-        pokemon = [pokemon.split(' -> ')[0] for pokemon in self.pokelist if pokemon.split(' -> ')[1]==id]
-        return pokemon[0]
+        def guard(pokes):
+            limit = int(self.configs['max_duplicates'])
+            pokelist = pokes[:]
+            for poke in pokelist:
+                pokename = poke[0]
+                mons = [mon[0] for mon in pokelist]
+                while mons.count(pokename) > limit:
+                    pokelist.pop(mons.index(pokename))
+                    mons = [mon[0] for mon in pokelist]
+            return pokelist
+        results = [pokemon.split(' -> ') for pokemon in self.pokelist if safe_filter(pokemon)]
+        junk = sorted(results, key=(lambda x: (x[0], int(x[2]))))
+        safe = guard(junk)
+        pokes = [poke for poke in junk if poke not in safe]
+        return pokes
 
     def is_legend(self, pokemon):
         return pokemon in self.legendaries
@@ -93,30 +107,51 @@ class PokeBall(discord.Client):
         def pokecord_reply(msg):
             return msg.author.id == 365975655608745985
         
+        if not self.ready:
+            return
+
+        if message.guild is None: #Skip DMs to avoid AttributeError
+            return
+        else:
+            stealth_checks = [
+                self.stealth,
+                message.guild.id == 382316968394620938 #PokeCord Official Server
+            ]
+            blacklist_checks = [
+                self.mode == "blacklist",
+                message.channel.id in self.configs["blacklists"]    
+            ]
+            whitelist_checks = [
+                self.mode == "whitelist",
+                message.channel.id not in self.configs["whitelists"]    
+            ]
+            return_checks = [
+                all(stealth_checks),
+                all(blacklist_checks),
+                all(whitelist_checks)
+            ]
+            if any(return_checks):
+                return
+        
+        #AutoCatcher
         pokeball_checks = [
             message.author.id == 365975655608745985,
             message.embeds,
             self.auto_catcher
         ]
-        prefix_checks = [
-            message.content.startswith(self.prefix),
-            message.author.id == self.user.id
-        ]    
-        if message.guild is None: #Skip DMs to avoid AttributeError
-            return
-        else:
-            if self.stealth and message.guild.id == 382316968394620938: #PokeCord Official Server
-                return        
         if all(pokeball_checks):
             emb = message.embeds[0]
             try:
                 embcheck = emb.title.startswith('A wild')
             except AttributeError:
-                print(f"Ignoring _EmptyEmbed object.\nCheck {message.channel} in {message.guild}.")
                 return    
             if embcheck:
                 name = self.p.search(emb.image.url.split('/')[-1]).group()
                 name = name.replace('_', ' ')
+                name = self.pokenames.get(name, None)
+                if not name:
+                    print(f"Unable to find a name for {name}.")
+                    return
                 duplicate_checks = [
                     name in self.trash,
                     name not in (
@@ -127,7 +162,6 @@ class PokeBall(discord.Client):
                 ]
                 if all(duplicate_checks):
                     print(f"Skipping the duplicate: {name}")
-                    await message.channel.send(f"H^catch {name}")
                     return
                 proc = random.randint(1, 100)
                 sub_checks = [
@@ -154,27 +188,38 @@ class PokeBall(discord.Client):
                 if self.user.mentioned_in(reply):
                     print(f'Caught **{name}** in *{message.guild.name}* in #{message.channel.name}')
 
+        #SelfBot Commands
+        prefix_checks = [
+            message.content.startswith(self.prefix),
+            message.author.id == self.user.id
+        ]
         if all(prefix_checks):
             def arg_check(arg):
-                if not message.raw_mentions:
+                str_mentions = [str(mention) for mention in raw_mentions]
+                if not raw_mentions:
                     return True
                 checks = [
-                    message.raw_mentions,
-                    arg != f"<@{message.raw_mentions.pop(0)}>"
+                    raw_mentions,
+                    arg != '',
+                    arg.replace('<@','').replace('>','') not in str_mentions 
                 ]
                 return all(checks)
 
+            raw_mentions = message.raw_mentions or None
             detokenized = message.content.split(' ')
             cmd = detokenized[0]
             args = []
             if len(detokenized) > 1:
-                args = [
-                    arg for arg in detokenized[1:] if arg_check(arg)
-                ]
+                if raw_mentions:
+                    args = [
+                        arg for arg in detokenized[1:] if arg_check(arg)
+                    ]
+                else:
+                    args = [arg for arg in detokenized[1:] if arg != '']
             cmd = cmd.replace(self.prefix,'cmd_')
             try:
                 method = self.__getattribute__(cmd)
-            except AttributeError:
+            except AttributeError: # Not a selfbot command, so execute it as a PokeCord command.
                 cmd = cmd.replace('cmd_', '')
                 args.insert(0, cmd)
                 method = self.cmd_poke_exec
@@ -184,7 +229,7 @@ class PokeBall(discord.Client):
                 'mentions': []
             }
             if message.mentions:
-                kwargs['mentions'] = message.mentions
+                kwargs['mentions'] = [mention.mention for mention in message.mentions]
             required = inspect.signature(method)
             required = set(required.parameters.copy())
             for key in list(kwargs):
@@ -215,9 +260,10 @@ class PokeBall(discord.Client):
                 return False
         def log_formatter(pokemon):
             params = pokemon.split(' | ')
-            name = params[0].replace('**','')
-            number = params[2].replace('Number: ','')
-            return f"{name} -> {number}"
+            name = params[0].replace('**', '')
+            level = params[1].replace('Level: ', '')
+            number = params[2].replace('Number: ', '')
+            return f"{name} -> {number} -> {level}"
         
         pref = self.prefix_dict.get(str(message.guild.id), None)
         if pref:
@@ -297,7 +343,7 @@ class PokeBall(discord.Client):
             else:
                 numbers = [pokemon.split(' -> ')[1] for pokemon in self.pokelist if safe_filter(pokemon)]
                 numbers = sorted(numbers,reverse=True)
-            await message.channel.send(f"{pref}trade {user.mention}")    
+            await message.channel.send(f"{pref}trade {user}")    
             word = f"{pref}accept"
             reply = await self.wait_for('message', check=user_reply)
             confirmation = await self.wait_for('message', check=pokecord_reply)
@@ -315,16 +361,13 @@ class PokeBall(discord.Client):
         if pref and args:
             command = args.pop(0)
             pokeargs = ' '.join(args)
-            pokementions = ''
-            if mentions:
-                for mention in mentions:
-                    pokementions += f"@{mention} "
-            pokecmd = f"{pref}{command} {pokementions}{pokeargs}"
+            pokementions = ' '+' '.join(mentions) or ''
+            pokecmd = f"{pref}{command}{pokeargs}{pokementions}"
             await message.channel.send(pokecmd)
 
-    async def cmd_echo(self, message, args=[]):
+    async def cmd_echo(self, message, args=[], mentions=None):
         if args:
-            await message.channel.send(' '.join(args))
+            await message.channel.send(f"{' '.join(mentions)} {' '.join(args)}")
 
     async def cmd_id(self, message, args=[]):
         pref = self.prefix_dict.get(str(message.guild.id), None)
@@ -335,29 +378,52 @@ class PokeBall(discord.Client):
                 embeds = []
                 for i in range(0, len(results), 10):
                     embed = discord.Embed(title="Search Results", description="\u200B", color=15728640)
-                    for result in results[i:i+10]:
-                        embed.add_field(name=result[0], value=result[1], inline=False)
-                    embeds.append(embed)
-                base = await message.channel.send(content=None, embed=embeds[0])
-                pager = Paginator(message, base, embeds, self)
-                await pager.run()
+                    if results == "\u200B":
+                        continue
+                    else:
+                        for result in results[i:i+10]:
+                            embed.add_field(name=result[0], value=f"**ID**: {result[1]}\n**LEVEL**: {result[2]}", inline=False)
+                        embeds.append(embed)
+                try:
+                    base = await message.channel.send(content=None, embed=embeds[0])
+                    pager = Paginator(message, base, embeds, self)
+                    await pager.run()
+                except:
+                    await message.channel.send(":cold_sweat: | No results found.")
             else:
                 pokename = args[0]
-                ids = self.get_id(pokename)
-                embed = discord.Embed(title=pokename, description="\u200B", color=15728640)    
-                for id_val in ids:
-                    embed.add_field(name=id_val, value="\u200B", inline=False) 
-                await message.channel.send(content=None, embed=embed)
+                results = self.get_id(pokename, True)
+                embed = discord.Embed(title=pokename.title(), description="\u200B", color=15728640)    
+                if results  == "\u200B":
+                    await message.channel.send(":cold_sweat: | No results found.")
+                    return
+                else:        
+                    for result in results:
+                        embed.add_field(name="**ID**", value=f"{result[1]}", inline=False)
+                        embed.add_field(name="**LEVEL**", value=f"{result[2]}", inline=False)
+                        embed.add_field(name="-----", value="\u200B", inline=False) 
+                    await message.channel.send(content=None, embed=embed)
 
-    async def cmd_duplicates(self, message):
+    async def cmd_duplicates(self, message, args=[]):
         pokemons = [pokemon.split(' -> ')[0] for pokemon in self.pokelist]
-        dups = {dup for dup in pokemons if pokemons.count(dup) > 1}
+        limit = 2
+        if args:
+            limit = int(args[0])
+        dups = {dup for dup in pokemons if pokemons.count(dup) >= limit}
+        if len(dups) == 0:
+            await message.channel.send("There is no pokemon with so many duplicates. Try a smaller number.")
+            return
         dups = list(dups)
+        dups = sorted(dups)
         embeds = []
         for i in range(0, len(dups), 10):
             embed = discord.Embed(title="Duplicates", description="\u200B", color=15728640)
             for dup in dups[i:i+10]:
-                embed.add_field(name=dup, value='\n'.join(self.get_id(dup)), inline=False)
+                results = self.get_id(dup, True)
+                data = [f"**ID**: {result[1]}\t**LEVEL**: {result[2]}" for result in results]
+                data.append('-------------------------------------------------')    
+                embed.add_field(name=f"**{dup}**", value='\n'.join(data), inline=False)
+            embed.set_footer(text=f"{(i//10)+1}/{ceil(len(dups)/10)}")
             embeds.append(embed)
         base = await message.channel.send(content=None, embed=embeds[0])
         pager = Paginator(message, base, embeds, self)
@@ -387,16 +453,6 @@ class PokeBall(discord.Client):
         await message.channel.send(f"Total number of pokemon:\n{len(self.pokelist)}")
 
     async def cmd_clean_trash(self, message):
-        def guard(pokes):
-            limit = int(self.configs['max_duplicates'])
-            pokelist = pokes[:]
-            for poke in pokelist:
-                pokename = poke[0]
-                mons = [mon[0] for mon in pokelist]
-                while mons.count(pokename) > limit:
-                    pokelist.pop(mons.index(pokename))
-                    mons = [mon[0] for mon in pokelist]
-            return pokelist
         def release_check(msg):
             checks = [
                 msg.author.id == 365975655608745985,
@@ -407,13 +463,8 @@ class PokeBall(discord.Client):
 
         pref = self.prefix_dict.get(str(message.guild.id), None)
         if pref:
-            pokes = []
-            for id in self.junky_trash():
-                pokes.append((self.get_name(id), id))
-            pokes = sorted(pokes, key=lambda x: x[0])
-            safe = guard(pokes)
-            pokes = [poke for poke in pokes if poke not in safe]
-            pokes = sorted(pokes, key=lambda x: int(x[1]), reverse=True)
+            junk = self.junky_trash()
+            pokes = sorted(junk, key=lambda x: int(x[1]), reverse=True)
             for poke in pokes:
                 curr = poke[1]
                 curr_name = poke[0]
@@ -445,10 +496,10 @@ class PokeBall(discord.Client):
 
     async def cmd_priority_only(self, message, args=[]):
         if args:
-            if args[0] == 'off':
+            if args[0].lower() == 'off':
                 self.priority_only = False
                 print('Catching all pokemons.\n')
-            elif args[0] == 'on':
+            elif args[0].lower() == 'on':
                 self.priority_only = True
                 print('Catching only priority and legendary pokemon.\n')
             else:
@@ -456,22 +507,33 @@ class PokeBall(discord.Client):
 
     async def cmd_autocatcher(self, message, args=[]):
         if args:
-            if args[0] == 'off':
+            if args[0].lower() == 'off':
                 self.auto_catcher = False
                 print('Switching to Commands Only mode.\n')
-            elif args[0] == 'on':
+            elif args[0].lower() == 'on':
                 self.auto_catcher = True
                 print('Activated autocatcher.\n')
             else:
                 print(args)
+
+    async def cmd_toggle_mode(self, message, args=[]):
+        if args and args[0].lower() in ["blacklist", "whitelist"]:
+            self.mode = args[0].lower()
+        print(f"Switched to {args[0].title()} mode.")
 
     async def on_ready(self):
         priorities = self.configs['priority']
         prio_list = '\n'.join([
             ', '.join(priorities[i:i+5]) for i in range(0, len(priorities), 5)
         ])
+        blackies = '\n'.join([
+            ', '.join(self.configs['blacklists'][i:i+5]) for i in range(0, len(self.configs['blacklists']), 5)
+        ])
+        whities = '\n'.join([
+            ', '.join(self.configs['whitelists'][i:i+5]) for i in range(0, len(self.configs['whitelists']), 5)
+        ])
         print(
-            "\n---PokeBall SelfBot v1.93----\n\n"
+            "\n---PokeBall SelfBot v2.45----\n\n"
             f"Command Prefix: {self.configs['command_prefix']}\n\n"
             f"Priority:\n~~~~~~~~~\n{prio_list}\n\n"
             f"Catch Rate: {self.configs['catch_rate']}%\n\n"
@@ -479,4 +541,7 @@ class PokeBall(discord.Client):
             f"Delay On Priority: {'On' if self.configs['delay_on_priority'] == True else 'Off'}\n\n"
             f"Restrict Catching of Duplicates: {'On' if self.configs['delay_on_priority'] == True else 'Off'}\n\n"
             f"Maximum Number of Duplicates: {self.configs['max_duplicates']}\n\n"
+            f"Blacklisted Channels:\n~~~~~~~~~~~~~~~~~~~~\n{blackies}\n\n"
+            f"Whitelisted Channels:\n~~~~~~~~~~~~~~~~~~~~\n{whities}\n\n"
         )
+        self.ready = True

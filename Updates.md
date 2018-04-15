@@ -48,3 +48,14 @@
   >Use `{prefix}pokelog {page_number} continue` to resume the pokelog from that page instead of from the start.
 * Fixed DMChannel bug which pops up when the user is DMed.
 * Slightly refactored code for better efficiency.
+
+**15 April 2018**
+
+* Expanded Legendaries list
+* Toggler for Autocatcher
+* Added Blacklist/Whitelist mode
+* Fixed autocatcher's name bug
+* Logs now include levels
+* Better trash control
+* Fixed error for id command when the pokemon is not found
+* Case insensitive toggler commands
