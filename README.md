@@ -75,7 +75,7 @@ If you find any bugs or would like to add new features or somehow improve the co
 * Rapptz for [Discord.py](https://github.com/Rapptz/discord.py)
 
 ### Donors
-* *Yet to be filled.*
+* August.0
 
 
 ## Donations
