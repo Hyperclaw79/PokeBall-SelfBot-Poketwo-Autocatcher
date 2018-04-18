@@ -13,7 +13,6 @@ class PokeBall(discord.Client):
         self.config_path = config_path
         self.guild_path = guild_path
         self.pokelist_path = pokelist_path
-        self.p = re.compile('([A-Z])\w+')
         with open(self.guild_path) as f:
             self.prefix_dict = json.load(f)
         with open(self.config_path) as f:
@@ -146,7 +145,7 @@ class PokeBall(discord.Client):
             except AttributeError:
                 return    
             if embcheck:
-                name = self.p.search(emb.image.url.split('/')[-1]).group()
+                name = emb.image.url.split('/')[-1].split('.')[0]
                 name = name.replace('_', ' ')
                 name = self.pokenames.get(name, None)
                 if not name:
