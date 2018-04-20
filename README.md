@@ -1,4 +1,6 @@
 # PokeBall SelfBot
+![logo](https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/PokeballSelfbot_Logo.png)
+
 This selfbot is an extension of [PokecordCatcher](https://github.com/xKynn/PokecordCatcher) which catches pokemon when they are spawned by the Pokecord discord bot.  
 
 ## Features
@@ -86,7 +88,7 @@ If you find any bugs or would like to add new features or somehow improve the co
   + Logging catches to owner's DMs in multimode
   > *These features are based upon multimode which involves having multiple selfbot accounts.*
 * To avail these features, contact me on Discord @**Hyperclaw79#3570** where we can negotiate upon an offer and I'll give you my PayPal id. 
-  > *Please ping me only for donations and not for support (unless you are already a donor).*
+  > *Please ping me only for donations and not for support (unless you are already a donor). Currently the price is $5. Better donate fast as the price will be bound to go up along with the demand.*
 * The other **advantages** upon being a donor would be:
   + Be the first to avail any bug fixes and new updates.
   + A special mention of your username in this readme. *(optional)*
@@ -101,3 +103,14 @@ If you find any bugs or would like to add new features or somehow improve the co
   + Since Pokecord keeps updating, some of the older code might break. Stay patient till I send you a patch for it.
   + All donations are non-refundable.
   + Me or the contributors for this repo and not responsible for any legal suits.
+
+
+## Referrals
+* If you refer this to another person and they successfully donate to this repo, you will get the option to choose *one* of the following benefits:
+    + Trade Offer Generator module for free.
+    + A 5% discount while donating in the future.
+* DM me on Discord with the name of the person you referred to and ask them to include your username too while contacting me about the donation.
+* You need to also Star this repo before referring to others.
+* Maximum number of stackable discounts would be 2, i.e., maximum possible discount would be 10%.
+* The benefits are provided only **after** the referred person makes a donation.
+* The discount rate is subject to change based on the referral activity and donation price.
