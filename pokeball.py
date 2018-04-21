@@ -146,10 +146,10 @@ class PokeBall(discord.Client):
                 return    
             if embcheck:
                 name = emb.image.url.split('/')[-1].split('.')[0]
-                name = name.replace('_', ' ')
-                name = self.pokenames.get(name, None)
+                name1 = name.replace('_', ' ')
+                name = self.pokenames.get(name1, None)
                 if not name:
-                    print(f"Unable to find a name for {name}.")
+                    print(f"Unable to find a name for {name1}.")
                     return
                 duplicate_checks = [
                     name in self.trash,
@@ -159,9 +159,6 @@ class PokeBall(discord.Client):
                     ),
                     self.configs["restrict_duplicates"]
                 ]
-                if all(duplicate_checks):
-                    print(f"Skipping the duplicate: {name}")
-                    return
                 proc = random.randint(1, 100)
                 sub_checks = [
                     name in self.configs['priority'],
@@ -182,6 +179,9 @@ class PokeBall(discord.Client):
                         ]        
                         if all(delay_checks) or name not in self.configs["priority"]:
                             await asyncio.sleep(self.configs['delay'])
+                        if all(duplicate_checks):
+                            print(f"Skipping the duplicate: {name}")
+                            return    
                     await message.channel.send(f"{pref} {name}")
                 reply = await self.wait_for('message', check=pokecord_reply)
                 if self.user.mentioned_in(reply):
@@ -228,7 +228,7 @@ class PokeBall(discord.Client):
                 'mentions': []
             }
             if message.mentions:
-                kwargs['mentions'] = [mention.mention for mention in message.mentions]
+                kwargs['mentions'] = message.mentions
             required = inspect.signature(method)
             required = set(required.parameters.copy())
             for key in list(kwargs):
@@ -342,7 +342,7 @@ class PokeBall(discord.Client):
             else:
                 numbers = [pokemon.split(' -> ')[1] for pokemon in self.pokelist if safe_filter(pokemon)]
                 numbers = sorted(numbers,reverse=True)
-            await message.channel.send(f"{pref}trade {user}")    
+            await message.channel.send(f"{pref}trade {user.mention}")    
             word = f"{pref}accept"
             reply = await self.wait_for('message', check=user_reply)
             confirmation = await self.wait_for('message', check=pokecord_reply)
@@ -360,13 +360,13 @@ class PokeBall(discord.Client):
         if pref and args:
             command = args.pop(0)
             pokeargs = ' '.join(args)
-            pokementions = ' '+' '.join(mentions) or ''
-            pokecmd = f"{pref}{command}{pokeargs}{pokementions}"
-            await message.channel.send(pokecmd)
+            pokementions = ' '+' '.join([mention.mention for mention in mentions]) or ''
+            pokecmd = f"{pref}{command}{pokementions}{pokeargs}"
+            await message.channel.send(pokecmd)        
 
     async def cmd_echo(self, message, args=[], mentions=None):
         if args:
-            await message.channel.send(f"{' '.join(mentions)} {' '.join(args)}")
+            await message.channel.send(f"{' '.join(args)} {' '.join([mention.mention for mention in mentions])}")
 
     async def cmd_id(self, message, args=[]):
         pref = self.prefix_dict.get(str(message.guild.id), None)
@@ -525,14 +525,20 @@ class PokeBall(discord.Client):
         prio_list = '\n'.join([
             ', '.join(priorities[i:i+5]) for i in range(0, len(priorities), 5)
         ])
-        blackies = '\n'.join([
-            ', '.join(self.configs['blacklists'][i:i+5]) for i in range(0, len(self.configs['blacklists']), 5)
-        ])
-        whities = '\n'.join([
-            ', '.join(self.configs['whitelists'][i:i+5]) for i in range(0, len(self.configs['whitelists']), 5)
-        ])
+        try:
+            blackies = '\n'.join([
+                ', '.join(self.configs['blacklists'][i:i+5]) for i in range(0, len(self.configs['blacklists']), 5)
+            ])
+        except:
+            blackies = "None"
+        try:    
+            whities = '\n'.join([
+                ', '.join(self.configs['whitelists'][i:i+5]) for i in range(0, len(self.configs['whitelists']), 5)
+            ])
+        except:
+            whities = "None"
         print(
-            "\n---PokeBall SelfBot v2.45----\n\n"
+            "\n---PokeBall SelfBot v2.5----\n\n"
             f"Command Prefix: {self.configs['command_prefix']}\n\n"
             f"Priority:\n~~~~~~~~~\n{prio_list}\n\n"
             f"Catch Rate: {self.configs['catch_rate']}%\n\n"
