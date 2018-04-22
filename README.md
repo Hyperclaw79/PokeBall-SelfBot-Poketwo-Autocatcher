@@ -79,7 +79,7 @@ If you find any bugs or would like to add new features or somehow improve the co
 
 ### Donors
 * August.0
-
+* SwiftBrass
 
 ## Donations
 * The public version of this selfbot doesn't contain the following to keep the bot usage to minimum and not break Pokecord bot:
