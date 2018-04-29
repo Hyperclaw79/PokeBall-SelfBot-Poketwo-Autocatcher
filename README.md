@@ -23,6 +23,7 @@ It is inspired by [PokecordCatcher](https://github.com/xKynn/PokecordCatcher) an
 ## Setup
 1. First replace the `os.environ["DISCORD_BOT_TOKEN"]` in `secret.py` with your bot token. Refer the tutorial below to get the token.
     > *Remove `os.environ` too if you're not using the token as an environmental variable.*
+    >> *So modify that line to `configs["token"] = "your token"`; **not** `configs["token"] = os.environ["your token"]`.*
 2. Run `setup.bat` to install the requirements.
 3. Then simply run `run.bat` to get your bot live.
 
