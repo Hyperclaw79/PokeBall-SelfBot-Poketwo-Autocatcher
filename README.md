@@ -89,12 +89,14 @@ If you find any bugs or would like to add new features or somehow improve the co
   + Auto-dueler for Credits farming [Major]
   + Logging catches to owner's DMs in multimode
   > *These features are based upon multimode which involves having multiple selfbot accounts.*
-* To avail these features, contact me on Discord @**Hyperclaw79#3570** where we can negotiate upon an offer and I'll give you my PayPal id. 
+* To avail these features, contact me on Discord @**Hyperclaw79#3570** and I'll give you my PayPal id. 
   > *Please ping me only for donations and not for support (unless you are already a donor). Currently the price is $7. Better donate fast as the price will be bound to go up along with the demand.*
 * The other **advantages** upon being a donor would be:
   + Be the first to avail any bug fixes and new updates.
   + A special mention of your username in this readme. *(optional)*
   + Bot related Support on Discord DMs. (Don't ask me how to install Python xD)
+    + >*This version is to suggested to be used after you've tried out the public version.*
+    + >*The support doesn't include how to setup the public bot. Use [GitHub Issues](https://github.com/Hyperclaw79/PokeBall-SelfBot/issues) for that one.
   + You can propose new features and I shall implement them *based on the plausibilty*.
 * **Terms & Conditions apply**:
   + You shall receive the source code and deployment instructions after the payment has been acknowledged.
