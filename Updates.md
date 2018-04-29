@@ -59,3 +59,10 @@
 * Better trash control
 * Fixed error for id command when the pokemon is not found
 * Case insensitive toggler commands
+
+**29 April 2018**
+
+* Trade by Fav option added.
+  >You can now simply trade all the pokemon in your fav list to the other account.
+* Fixed spelling for Yveltal.
+* Other Minor changes.

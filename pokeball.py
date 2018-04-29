@@ -30,7 +30,7 @@ class PokeBall(discord.Client):
             'Mespirit', 'Mew', 'Mewtwo', 'Moltres', 'Necrozma', 'Palkia', 'Phione', 'Raikou',
             'Rayquaza', 'Regice', 'Regigigas', 'Regirock', 'Registeel', 'Reshiram', 'Shaymin', 'Silvally',
             'Solgaleo', 'Suicune', 'Tapu Bulu', 'Tapu Fini', 'Tapu Koko', 'Tapu Lele', 'Terrakion', 'Thunderus',
-            'Tornadus', 'Type: Null', 'Uxie', 'Victini', 'Virizion', 'Volcanion', 'Xerneas', 'YveItaI',
+            'Tornadus', 'Type: Null', 'Uxie', 'Victini', 'Virizion', 'Volcanion', 'Xerneas', 'Yveltal',
             'Zapdos', 'Zekrom', 'Zeraora', 'Zygarde'
         ]
         pokemons = [pokemon.split(' -> ')[0] for pokemon in self.pokelist]
@@ -243,6 +243,7 @@ class PokeBall(discord.Client):
             if msg.embeds:
                 checks = [
                     msg.author.id == 365975655608745985,
+                    msg.channel.id == message.channel.id,
                     msg.embeds[0].title.startswith('Your pokémon:')
                 ]
                 return  all(checks)
@@ -252,6 +253,7 @@ class PokeBall(discord.Client):
             if msg.embeds:
                 checks = [
                     msg.author.id == 365975655608745985,
+                    msg.channel.id == message.channel.id,
                     msg.embeds[0].title.startswith('Your pokémon:')
                 ]
                 return  all(checks)
@@ -324,7 +326,14 @@ class PokeBall(discord.Client):
             return all(checks)
 
         def pokecord_reply(msg):
-            return msg.author.id == 365975655608745985
+            return msg.author.id == 365975655608745985 and msg.channel.id == message.channel.id
+
+        def id_extracter(pokemon):
+            params = pokemon.split(' | ')
+            name = params[0].replace('**', '')
+            level = params[1].replace('Level: ', '')
+            number = params[2].replace('Number: ', '')
+            return int(number)
 
         user = mentions[0]
         pref = self.prefix_dict.get(str(message.guild.id), None)
@@ -332,13 +341,25 @@ class PokeBall(discord.Client):
             with open(self.pokelist_path,'r', encoding='utf-8') as f:
                 pokelist = f.read().splitlines()
             if args:
-                numlist = []
-                for arg in args:
-                    if all(char.isalpha() for char in arg):
-                        numlist += self.get_id(args[0].title())
-                    else:
-                        numlist.append(arg)
-                numbers = numlist            
+                if "fav" in args:
+                    await message.channel.send(f"{pref}fav")
+                    try:
+                        reply = await self.wait_for('message', check=pokecord_reply, timeout=2.0)
+                    except:
+                        await message.channel.send(f"{pref}ping")
+                        await message.channel.send(f"{pref}fav")
+                        reply = await self.wait_for('message', check=pokecord_reply)
+                    if reply.embeds and reply.embeds[0].title == "Your pokémon:":
+                        pokemons = reply.embeds[0].description.split('\n')
+                        numbers = [id_extracter(pokeline) for pokeline in pokemons]
+                else:
+                    numlist = []
+                    for arg in args:
+                        if all(char.isalpha() for char in arg):
+                            numlist += self.get_id(args[0].title())
+                        else:
+                            numlist.append(arg)
+                    numbers = numlist            
             else:
                 numbers = [pokemon.split(' -> ')[1] for pokemon in self.pokelist if safe_filter(pokemon)]
                 numbers = sorted(numbers,reverse=True)
@@ -455,6 +476,7 @@ class PokeBall(discord.Client):
         def release_check(msg):
             checks = [
                 msg.author.id == 365975655608745985,
+                msg.channel.id == message.channel.id,
                 "release" in msg.content,
                 curr_name in msg.content
             ]
@@ -538,7 +560,7 @@ class PokeBall(discord.Client):
         except:
             whities = "None"
         print(
-            "\n---PokeBall SelfBot v2.5----\n\n"
+            "\n---PokeBall SelfBot v2.7----\n\n"
             f"Command Prefix: {self.configs['command_prefix']}\n\n"
             f"Priority:\n~~~~~~~~~\n{prio_list}\n\n"
             f"Catch Rate: {self.configs['catch_rate']}%\n\n"
