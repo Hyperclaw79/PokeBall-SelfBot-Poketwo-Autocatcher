@@ -549,18 +549,18 @@ class PokeBall(discord.Client):
         ])
         try:
             blackies = '\n'.join([
-                ', '.join(self.configs['blacklists'][i:i+5]) for i in range(0, len(self.configs['blacklists']), 5)
+                ', '.join([str(channel) for channel in self.configs['blacklists'][i:i+5]]) for i in range(0, len(self.configs['blacklists']), 5)
             ])
         except:
             blackies = "None"
         try:    
             whities = '\n'.join([
-                ', '.join(self.configs['whitelists'][i:i+5]) for i in range(0, len(self.configs['whitelists']), 5)
+                ', '.join([str(channel) for channel in self.configs['whitelists'][i:i+5]]) for i in range(0, len(self.configs['whitelists']), 5)
             ])
         except:
             whities = "None"
         print(
-            "\n---PokeBall SelfBot v2.7----\n\n"
+            "\n---PokeBall SelfBot v2.7.5----\n\n"
             f"Command Prefix: {self.configs['command_prefix']}\n\n"
             f"Priority:\n~~~~~~~~~\n{prio_list}\n\n"
             f"Catch Rate: {self.configs['catch_rate']}%\n\n"
