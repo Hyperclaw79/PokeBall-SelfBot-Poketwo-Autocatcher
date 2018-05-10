@@ -202,7 +202,7 @@ class PokeBall(discord.Client):
                         ]
                         self.pokelist.append(refined_list[0])
                         with open(self.pokelist_path, 'w', encoding='utf-8') as f:
-                            f.write(self.pokelist)
+                            f.write('\n'.join(self.pokelist))
 
         #SelfBot Commands
         prefix_checks = [
