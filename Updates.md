@@ -66,3 +66,8 @@
   >You can now simply trade all the pokemon in your fav list to the other account.
 * Fixed spelling for Yveltal.
 * Other Minor changes.
+
+**10 May 2018**
+* No need to use `pokelog`, after catching every new pokemon, anymore. The selfbot will take care of that automatically.
+* Fixed bugs in display of Whitelists and Blacklists.
+* Other minor improvements.

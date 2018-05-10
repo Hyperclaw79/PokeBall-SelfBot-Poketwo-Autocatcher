@@ -139,6 +139,13 @@ class PokeBall(discord.Client):
             self.auto_catcher
         ]
         if all(pokeball_checks):
+            def log_formatter(pokemon):
+                params = pokemon.split(' | ')
+                name = params[0].replace('**', '')
+                level = params[1].replace('Level: ', '')
+                number = params[2].replace('Number: ', '')
+                return f"{name} -> {number} -> {level}"
+            
             emb = message.embeds[0]
             try:
                 embcheck = emb.title.startswith('A wild')
@@ -186,6 +193,16 @@ class PokeBall(discord.Client):
                 reply = await self.wait_for('message', check=pokecord_reply)
                 if self.user.mentioned_in(reply):
                     print(f'Caught **{name}** in *{message.guild.name}* in #{message.channel.name}')
+                    await message.channel.send(f"{pref.replace('catch','pokemon')} --name {name}")
+                    reply = await self.wait_for('message', check=pokecord_reply)
+                    if reply.embeds and reply.channel.id == message.channel.id:
+                        raw_list = reply.embeds[0].description.splitlines()
+                        refined_list = [
+                            log_formatter(pokeline) for pokeline in raw_list if log_formatter(pokeline) not in self.pokelist
+                        ]
+                        self.pokelist.append(refined_list[0])
+                        with open(self.pokelist_path, 'w', encoding='utf-8') as f:
+                            f.write(self.pokelist)
 
         #SelfBot Commands
         prefix_checks = [
@@ -560,7 +577,7 @@ class PokeBall(discord.Client):
         except:
             whities = "None"
         print(
-            "\n---PokeBall SelfBot v2.7.5----\n\n"
+            "\n---PokeBall SelfBot v2.8----\n\n"
             f"Command Prefix: {self.configs['command_prefix']}\n\n"
             f"Priority:\n~~~~~~~~~\n{prio_list}\n\n"
             f"Catch Rate: {self.configs['catch_rate']}%\n\n"
