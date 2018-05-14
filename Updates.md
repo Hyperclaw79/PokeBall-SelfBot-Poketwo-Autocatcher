@@ -71,3 +71,7 @@
 * No need to use `pokelog`, after catching every new pokemon, anymore. The selfbot will take care of that automatically.
 * Fixed bugs in display of Whitelists and Blacklists.
 * Other minor improvements.
+
+**14 May 2018**
+* [Breaking] Fixed the autocatcher. It is now a few seconds slower than before but it works. This was a result of PokeCord's update.
+* Fixed a small bug in autologging.

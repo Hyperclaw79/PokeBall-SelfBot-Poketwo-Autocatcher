@@ -7,6 +7,8 @@ import json
 import inspect
 from paginator import Paginator
 from math import ceil
+import aiohttp
+import hashlib
 
 class PokeBall(discord.Client):
     def __init__(self, config_path: str, guild_path: str, pokelist_path: str, pokenames_path: str, *args, **kwargs):
@@ -102,6 +104,12 @@ class PokeBall(discord.Client):
             with open(self.guild_path, 'w') as f:
                 f.write(json.dumps(self.prefix_dict))
     
+    async def match(self, url):
+        async with await self.sess.get(url) as resp:
+            dat = await resp.content.read()
+        m = hashlib.md5(dat).hexdigest()
+        return self.pokenames[m]
+        
     async def on_message(self, message):
         def pokecord_reply(msg):
             return msg.author.id == 365975655608745985
@@ -152,9 +160,7 @@ class PokeBall(discord.Client):
             except AttributeError:
                 return    
             if embcheck:
-                name = emb.image.url.split('/')[-1].split('.')[0]
-                name1 = name.replace('_', ' ')
-                name = self.pokenames.get(name1, None)
+                name = await self.match(emb.image.url.split('?')[0])
                 if not name:
                     print(f"Unable to find a name for {name1}.")
                     return
@@ -577,7 +583,7 @@ class PokeBall(discord.Client):
         except:
             whities = "None"
         print(
-            "\n---PokeBall SelfBot v2.8----\n\n"
+            "\n---PokeBall SelfBot v3.0----\n\n"
             f"Command Prefix: {self.configs['command_prefix']}\n\n"
             f"Priority:\n~~~~~~~~~\n{prio_list}\n\n"
             f"Catch Rate: {self.configs['catch_rate']}%\n\n"
@@ -588,4 +594,5 @@ class PokeBall(discord.Client):
             f"Blacklisted Channels:\n~~~~~~~~~~~~~~~~~~~~\n{blackies}\n\n"
             f"Whitelisted Channels:\n~~~~~~~~~~~~~~~~~~~~\n{whities}\n\n"
         )
+        self.sess = aiohttp.ClientSession()
         self.ready = True
