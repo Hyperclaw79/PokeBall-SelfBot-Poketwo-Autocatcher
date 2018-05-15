@@ -101,6 +101,7 @@ If you find any bugs or would like to add new features or somehow improve the co
 * SwiftBrass
 * Leschx
 * KappaBotter
+* BestGunner
 
 ## Donations
 * The public version of this selfbot doesn't contain the following to keep the bot usage to minimum and not break Pokecord bot:
@@ -110,7 +111,7 @@ If you find any bugs or would like to add new features or somehow improve the co
   + Logging catches to owner's DMs in multimode
   > *These features are based upon multimode which involves having multiple selfbot accounts.*
 * To avail these features, contact me on Discord @**Hyperclaw79#3570** and I'll give you my PayPal id. 
-  > *Please ping me only for donations and not for support (unless you are already a donor). Currently the price is $8. Better donate fast as the price will be bound to go up along with the demand.*
+  > *Please ping me only for donations and not for support (unless you are already a donor). Currently the price is $9. Better donate fast as the price will be bound to go up along with the demand.*
 * The other **advantages** upon being a donor would be:
   + Be the first to avail any bug fixes and new updates.
   + A special mention of your username in this readme. *(optional)*
