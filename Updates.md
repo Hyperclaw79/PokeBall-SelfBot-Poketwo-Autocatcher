@@ -75,3 +75,7 @@
 **14 May 2018**
 * [Breaking] Fixed the autocatcher. It is now a few seconds slower than before but it works. This was a result of PokeCord's update.
 * Fixed a small bug in autologging.
+
+**17 May 2018**
+* [Breaking] Added more delays to take care of PokeCord's ratelimits. (Realtime testing required.)
+* Added `avoid` config to skip all the unrequired pokemon.

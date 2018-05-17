@@ -179,7 +179,8 @@ class PokeBall(discord.Client):
                 ]
                 catch_checks = [
                     not any(sub_checks),
-                    proc <= self.configs['catch_rate']
+                    proc <= self.configs['catch_rate'],
+                    name not in self.configs['avoid']
                 ]
                 catcher = any(sub_checks) if self.priority_only else all(catch_checks)
                 if catcher:
@@ -391,8 +392,8 @@ class PokeBall(discord.Client):
             reply = await self.wait_for('message', check=user_reply)
             confirmation = await self.wait_for('message', check=pokecord_reply)
             for number in numbers:
-                await asyncio.sleep(0.5)
                 await message.channel.send(f"{pref}p add {number}")
+                await asyncio.sleep(2.0)
             await message.channel.send(f"{pref}confirm")
             confirmation = await self.wait_for('message', check=pokecord_reply)
             if confirmation.content == "Trade confirmed.":
@@ -529,12 +530,14 @@ class PokeBall(discord.Client):
                     if pokemon in desc.content:
                         print(f"WOAH! Almost deleted {pokemon}!")
                         return
+                await asyncio.sleep(2.0)        
                 await message.channel.send(f"{pref}confirm")
                 try:
                     await self.wait_for('message', check=release_check, timeout=10.0)
                 except:
                     await message.channel.send(f"{pref}ping")
                     await self.wait_for('message', check=release_check, timeout=10.0)
+                await asyncio.sleep(2.0)    
             print("Successfully cleared the junk.")
             await self.cmd_pokelog(message)
 
@@ -583,7 +586,7 @@ class PokeBall(discord.Client):
         except:
             whities = "None"
         print(
-            "\n---PokeBall SelfBot v3.0----\n\n"
+            "\n---PokeBall SelfBot v3.1.2----\n\n"
             f"Command Prefix: {self.configs['command_prefix']}\n\n"
             f"Priority:\n~~~~~~~~~\n{prio_list}\n\n"
             f"Catch Rate: {self.configs['catch_rate']}%\n\n"

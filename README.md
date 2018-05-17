@@ -58,6 +58,7 @@ If a priority pokemon is caught, it will be removed from priority list in the cu
 * `delay_on_priority` can be set to **true** or **false**, false means it won't wait and will instantly catch a pokemon if its in priority.
 * `restrict_duplicates` can be set to **false** to catch unlimited number of duplicates. If **true**, use `max_duplicates` to control the number of duplicates you can catch. 
 * `blacklists` and `whitelists` can be filled with the channel ids to choose where the selfbot should work. You can use the `toggle_mode` command to choose which mode it should run in.
+* `avoid` can be filled with all the pokemons that shouldn't be caught automatically.
 * Use the `pokelog` command before performing a trade in order to sync up all your newly caught pokemon.
 * Regularly run `pokelog` to keep the list synchronized. Especially, before `clean_trash` as it might result in releasing the wrong pokemon.
 * For args based trading/releasing, always provide the ids in a descending order.
@@ -73,6 +74,7 @@ Example config:
   "token": "<your token>",
   "command_prefix": "P^",
   "priority": ["Groudon", "Geodude"],
+  "avoid": ["Croagunk", "Trubbish"],
   "catch_rate": 90,
   "delay": 2,
   "delay_on_priority": true,
@@ -101,6 +103,7 @@ If you find any bugs or would like to add new features or somehow improve the co
 * SwiftBrass
 * Leschx
 * KappaBotter
+* BestGunner
 
 ## Donations
 * The public version of this selfbot doesn't contain the following to keep the bot usage to minimum and not break Pokecord bot:
@@ -110,7 +113,7 @@ If you find any bugs or would like to add new features or somehow improve the co
   + Logging catches to owner's DMs in multimode
   > *These features are based upon multimode which involves having multiple selfbot accounts.*
 * To avail these features, contact me on Discord @**Hyperclaw79#3570** and I'll give you my PayPal id. 
-  > *Please ping me only for donations and not for support (unless you are already a donor). Currently the price is $8. Better donate fast as the price will be bound to go up along with the demand.*
+  > *Please ping me only for donations and not for support (unless you are already a donor). Currently the price is $9. Better donate fast as the price will be bound to go up along with the demand.*
 * The other **advantages** upon being a donor would be:
   + Be the first to avail any bug fixes and new updates.
   + A special mention of your username in this readme. *(optional)*
