@@ -117,6 +117,9 @@ class PokeBall(discord.Client):
         if not self.ready:
             return
 
+        if "guild" not in dir(message): #Skip DMs to avoid AttributeError (alt)
+            return
+        
         if message.guild is None: #Skip DMs to avoid AttributeError
             return
         else:
