@@ -44,8 +44,13 @@ It is inspired by [PokecordCatcher](https://github.com/xKynn/PokecordCatcher) an
     >> *So modify that line to `configs["token"] = "your token"`; **not** `configs["token"] = os.environ["your token"]`.*
 2. Run `setup.bat` to install the requirements.
 3. Then simply run `run.bat` to get your bot live.
+  > If you are on a mac or linux, directly launch `launcer.py` instead of running the bat file. And use `pip install -r requirements.txt` instead to setup.
+4. The autocatcher is **off** by default. To enable it, you need to send a message in Discord as `P^autocatcher on`.
+  > `P^` is the default command_prefix for the selfbot. Feel free to change it. Note that, this is not the same as PokeCord's prefix.
+  > If you don't want to toggle it on every time after restart, change line 41 to `True` instead of `False`.
+5. Most of the commands need you to catch a pokemon in the new guild with autocatcher on, at least once, followed by a restart.
+  > There is a way to manually bypass this. You need to turn the Developer Mode on your Discord on, get the guild id and alter    `guilds.json` to include the `,guild_id:"pokecord prefix in that guild"`.
 
-    > If you are on a mac or linux, directly launch `launcer.py` instead of running the bat file. And use `pip install -r requirements.txt` instead to setup.
 
 ## Fine-Tuning
 * To find out how to get your token visit [Token Tutorial](https://github.com/TheRacingLion/Discord-SelfBot/wiki/Discord-Token-Tutorial).
@@ -92,6 +97,7 @@ Example config:
 
 ## Contributions
 If you find any bugs or would like to add new features or somehow improve the code, feel free to open an Issue or a Pull Request.
+Before you open up a new issue to ask a question, please refer to the [closed issues](https://github.com/Hyperclaw79/PokeBall-SelfBot/issues?q=is%3Aissue+is%3Aclosed) first.
 
 ## Acknowledgements
 ### Creators
