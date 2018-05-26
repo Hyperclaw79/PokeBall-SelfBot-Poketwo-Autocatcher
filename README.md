@@ -119,7 +119,7 @@ Before you open up a new issue to ask a question, please refer to the [closed is
   + Logging catches to owner's DMs in multimode
   > *These features are based upon multimode which involves having multiple selfbot accounts.*
 * To avail these features, contact me on Discord @**Hyperclaw79#3570** and I'll give you my PayPal id. 
-  > *Please ping me only for donations and not for support (unless you are already a donor). Currently the price is $9. Better donate fast as the price will be bound to go up along with the demand.*
+  > *Please ping me only for donations and not for support (unless you are already a donor). Currently the price is just $9. Better donate fast as the price will be bound to go up along with the demand.*
 * The other **advantages** upon being a donor would be:
   + Be the first to avail any bug fixes and new updates.
   + A special mention of your username in this readme. *(optional)*
@@ -127,6 +127,15 @@ Before you open up a new issue to ask a question, please refer to the [closed is
     + >*This version is to suggested to be used after you've tried out the public version.*
     + >*The support doesn't include how to setup the public bot. Use [GitHub Issues](https://github.com/Hyperclaw79/PokeBall-SelfBot/issues) for that one.
   + You can propose new features and I shall implement them *based on the plausibilty*.
+* **Advanced Extension**
+  + The premium version also got an advanced extension which adds more game to the bot.
+    It contains the following features:
+    + This one works on a multi-user mode with 3+ bots. It follows a master-slave system where one master bot can        trigger the commands on multiple slave selfbots.
+    + `Best_stats` command to check for the pokemon which has the best total stats or a specific stat like Speed,         Attack among your fav list or list of ids. Pretty useful for the traders.
+    + `Incubate` command to automatically level up all the pokemon in your fav list or list of ids, through the           autospammer module. You don't need to check for the level of your pokemon and manually switch to the next one      anymore.
+    + `iter` command to chain a series of pokecord commands for a list of ids.
+    + `sudo_exec` and `sudo_echo` commands for the master-slave control.
+  + The current price for this extension is just $7     and will change with demand, just like the          premium version.  
 * **Terms & Conditions apply**:
   + You shall receive the source code and deployment instructions after the payment has been acknowledged.
   + You shall not disclose the obtained code to anyone directly. Refer them to this repo instead.

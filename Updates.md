@@ -79,3 +79,10 @@
 **17 May 2018**
 * [Breaking] Added more delays to take care of PokeCord's ratelimits. (Realtime testing required.)
 * Added `avoid` config to skip all the unrequired pokemon.
+
+**26 May 2018**
+* Fixed the `Trade` bug where the first pokemon gets added before the trade begins.
+* Fixed the freezing `clean_trash` command.
+* Added a gift command to transfer cash quickly.
+  > `P^gift @user2 10000` is the syntax.
+* Fixed indentation in autocatcher to fix the `pref referenced before local assignment` bug.  

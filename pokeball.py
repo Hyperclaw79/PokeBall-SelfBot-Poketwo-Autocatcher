@@ -192,27 +192,27 @@ class PokeBall(discord.Client):
                         self.new_guild(message, pref)
                         delay_checks = [
                             self.configs['delay_on_priority'],
-                            name in self.configs["priority"]
+                            name in (self.legendaries + self.configs["priority"])
                         ]        
-                        if all(delay_checks) or name not in self.configs["priority"]:
+                        if all(delay_checks) or name not in (self.legendaries + self.configs["priority"]):
                             await asyncio.sleep(self.configs['delay'])
                         if all(duplicate_checks):
                             print(f"Skipping the duplicate: {name}")
                             return    
                     await message.channel.send(f"{pref} {name}")
-                reply = await self.wait_for('message', check=pokecord_reply)
-                if self.user.mentioned_in(reply):
-                    print(f'Caught **{name}** in *{message.guild.name}* in #{message.channel.name}')
-                    await message.channel.send(f"{pref.replace('catch','pokemon')} --name {name}")
                     reply = await self.wait_for('message', check=pokecord_reply)
-                    if reply.embeds and reply.channel.id == message.channel.id:
-                        raw_list = reply.embeds[0].description.splitlines()
-                        refined_list = [
-                            log_formatter(pokeline) for pokeline in raw_list if log_formatter(pokeline) not in self.pokelist
-                        ]
-                        self.pokelist.append(refined_list[0])
-                        with open(self.pokelist_path, 'w', encoding='utf-8') as f:
-                            f.write('\n'.join(self.pokelist))
+                    if self.user.mentioned_in(reply):
+                        print(f'Caught **{name}** in *{message.guild.name}* in #{message.channel.name}')
+                        await message.channel.send(f"{pref.replace('catch','pokemon')} --name {name}")
+                        reply = await self.wait_for('message', check=pokecord_reply)
+                        if reply.embeds and reply.channel.id == message.channel.id:
+                            raw_list = reply.embeds[0].description.splitlines()
+                            refined_list = [
+                                log_formatter(pokeline) for pokeline in raw_list if log_formatter(pokeline) not in self.pokelist
+                            ]
+                            self.pokelist.append(refined_list[0])
+                            with open(self.pokelist_path, 'w', encoding='utf-8') as f:
+                                f.write('\n'.join(self.pokelist))
 
         #SelfBot Commands
         prefix_checks = [
@@ -355,6 +355,14 @@ class PokeBall(discord.Client):
         def pokecord_reply(msg):
             return msg.author.id == 365975655608745985 and msg.channel.id == message.channel.id
 
+        def pokecord_embed(msg):
+            checks = [
+                msg.author.id == 365975655608745985,
+                msg.channel.id == message.channel.id,
+                msg.embeds
+            ]
+            return all(checks)    
+
         def id_extracter(pokemon):
             params = pokemon.split(' | ')
             name = params[0].replace('**', '')
@@ -393,7 +401,7 @@ class PokeBall(discord.Client):
             await message.channel.send(f"{pref}trade {user.mention}")    
             word = f"{pref}accept"
             reply = await self.wait_for('message', check=user_reply)
-            confirmation = await self.wait_for('message', check=pokecord_reply)
+            confirmation = await self.wait_for('message', check=pokecord_embed)
             for number in numbers:
                 await message.channel.send(f"{pref}p add {number}")
                 await asyncio.sleep(2.0)
@@ -505,7 +513,7 @@ class PokeBall(discord.Client):
                 msg.author.id == 365975655608745985,
                 msg.channel.id == message.channel.id,
                 "release" in msg.content,
-                curr_name in msg.content
+                curr_name.title() in msg.content
             ]
             return all(checks)
 
@@ -538,8 +546,11 @@ class PokeBall(discord.Client):
                 try:
                     await self.wait_for('message', check=release_check, timeout=10.0)
                 except:
-                    await message.channel.send(f"{pref}ping")
-                    await self.wait_for('message', check=release_check, timeout=10.0)
+                    pinger = await message.channel.send(f"{pref}ping")
+                    desc = await message.channel.history(before=pinger).find(release_check).flatten()
+                    if len(desc) < 1:
+                        desc = await self.wait_for('message', check=release_check, timeout=5.0)
+                        continue
                 await asyncio.sleep(2.0)    
             print("Successfully cleared the junk.")
             await self.cmd_pokelog(message)
@@ -571,6 +582,40 @@ class PokeBall(discord.Client):
             self.mode = args[0].lower()
         print(f"Switched to {args[0].title()} mode.")
 
+    async def cmd_gift(self, message, mentions, args=[]):
+        def user_reply(msg):
+            checks = [
+                msg.author.id == user.id,
+                word in msg.content
+            ]
+            return all(checks)
+
+        def pokecord_reply(msg):
+            return msg.author.id == 365975655608745985 and msg.channel.id == message.channel.id
+
+        def pokecord_embed(msg):
+            checks = [
+                msg.author.id == 365975655608745985,
+                msg.channel.id == message.channel.id,
+                msg.embeds
+            ]
+            return all(checks)
+
+        user = mentions[0]
+        pref = self.prefix_dict.get(str(message.guild.id), None)
+        if pref and args:
+            money = args[0]
+            await message.channel.send(f"{pref}trade {user.mention}")    
+            word = f"{pref}accept"
+            reply = await self.wait_for('message', check=user_reply)
+            confirmation = await self.wait_for('message', check=pokecord_embed)
+            await message.channel.send(f"{pref}c add {money}")
+            await asyncio.sleep(2.0)
+            await message.channel.send(f"{pref}confirm")
+            confirmation = await self.wait_for('message', check=pokecord_reply)
+            if confirmation.content == "Trade confirmed.":
+                print(f'Successfully gifted {money}c to {user}.')
+
     async def on_ready(self):
         priorities = self.configs['priority']
         prio_list = '\n'.join([
@@ -589,7 +634,8 @@ class PokeBall(discord.Client):
         except:
             whities = "None"
         print(
-            "\n---PokeBall SelfBot v3.1.2----\n\n"
+            "\n---PokeBall SelfBot v3.1.5----\n\n"
+            f"Bot name: {self.user}\n\n"
             f"Command Prefix: {self.configs['command_prefix']}\n\n"
             f"Priority:\n~~~~~~~~~\n{prio_list}\n\n"
             f"Catch Rate: {self.configs['catch_rate']}%\n\n"
