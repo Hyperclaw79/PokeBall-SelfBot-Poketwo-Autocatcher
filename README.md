@@ -111,6 +111,7 @@ Before you open up a new issue to ask a question, please refer to the [closed is
 * KappaBotter
 * BestGunner
 * Matt
+* DaddyNew
 
 ## Donations
 * The public version of this selfbot doesn't contain the following to keep the bot usage to minimum and not break Pokecord bot:
@@ -120,7 +121,7 @@ Before you open up a new issue to ask a question, please refer to the [closed is
   + Logging catches to owner's DMs in multimode
   > *These features are based upon multimode which involves having multiple selfbot accounts.*
 * To avail these features, contact me on Discord @**Hyperclaw79#3570** and I'll give you my PayPal id. 
-  > *Please ping me only for donations and not for support (unless you are already a donor). Currently the price is just $10. Better donate fast as the price will be bound to go up along with the demand.*
+  > *Please ping me only for donations and not for support (unless you are already a donor). Currently the price is just $11. Better donate fast as the price will be bound to go up along with the demand.*
 * The other **advantages** upon being a donor would be:
   + Be the first to avail any bug fixes and new updates.
   + A special mention of your username in this readme. *(optional)*
