@@ -98,6 +98,8 @@ Example config:
 ## Contributions
 If you find any bugs or would like to add new features or somehow improve the code, feel free to open an Issue or a Pull Request.
 Before you open up a new issue to ask a question, please refer to the [closed issues](https://github.com/Hyperclaw79/PokeBall-SelfBot/issues?q=is%3Aissue+is%3Aclosed) first.
+If your issue got closed but it hasn't been resolved, please reopen that issue instead of creating a new one.
+Also, please use relevant issue titles, instead of "help me fix this", "what is wrong", etc.
 
 ## Acknowledgements
 ### Creators
