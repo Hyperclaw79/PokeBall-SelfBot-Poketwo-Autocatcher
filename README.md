@@ -96,10 +96,13 @@ Example config:
 * Do not use this in official PokeCord Discord server.... for obvious reasons.
 
 ## Contributions
-If you find any bugs or would like to add new features or somehow improve the code, feel free to open an Issue or a Pull Request.
-Before you open up a new issue to ask a question, please refer to the [closed issues](https://github.com/Hyperclaw79/PokeBall-SelfBot/issues?q=is%3Aissue+is%3Aclosed) first.
-If your issue got closed but it hasn't been resolved, please reopen that issue instead of creating a new one.
-Also, please use relevant issue titles, instead of "help me fix this", "what is wrong", etc.
+Refer to the new [CONTRIBUTION GUIDE](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/CONTRIBUTING.md).
+Also, refer to [Issue Template](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/.github/ISSUE_TEMPLATE/basic-issue-template.md) and [PR Template](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/PULL_REQUEST_TEMPLATE.md).
+
+## Feature Requests
+You can request **new features** in the FeatHub.
+
+  <a href="http://feathub.com/Hyperclaw79/PokeBall-SelfBot"><img src="https://cdn.rawgit.com/Hyperclaw79/PokeBall-SelfBot/8da8c6dd/pika%2B1.png" width="100" height="100" alt="Feature Requests"/></a>
 
 ## Acknowledgements
 ### Creators
@@ -151,6 +154,11 @@ Also, please use relevant issue titles, instead of "help me fix this", "what is 
   + All donations are non-refundable.
   + Me or the contributors for this repo and not responsible for any legal suits.
 
+* If you'd like to simply donate to support the cause instead of buying the Premium Version, you can always send me your support. Click that image below.
+
+  <a href="https://www.paypal.me/hyperclaw79"><img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/PokeballSelfbot_Logo.png" width="100" height="100" alt="Feature Requests"/></a>
+
+Don't forget to let me know that you're the one who paid it. ;)
 
 ## Referrals
 * If you refer this to another person and they successfully donate to this repo, you will get the option to choose *one* of the following benefits:
