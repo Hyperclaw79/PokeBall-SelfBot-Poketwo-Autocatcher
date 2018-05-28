@@ -31,7 +31,10 @@ It is inspired by [PokecordCatcher](https://github.com/xKynn/PokecordCatcher) an
 6. Toggle catching of dupliactes.
 7. Mass release of thrash pokemon.
 8. Toggle autocatching to use in Command_Only mode.
-9. Blacklist and Whitelist channels to control the scope of the selfbot.
+9. Blacklist and Whitelist channels to control the scope of the selfbot. And a toggler function for the switch.
+10. Toggle priority_only mode.
+11. List out all the legendaries you've caught so far.
+12. A gift command to send credits. (isolated to prevent conflict with Trade)
 
 ## Requirements
 * Python 3.6+
