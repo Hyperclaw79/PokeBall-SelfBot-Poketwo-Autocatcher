@@ -85,8 +85,8 @@ Example config:
   "delay_on_priority": true,
   "restrict_duplicates": true,
   "max_duplicates": 2,
-   "blacklists": [1234567,654356],
-   "whitelists": [123456765,435467777]
+  "blacklists": [1234567,654356],
+  "whitelists": [123456765,435467777]
 }
 ```
 
