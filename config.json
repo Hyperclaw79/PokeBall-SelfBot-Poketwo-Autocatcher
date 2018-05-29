@@ -14,5 +14,8 @@
    "restrict_duplicates": true,
    "max_duplicates": 2,
    "blacklists": [],
-   "whitelists": []
+   "whitelists": [],
+   "blacklist_guilds": [382316968394620938],
+   "whitelist_guilds": [],
+   "autolog": true
 }

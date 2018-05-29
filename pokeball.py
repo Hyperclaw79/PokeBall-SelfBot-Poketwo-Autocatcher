@@ -23,15 +23,14 @@ class PokeBall(discord.Client):
         super().__init__()
         with open(self.pokelist_path, 'r', encoding='utf-8') as f:
             self.pokelist = f.read().splitlines()
-        self.stealth = True
         self.legendaries = [
             'Arceus', 'Articuno', 'Azelf', 'Celebi', 'Cobalion', 'Cosmoem', 'Cosmog', 'Cresselia',
             'Darkrai', 'Deoxys', 'Dialga', 'Diancie', 'Entei', 'Genesect', 'Giratina', 'Groudon',
             'Heatran', 'Ho-Oh', 'Hoopa', 'Jirachi', 'Keldeo', 'Kyogre', 'Kyurem', 'Landorus',
             'Latias', 'Latios', 'Lugia', 'Lunala', 'Magearna', 'Manaphy', 'Marshadow', 'Meloetta',
-            'Mespirit', 'Mew', 'Mewtwo', 'Moltres', 'Necrozma', 'Palkia', 'Phione', 'Raikou',
+            'Mesprit', 'Mew', 'Mewtwo', 'Moltres', 'Necrozma', 'Palkia', 'Phione', 'Raikou',
             'Rayquaza', 'Regice', 'Regigigas', 'Regirock', 'Registeel', 'Reshiram', 'Shaymin', 'Silvally',
-            'Solgaleo', 'Suicune', 'Tapu Bulu', 'Tapu Fini', 'Tapu Koko', 'Tapu Lele', 'Terrakion', 'Thunderus',
+            'Solgaleo', 'Suicune', 'Tapu Bulu', 'Tapu Fini', 'Tapu Koko', 'Tapu Lele', 'Terrakion', 'Thundurus',
             'Tornadus', 'Type: Null', 'Uxie', 'Victini', 'Virizion', 'Volcanion', 'Xerneas', 'Yveltal',
             'Zapdos', 'Zekrom', 'Zeraora', 'Zygarde'
         ]
@@ -40,6 +39,8 @@ class PokeBall(discord.Client):
         self.priority_only = False
         self.auto_catcher = False
         self.mode = "blacklist"
+        self.guild_mode = "blacklist"
+        self.autolog = self.configs["autolog"]
         self.ready = False
         with open(pokenames_path, 'r', encoding='utf-8') as f:
             self.pokenames = json.load(f)
@@ -123,10 +124,6 @@ class PokeBall(discord.Client):
         if message.guild is None: #Skip DMs to avoid AttributeError
             return
         else:
-            stealth_checks = [
-                self.stealth,
-                message.guild.id == 382316968394620938 #PokeCord Official Server
-            ]
             blacklist_checks = [
                 self.mode == "blacklist",
                 message.channel.id in self.configs["blacklists"]    
@@ -135,10 +132,19 @@ class PokeBall(discord.Client):
                 self.mode == "whitelist",
                 message.channel.id not in self.configs["whitelists"]    
             ]
+            blackguild_checks = [
+                self.guild_mode == "blacklist",
+                message.guild.id in self.configs["blacklist_guilds"]    
+            ]
+            whiteguild_checks = [
+                self.guild_mode == "whitelist",
+                message.guild.id not in self.configs["whitelist_guilds"]    
+            ]
             return_checks = [
-                all(stealth_checks),
                 all(blacklist_checks),
-                all(whitelist_checks)
+                all(whitelist_checks),
+                all(blackguild_checks),
+                all(whiteguild_checks)
             ]
             if any(return_checks):
                 return
@@ -164,6 +170,7 @@ class PokeBall(discord.Client):
                 return    
             if embcheck:
                 name = await self.match(emb.image.url.split('?')[0])
+                name = name.title()
                 if not name:
                     print(f"Unable to find a name for {name1}.")
                     return
@@ -192,9 +199,12 @@ class PokeBall(discord.Client):
                         self.new_guild(message, pref)
                         delay_checks = [
                             self.configs['delay_on_priority'],
-                            name in (self.legendaries + self.configs["priority"])
+                            name in (
+                                self.configs["priority"] +
+                                self.legendaries
+                            )
                         ]        
-                        if all(delay_checks) or name not in (self.legendaries + self.configs["priority"]):
+                        if all(delay_checks) or not any(sub_checks):
                             await asyncio.sleep(self.configs['delay'])
                         if all(duplicate_checks):
                             print(f"Skipping the duplicate: {name}")
@@ -203,16 +213,17 @@ class PokeBall(discord.Client):
                     reply = await self.wait_for('message', check=pokecord_reply)
                     if self.user.mentioned_in(reply):
                         print(f'Caught **{name}** in *{message.guild.name}* in #{message.channel.name}')
-                        await message.channel.send(f"{pref.replace('catch','pokemon')} --name {name}")
-                        reply = await self.wait_for('message', check=pokecord_reply)
-                        if reply.embeds and reply.channel.id == message.channel.id:
-                            raw_list = reply.embeds[0].description.splitlines()
-                            refined_list = [
-                                log_formatter(pokeline) for pokeline in raw_list if log_formatter(pokeline) not in self.pokelist
-                            ]
-                            self.pokelist.append(refined_list[0])
-                            with open(self.pokelist_path, 'w', encoding='utf-8') as f:
-                                f.write('\n'.join(self.pokelist))
+                        if self.autolog:
+                            await message.channel.send(f"{pref.replace('catch','pokemon')} --name {name}")
+                            reply = await self.wait_for('message', check=pokecord_reply)
+                            if reply.embeds and reply.channel.id == message.channel.id:
+                                raw_list = reply.embeds[0].description.splitlines()
+                                refined_list = [
+                                    log_formatter(pokeline) for pokeline in raw_list if log_formatter(pokeline) not in self.pokelist
+                                ]
+                                self.pokelist.append(refined_list[0])
+                                with open(self.pokelist_path, 'w', encoding='utf-8') as f:
+                                    f.write('\n'.join(self.pokelist))
 
         #SelfBot Commands
         prefix_checks = [
@@ -242,7 +253,7 @@ class PokeBall(discord.Client):
                     ]
                 else:
                     args = [arg for arg in detokenized[1:] if arg != '']
-            cmd = cmd.replace(self.prefix,'cmd_')
+            cmd = cmd.replace(self.prefix,'cmd_').lower()
             try:
                 method = self.__getattribute__(cmd)
             except AttributeError: # Not a selfbot command, so execute it as a PokeCord command.
@@ -311,29 +322,32 @@ class PokeBall(discord.Client):
             await asyncio.sleep(random.randint(2,3))
             while True:
                 delme = await message.channel.send(f"{pref}n")
-                page += 1
                 try:
                     before, reply = await self.wait_for('message_edit', check=pokecord_edit, timeout=10.0)
                 except:
+                    await message.channel.send(f"{pref}pokemon {page + 1}")
                     try:
-                        await message.channel.send(f"{pref}ping")
-                        before, reply = await self.wait_for('message_edit', check=pokecord_edit, timeout=10.0)
+                        reply = await self.wait_for('message', check=pokecord_reply, timeout=10.0)
                     except:
                         await message.channel.send(f"Logged up to page {page}.")
-                        break
                 pokemons = reply.embeds[0].description.split('\n')
                 try:
                     await delme.delete()
                 except:
                     pass
+                page += 1
                 pokelist += [log_formatter(pokemon) for pokemon in pokemons]
                 with open(self.pokelist_path, 'w', encoding='utf-8') as f:
                     f.write('\n'.join(pokelist))
                 self.pokelist = pokelist
-                await asyncio.sleep(random.randint(5,7))
+                if len(pokemons) < 20:
+                    break
+                else:
+                    await asyncio.sleep(random.randint(5,7))
             self.pokelist = pokelist
             self.refresh_trash()    
             print('Logged all the pokemon successfully.\n')
+            await self.cmd_total(message=message)
         else:
             print('No prefix found for this guild.')
 
@@ -484,15 +498,6 @@ class PokeBall(discord.Client):
         pager = Paginator(message, base, embeds, self)
         await pager.run()
 
-    async def cmd_stealth(self, message, args=[]):
-        if args:
-            if args[0].lower() == 'on':
-                self.stealth = True
-            elif args[0].lower() == 'off':
-                self.stealth = False
-            else:
-                pass
-
     async def cmd_legendary(self, message):
         embeds = []
         for i in range(0, len(self.legendaries), 5):
@@ -577,10 +582,26 @@ class PokeBall(discord.Client):
             else:
                 print(args)
 
+    async def cmd_autolog(self, message, args=[]):
+        if args:
+            if args[0].lower() == 'off':
+                self.autolog = False
+                print('Disabled Autologger.\n')
+            elif args[0].lower() == 'on':
+                self.autolog = True
+                print('Enabled Autologger.\n')
+            else:
+                print(args)            
+
     async def cmd_toggle_mode(self, message, args=[]):
         if args and args[0].lower() in ["blacklist", "whitelist"]:
             self.mode = args[0].lower()
         print(f"Switched to {args[0].title()} mode.")
+
+    async def cmd_toggle_guildmode(self, message, args=[]):
+        if args and args[0].lower() in ["blacklist", "whitelist"]:
+            self.guild_mode = args[0].lower()
+        print(f"Switched to {args[0].title()}ed guilds mode.")    
 
     async def cmd_gift(self, message, mentions, args=[]):
         def user_reply(msg):
@@ -634,7 +655,7 @@ class PokeBall(discord.Client):
         except:
             whities = "None"
         print(
-            "\n---PokeBall SelfBot v3.1.5----\n\n"
+            "\n---PokeBall SelfBot v3.2.0----\n\n"
             f"Bot name: {self.user}\n\n"
             f"Command Prefix: {self.configs['command_prefix']}\n\n"
             f"Priority:\n~~~~~~~~~\n{prio_list}\n\n"

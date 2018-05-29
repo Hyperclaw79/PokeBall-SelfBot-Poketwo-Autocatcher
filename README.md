@@ -35,6 +35,9 @@ It is inspired by [PokecordCatcher](https://github.com/xKynn/PokecordCatcher) an
 10. Toggle priority_only mode.
 11. List out all the legendaries you've caught so far.
 12. A gift command to send credits. (isolated to prevent conflict with Trade)
+13. Blacklist/Whitelist toggle for entire guilds.
+14. Toggle Autolog after catching new pokemon.
+15. Case-insensitive Commands. (Args are still sensitive.)
 
 ## Requirements
 * Python 3.6+
@@ -52,7 +55,7 @@ It is inspired by [PokecordCatcher](https://github.com/xKynn/PokecordCatcher) an
   > `P^` is the default command_prefix for the selfbot. Feel free to change it. Note that, this is not the same as PokeCord's prefix.
   > If you don't want to toggle it on every time after restart, change line 41 to `True` instead of `False`.
 5. Most of the commands need you to catch a pokemon in the new guild with autocatcher on, at least once, followed by a restart.
-  > There is a way to manually bypass this. You need to turn the Developer Mode on your Discord on, get the guild id and alter    `guilds.json` to include the `,guild_id:"pokecord prefix in that guild"`.
+  > There is a way to manually bypass this. You need to turn the Developer Mode on your Discord on, get the guild id and alter `guilds.json` to include the `,guild_id:"pokecord prefix in that guild"`.
 
 
 ## Fine-Tuning
@@ -66,7 +69,10 @@ If a priority pokemon is caught, it will be removed from priority list in the cu
 * `delay_on_priority` can be set to **true** or **false**, false means it won't wait and will instantly catch a pokemon if its in priority.
 * `restrict_duplicates` can be set to **false** to catch unlimited number of duplicates. If **true**, use `max_duplicates` to control the number of duplicates you can catch. 
 * `blacklists` and `whitelists` can be filled with the channel ids to choose where the selfbot should work. You can use the `toggle_mode` command to choose which mode it should run in.
+* `blacklist_guilds` and `whitelist_guilds` can be filled with the guild ids to filter entire guilds. You can use the `toggle_guildmode` command to choose which mode it should run in.
+   > Always keep the default value in the list. It is the id for Official PokeCord Server. 
 * `avoid` can be filled with all the pokemons that shouldn't be caught automatically.
+* `autolog` can be used to choose whether the `p!pokemon --name FreshlyCaughtPokemon` should be used immediately after catching a new pokemon. To be stealthy, use `false`.
 * Use the `pokelog` command before performing a trade in order to sync up all your newly caught pokemon.
 * Regularly run `pokelog` to keep the list synchronized. Especially, before `clean_trash` as it might result in releasing the wrong pokemon.
 * For args based trading/releasing, always provide the ids in a descending order.
@@ -89,7 +95,10 @@ Example config:
   "restrict_duplicates": true,
   "max_duplicates": 2,
   "blacklists": [1234567,654356],
-  "whitelists": [123456765,435467777]
+  "whitelists": [123456765,435467777],
+  "blacklist_guilds": [382316968394620938],
+  "whitelist_guilds": [],
+  "autolog": true
 }
 ```
 

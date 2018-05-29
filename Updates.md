@@ -14,7 +14,7 @@
 * Fixed Args-Mention Conflict.
 * Added Duplicates command.
 
-**‎22 ‎March ‎2018**
+**22 ‎March ‎2018**
 
 * Added Legendary Command.
 * Added Stealth Mode if you're in PokeCord Official Server.
@@ -86,3 +86,12 @@
 * Added a gift command to transfer cash quickly.
   > `P^gift @user2 10000` is the syntax.
 * Fixed indentation in autocatcher to fix the `pref referenced before local assignment` bug.  
+
+**29 May 2018**
+* [Major] Added blacklist/whitelist modes for guilds.
+* [Major] Added config key and toggler function for Autolog.
+* [Major] Pokelog has been rewritten and is now fully automatic.
+* Commands are now case insensitive.
+* Fixed spellings on Mesprit and Thundurus in the legendaries list.
+* Fixed pokemon name conflicts in priority_only mode.
+* [Major] Deprecated Stealth Mode in favor of Blacklist Guilds.
