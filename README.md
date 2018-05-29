@@ -113,14 +113,14 @@ You can request **new features** in the FeatHub.
 * Rapptz for [Discord.py](https://github.com/Rapptz/discord.py)
 
 ### Donors
-* August.0
+* August.0 [Advanced]
 * SwiftBrass
-* Leschx
-* KappaBotter
-* BestGunner
+* Leschx [Advanced]
+* KappaBotter [Advanced]
+* BestGunner [Advanced]
 * Matt
 * DaddyNew
-* Damned
+* Damned [Advanced]
 
 ## Donations
 * The public version of this selfbot doesn't contain the following to keep the bot usage to minimum and not break Pokecord bot:
