@@ -48,10 +48,12 @@ It is inspired by [PokecordCatcher](https://github.com/xKynn/PokecordCatcher) an
 * A discord account. (Preferably two - one main and one alt)
 
 ## Setup
-1. First replace the `os.environ["DISCORD_BOT_TOKEN"]` in `secret.py` with your bot token. Refer the tutorial below to get the token.
-    > *Remove `os.environ` too if you're not using the token as an environmental variable.*
-    >> *So modify that line to `configs["token"] = "your token"`; **not** `configs["token"] = os.environ["your token"]`.*
-2. Run `setup.bat` to install the requirements.
+1. First run `setup.bat` to install the requirements.
+2. Then, add your bot token in the `config.json`'s `"token"` key. Refer the tutorial below to get the token.
+    > The token should be withing the `""` like:
+      >> `"token": "Mxy.23e2d3_2er3.sf4t4.....xyz"`
+      >> Make sure it's exactly within one pair of `""`.
+    > Users deploying it on server, can uncomment the lines 3 and 17 and use the token as an environment variable.   
 3. Then simply run `run.bat` to get your bot live.
   > If you are on a mac or linux, directly launch `launcer.py` instead of running the bat file. And use `pip install -r requirements.txt` instead to setup.
 4. The autocatcher is **off** by default. To enable it, you need to send a message in Discord as `P^autocatcher on`.
@@ -88,7 +90,7 @@ If a priority pokemon is caught, it will be removed from priority list in the cu
 Example config:
 ```json
 {
-  "token": "<your token>",
+  "token": "Mxy.23e2d3_2er3.sf4t4.....xyz",
   "command_prefix": "P^",
   "priority": ["Groudon", "Geodude"],
   "avoid": ["Croagunk", "Trubbish"],
