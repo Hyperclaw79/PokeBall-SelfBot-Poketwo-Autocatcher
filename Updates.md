@@ -95,3 +95,8 @@
 * Fixed spellings on Mesprit and Thundurus in the legendaries list.
 * Fixed pokemon name conflicts in priority_only mode.
 * [Major] Deprecated Stealth Mode in favor of Blacklist Guilds.
+
+**31 May 2018**
+* Isolated version number as a class instance.
+* Added Version Control message.
+* Fixed indentation mismatch in toggler commands.

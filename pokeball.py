@@ -12,6 +12,7 @@ import hashlib
 
 class PokeBall(discord.Client):
     def __init__(self, config_path: str, guild_path: str, pokelist_path: str, pokenames_path: str, *args, **kwargs):
+        self.version = "v3.2.0"
         self.config_path = config_path
         self.guild_path = guild_path
         self.pokelist_path = pokelist_path
@@ -596,12 +597,12 @@ class PokeBall(discord.Client):
     async def cmd_toggle_mode(self, message, args=[]):
         if args and args[0].lower() in ["blacklist", "whitelist"]:
             self.mode = args[0].lower()
-        print(f"Switched to {args[0].title()} mode.")
+            print(f"Switched to {args[0].title()} mode.")
 
     async def cmd_toggle_guildmode(self, message, args=[]):
         if args and args[0].lower() in ["blacklist", "whitelist"]:
             self.guild_mode = args[0].lower()
-        print(f"Switched to {args[0].title()}ed guilds mode.")    
+            print(f"Switched to {args[0].title()}ed guilds mode.")    
 
     async def cmd_gift(self, message, mentions, args=[]):
         def user_reply(msg):
@@ -638,6 +639,17 @@ class PokeBall(discord.Client):
                 print(f'Successfully gifted {money}c to {user}.')
 
     async def on_ready(self):
+        headers = {"Accept": "application/vnd.github.v3.raw+json"}
+        async with aiohttp.ClientSession(headers=headers, loop=self.loop) as sess:
+            async with sess.get("http://api.github.com/repos/Hyperclaw79/PokeBall-SelfBot/contents/_version.json") as resp:
+                data = await resp.read()
+        data = json.loads(data)    
+        vnum = int(data["version"].split('v')[1].replace('.', ''))
+        lnum = int(self.version.split('v')[1].replace('.', ''))
+        if vnum > lnum:
+            vtext = f'{"_"*79}\nThere is a new version available. Download it to for new updates and bug fixes.\n'
+            vtext += f'Your version: {lnum}\nNew Version: {vnum}\n{"_"*79}'
+            print(vtext)
         priorities = self.configs['priority']
         prio_list = '\n'.join([
             ', '.join(priorities[i:i+5]) for i in range(0, len(priorities), 5)
@@ -655,7 +667,7 @@ class PokeBall(discord.Client):
         except:
             whities = "None"
         print(
-            "\n---PokeBall SelfBot v3.2.0----\n\n"
+            "\n---PokeBall SelfBot {self.version}----\n\n"
             f"Bot name: {self.user}\n\n"
             f"Command Prefix: {self.configs['command_prefix']}\n\n"
             f"Priority:\n~~~~~~~~~\n{prio_list}\n\n"
@@ -667,5 +679,5 @@ class PokeBall(discord.Client):
             f"Blacklisted Channels:\n~~~~~~~~~~~~~~~~~~~~\n{blackies}\n\n"
             f"Whitelisted Channels:\n~~~~~~~~~~~~~~~~~~~~\n{whities}\n\n"
         )
-        self.sess = aiohttp.ClientSession()
         self.ready = True
+        with self.sess.get("")
