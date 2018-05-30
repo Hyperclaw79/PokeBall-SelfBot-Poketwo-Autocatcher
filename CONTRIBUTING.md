@@ -49,6 +49,15 @@ In order to contribute use GitHub's Issues and Pull Requests systems.
 
 ## Other Ways to Contribute
 + **Donations**
+
+  <a href="http://feathub.com/Hyperclaw79/PokeBall-SelfBot"><img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/pikadonor.png" width="100" height="100" alt="Feature Requests"/></a>
+
 + You can request **new features** in the FeatHub.
 
-  <a href="http://feathub.com/Hyperclaw79/PokeBall-SelfBot"><img src="https://cdn.rawgit.com/Hyperclaw79/PokeBall-SelfBot/8da8c6dd/pika%2B1.png" width="100" height="100" alt="Feature Requests"/></a>
+  <a href="http://feathub.com/Hyperclaw79/PokeBall-SelfBot"><img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/pika%2B1.png" width="100" height="100" alt="Feature Requests"/></a>
+
++ **Starring the Repo**
+
+  <a href="http://feathub.com/Hyperclaw79/PokeBall-SelfBot"><img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/pikastar.png" width="100" height="100" alt="Feature Requests"/></a>
+
++ **Referrals**  

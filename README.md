@@ -2,22 +2,22 @@
   Title: PokeBall SelfBot
   Description: This specific selfbot was designed to automatically catch pokemon spawned on Discord by PokeCord bot. It also offers           other utility functions to automate features like trading, releasing, id search, etc. It is inspired by PokecordCatcher and             extends its features to more advanced version with better control.
   Author: Hyperclaw79
-  Logo: https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/PokeballSelfbot_Logo.png
+  Logo: https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/PokeballSelfbot_Logo.png
   Tags: discord-bot, discord, selfbot, pokeball-selfbot, pokecord, python, pokemon, pokecord-discord-bot, catch-pokemon, pokecord-hack,
         dicord bot, pokecord discord bot, catch pokemon, pokecord hack
 -->
-<meta name="description" content="This specific selfbot was designed to automatically catch pokemon spawned on Discord by PokeCord        bot. It also offers other utility functions to automate features like trading, releasing, id search, etc. It is inspired by              PokecordCatcher and extends its features to more advanced version with better control."/>
+<meta name="description" content="This specific selfbot was designed to automatically catch pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, id search, etc. It is inspired by PokecordCatcher and extends its features to more advanced version with better control."/>
 <meta name="keywords" content="discord-bot, discord, selfbot, pokeball-selfbot, pokecord, python, pokemon, pokecord-discord-bot, catch-     pokemon, pokecord-hack, dicord bot, pokecord discord bot, catch pokemon, pokecord hack"/>
 <meta name="author" content="Hyperclaw79"/>
 <meta name="url" content="https://github.com/Hyperclaw79/PokeBall-SelfBot" />
 <meta name="og:title" content="Pokeball SelfBot"/>
 <meta name="og:url" content="https://github.com/Hyperclaw79/PokeBall-SelfBot" />
-<meta name="og:image" content=" https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/PokeballSelfbot_Logo.png" />
+<meta name="og:image" content=" https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/PokeballSelfbot_Logo.png" />
 <meta name="og:description" content="This specific selfbot was designed to automatically catch pokemon spawned on Discord by PokeCord        bot. It also offers other utility functions to automate features like trading, releasing, id search, etc. It is inspired by              PokecordCatcher and extends its features to more advanced version with better control."/>
 
 
 # PokeBall SelfBot
-![logo](https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/PokeballSelfbot_Logo.png)
+![logo](https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/PokeballSelfbot_Logo.png)
 
 This specific selfbot was designed to automatically catch pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, id search, etc.
 It is inspired by [PokecordCatcher](https://github.com/xKynn/PokecordCatcher) and extends its features to more advanced version with better control.
@@ -173,7 +173,7 @@ You can request **new features** in the FeatHub.
 
 * If you'd like to simply donate to support the cause instead of buying the Premium Version, you can always send me your support. Click that image below.
 
-  <a href="https://www.paypal.me/hyperclaw79"><img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/PokeballSelfbot_Logo.png" width="100" height="100" alt="Feature Requests"/></a>
+  <a href="https://www.paypal.me/hyperclaw79"><img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/pikadonor.png" width="100" height="100" alt="Feature Requests"/></a>
 
 Don't forget to let me know that you're the one who paid it. ;)
 
