@@ -116,6 +116,17 @@ Example config:
 Refer to the new [CONTRIBUTION GUIDE](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/CONTRIBUTING.md).
 Also, refer to [Issue Template](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/.github/ISSUE_TEMPLATE/basic-issue-template.md) and [PR Template](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/PULL_REQUEST_TEMPLATE.md).
 
+Best ways to contribute apart from Issues and PRs:
++ **Donations**
+
+  <a href="http://feathub.com/Hyperclaw79/PokeBall-SelfBot"><img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/pikadonor.png" width="100" height="100" alt="Feature Requests"/></a>
+
++ **Starring the Repo**
+
+  <a href="http://feathub.com/Hyperclaw79/PokeBall-SelfBot"><img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/pikastar.png" width="100" height="100" alt="Feature Requests"/></a>
+
++ **Referrals**
+
 ## Feature Requests
 You can request **new features** in the FeatHub.
 
