@@ -680,4 +680,4 @@ class PokeBall(discord.Client):
             f"Whitelisted Channels:\n~~~~~~~~~~~~~~~~~~~~\n{whities}\n\n"
         )
         self.ready = True
-        with self.sess.get("")
+                                       
