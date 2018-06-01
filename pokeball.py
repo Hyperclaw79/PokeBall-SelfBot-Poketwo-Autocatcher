@@ -12,7 +12,7 @@ import hashlib
 
 class PokeBall(discord.Client):
     def __init__(self, config_path: str, guild_path: str, pokelist_path: str, pokenames_path: str, *args, **kwargs):
-        self.version = "v3.2.0"
+        self.version = "v3.2.2"
         self.config_path = config_path
         self.guild_path = guild_path
         self.pokelist_path = pokelist_path
