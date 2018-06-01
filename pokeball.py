@@ -639,6 +639,7 @@ class PokeBall(discord.Client):
                 print(f'Successfully gifted {money}c to {user}.')
 
     async def on_ready(self):
+        self.sess = aiohttp.ClientSession(loop=self.loop)
         headers = {"Accept": "application/vnd.github.v3.raw+json"}
         async with aiohttp.ClientSession(headers=headers, loop=self.loop) as sess:
             async with sess.get("http://api.github.com/repos/Hyperclaw79/PokeBall-SelfBot/contents/_version.json") as resp:
