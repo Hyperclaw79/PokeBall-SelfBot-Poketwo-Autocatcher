@@ -100,3 +100,7 @@
 * Isolated version number as a class instance.
 * Added Version Control message.
 * Fixed indentation mismatch in toggler commands.
+
+**4 June 2018**
+* Rewrote catch checker to fix anti-priority bug.
+* Fixed obsolete version display's versioning syntax.

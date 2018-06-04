@@ -12,7 +12,7 @@ import hashlib
 
 class PokeBall(discord.Client):
     def __init__(self, config_path: str, guild_path: str, pokelist_path: str, pokenames_path: str, *args, **kwargs):
-        self.version = "v3.2.2"
+        self.version = "v3.2.3"
         self.config_path = config_path
         self.guild_path = guild_path
         self.pokelist_path = pokelist_path
@@ -188,12 +188,18 @@ class PokeBall(discord.Client):
                     name in self.configs['priority'],
                     name in self.legendaries
                 ]
-                catch_checks = [
-                    not any(sub_checks),
-                    proc <= self.configs['catch_rate'],
-                    name not in self.configs['avoid']
-                ]
-                catcher = any(sub_checks) if self.priority_only else all(catch_checks)
+                def catch_checks(name):
+                    if self.priority_only:
+                        return any(sub_checks)
+                    elif not any(sub_checks):
+                        catch_subchecks = [
+                            proc <= self.configs['catch_rate'],
+                            name not in self.configs['avoid']
+                        ]
+                        return all(catch_subchecks)
+                    else:
+                        return True
+                catcher = catch_checks(name)
                 if catcher:
                     async with message.channel.typing():
                         pref = emb.description.split()[5]
@@ -639,6 +645,14 @@ class PokeBall(discord.Client):
                 print(f'Successfully gifted {money}c to {user}.')
 
     async def on_ready(self):
+        def bordered(text): # Kudos to xKynn for this.
+            lines = text.splitlines()
+            width = max(len(s) for s in lines) + 2
+            res = ['┌' + '─' * width + '┐']
+            for s in lines:
+                res.append('│ ' + (s + ' ' * width)[:width - 1] + '│')
+            res.append('└' + '─' * width + '┘')
+            return '\n'.join(res)
         self.sess = aiohttp.ClientSession(loop=self.loop)
         headers = {"Accept": "application/vnd.github.v3.raw+json"}
         async with aiohttp.ClientSession(headers=headers, loop=self.loop) as sess:
@@ -648,9 +662,9 @@ class PokeBall(discord.Client):
         vnum = int(data["version"].split('v')[1].replace('.', ''))
         lnum = int(self.version.split('v')[1].replace('.', ''))
         if vnum > lnum:
-            vtext = f'{"_"*79}\nThere is a new version available. Download it to for new updates and bug fixes.\n'
-            vtext += f'Your version: {lnum}\nNew Version: {vnum}\n{"_"*79}'
-            print(vtext)
+            vtext = 'There is a new version available.\nDownload it for new updates and bug fixes.\n'
+            vtext += f'Your version: {self.version}\nNew Version: {data["version"]}\n'
+            print(bordered(vtext))
         priorities = self.configs['priority']
         prio_list = '\n'.join([
             ', '.join(priorities[i:i+5]) for i in range(0, len(priorities), 5)
