@@ -146,6 +146,7 @@ You can request **new features** in the FeatHub.
 * Matt
 * DaddyNew
 * Damned [Advanced]
+* Flamlier
 
 ## Donations
 * The public version of this selfbot doesn't contain the following to keep the bot usage to minimum and not break Pokecord bot:
@@ -153,6 +154,9 @@ You can request **new features** in the FeatHub.
   + Trade Offer Generator
   + Auto-dueler for Credits farming [Major]
   + Logging catches to owner's DMs in multimode
+  + Help command that displays usage instruction for other commands. [Major]
+  + Trade command can use pokemon names as args
+  + DM commands - some commands can be used by DMing the bot.
   > *These features are based upon multimode which involves having multiple selfbot accounts.*
 * To avail these features, contact me on Discord @**Hyperclaw79#3570** and I'll give you my PayPal id. 
   > *Please ping me only for donations and not for support (unless you are already a donor). Currently the price is just $12. Better donate fast as the price will be bound to go up along with the demand.*
