@@ -104,3 +104,7 @@
 **4 June 2018**
 * Rewrote catch checker to fix anti-priority bug.
 * Fixed obsolete version display's versioning syntax.
+
+**6 June 2018**
+* Checking for updates can now be toggled off in the `config.json`.
+  > Useful for those having issues connecting to api.github.com.

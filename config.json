@@ -17,5 +17,6 @@
    "whitelists": [],
    "blacklist_guilds": [382316968394620938],
    "whitelist_guilds": [],
-   "autolog": true
+   "autolog": true,
+   "update_checker": true
 }

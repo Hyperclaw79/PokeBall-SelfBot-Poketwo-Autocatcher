@@ -12,7 +12,7 @@ import hashlib
 
 class PokeBall(discord.Client):
     def __init__(self, config_path: str, guild_path: str, pokelist_path: str, pokenames_path: str, *args, **kwargs):
-        self.version = "v3.2.3"
+        self.version = "v3.2.4"
         self.config_path = config_path
         self.guild_path = guild_path
         self.pokelist_path = pokelist_path
@@ -654,17 +654,18 @@ class PokeBall(discord.Client):
             res.append('└' + '─' * width + '┘')
             return '\n'.join(res)
         self.sess = aiohttp.ClientSession(loop=self.loop)
-        headers = {"Accept": "application/vnd.github.v3.raw+json"}
-        async with aiohttp.ClientSession(headers=headers, loop=self.loop) as sess:
-            async with sess.get("http://api.github.com/repos/Hyperclaw79/PokeBall-SelfBot/contents/_version.json") as resp:
-                data = await resp.read()
-        data = json.loads(data)    
-        vnum = int(data["version"].split('v')[1].replace('.', ''))
-        lnum = int(self.version.split('v')[1].replace('.', ''))
-        if vnum > lnum:
-            vtext = 'There is a new version available.\nDownload it for new updates and bug fixes.\n'
-            vtext += f'Your version: {self.version}\nNew Version: {data["version"]}\n'
-            print(bordered(vtext))
+        if self.configs["update_checker"]:  # For those with error connecting to api.github.com
+            headers = {"Accept": "application/vnd.github.v3.raw+json"}
+            async with aiohttp.ClientSession(headers=headers, loop=self.loop) as sess:
+                async with sess.get("http://api.github.com/repos/Hyperclaw79/PokeBall-SelfBot/contents/_version.json") as resp:
+                    data = await resp.read()
+            data = json.loads(data)    
+            vnum = int(data["version"].split('v')[1].replace('.', ''))
+            lnum = int(self.version.split('v')[1].replace('.', ''))
+            if vnum > lnum:
+                vtext = 'There is a new version available.\nDownload it for new updates and bug fixes.\n'
+                vtext += f'Your version: {self.version}\nNew Version: {data["version"]}\n'
+                print(bordered(vtext))
         priorities = self.configs['priority']
         prio_list = '\n'.join([
             ', '.join(priorities[i:i+5]) for i in range(0, len(priorities), 5)
