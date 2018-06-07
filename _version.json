@@ -1,1 +1,4 @@
-{"version":"v3.2.4"}
+{
+	"version":"v3.2.4",
+	"modified_files": ["_version.json", "pokeball.py"]
+}
