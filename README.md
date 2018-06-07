@@ -22,7 +22,7 @@
 This specific selfbot was designed to automatically catch pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, id search, etc.
 It is inspired by [PokecordCatcher](https://github.com/xKynn/PokecordCatcher) and extends its features to more advanced version with better control.
 
-**Current Version**: `v3.2.0`
+**Current Version**: `v3.2.5` (8th June 2018 )
    > Keep a lookout for [Updates](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/Updates.md). 
 
 ## Features
@@ -41,6 +41,7 @@ It is inspired by [PokecordCatcher](https://github.com/xKynn/PokecordCatcher) an
 13. Blacklist/Whitelist toggle for entire guilds.
 14. Toggle Autolog after catching new pokemon.
 15. Case-insensitive Commands. (Args are still sensitive.)
+16. Auto-updates available.
 
 ## Requirements
 * Python 3.6+
@@ -65,19 +66,28 @@ It is inspired by [PokecordCatcher](https://github.com/xKynn/PokecordCatcher) an
 
 ## Fine-Tuning
 * To find out how to get your token visit [Token Tutorial](https://github.com/TheRacingLion/Discord-SelfBot/wiki/Discord-Token-Tutorial).
-* Keep the `catch rate` **low** and `delay` **high** for it to act normally.  
-* `Priority` pokemon <u>bypass</u> catch rate.
-If a priority pokemon is caught, it will be removed from priority list in the current session, manually remove it from config if you restart.
-* Use the `Safe List` to prevent trading some pokemon to your main account in case you want them on the selfbot's account.  
-* `Catch Rate` is a percentage out of 100.  
-* `Delay` is in seconds.  
-* `delay_on_priority` can be set to **true** or **false**, false means it won't wait and will instantly catch a pokemon if its in priority.
-* `restrict_duplicates` can be set to **false** to catch unlimited number of duplicates. If **true**, use `max_duplicates` to control the number of duplicates you can catch. 
-* `blacklists` and `whitelists` can be filled with the channel ids to choose where the selfbot should work. You can use the `toggle_mode` command to choose which mode it should run in.
-* `blacklist_guilds` and `whitelist_guilds` can be filled with the guild ids to filter entire guilds. You can use the `toggle_guildmode` command to choose which mode it should run in.
-   > Always keep the default value in the list. It is the id for Official PokeCord Server. 
-* `avoid` can be filled with all the pokemons that shouldn't be caught automatically.
-* `autolog` can be used to choose whether the `p!pokemon --name FreshlyCaughtPokemon` should be used immediately after catching a new pokemon. To be stealthy, use `false`.
+
+### Configs explanations:
+
+  * Keep the `catch rate` **low** and `delay` **high** for it to act normally.  
+  * `Priority` pokemon <u>bypass</u> catch rate.
+  If a priority pokemon is caught, it will be removed from priority list in the current session, manually remove it from config if you restart.
+  * Use the `Safe List` to prevent trading some pokemon to your main account in case you want them on the selfbot's account.  
+  * `Catch Rate` is a percentage out of 100.  
+  * `Delay` is in seconds.  
+  * `delay_on_priority` can be set to **true** or **false**, false means it won't wait and will instantly catch a pokemon if its in priority.
+  * `restrict_duplicates` can be set to **false** to catch unlimited number of duplicates. If **true**, use `max_duplicates` to control the number of duplicates you can catch. 
+  * `blacklists` and `whitelists` can be filled with the channel ids to choose where the selfbot should work. You can use the `toggle_mode` command to choose which mode it should run in.
+  * `blacklist_guilds` and `whitelist_guilds` can be filled with the guild ids to filter entire guilds. You can use the `toggle_guildmode` command to choose which mode it should run in.
+    > Always keep the default value in the list. It is the id for Official PokeCord Server. 
+  * `avoid` can be filled with all the pokemons that shouldn't be caught automatically.
+  * `autolog` can be used to choose whether the `p!pokemon --name FreshlyCaughtPokemon` should be used immediately after catching a new pokemon. To be stealthy, use `false`.
+  * `update_checker` can be set to `false` if you don't wanna bother checking for new updates.
+    > Highly unrecommended.
+  * `auto_update` can be set to `false` to disable automatic update of code and other files.
+    > You will need to manually re-clone the repo and make modifications in your config again if disabled.
+      Auto-updater makes sure that your previous configs stay intact and only makes additions.  
+
 * Use the `pokelog` command before performing a trade in order to sync up all your newly caught pokemon.
 * Regularly run `pokelog` to keep the list synchronized. Especially, before `clean_trash` as it might result in releasing the wrong pokemon.
 * For args based trading/releasing, always provide the ids in a descending order.
@@ -103,7 +113,9 @@ Example config:
   "whitelists": [123456765,435467777],
   "blacklist_guilds": [382316968394620938],
   "whitelist_guilds": [],
-  "autolog": true
+  "autolog": true,
+  "update_checker": true,
+  "auto_update": true
 }
 ```
 

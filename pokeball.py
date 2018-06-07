@@ -9,10 +9,11 @@ from paginator import Paginator
 from math import ceil
 import aiohttp
 import hashlib
+import subprocess
 
 class PokeBall(discord.Client):
     def __init__(self, config_path: str, guild_path: str, pokelist_path: str, pokenames_path: str, *args, **kwargs):
-        self.version = "v3.2.4"
+        self.version = "v3.2.5"
         self.config_path = config_path
         self.guild_path = guild_path
         self.pokelist_path = pokelist_path
@@ -645,27 +646,75 @@ class PokeBall(discord.Client):
                 print(f'Successfully gifted {money}c to {user}.')
 
     async def on_ready(self):
-        def bordered(text): # Kudos to xKynn for this.
-            lines = text.splitlines()
-            width = max(len(s) for s in lines) + 2
-            res = ['┌' + '─' * width + '┐']
-            for s in lines:
-                res.append('│ ' + (s + ' ' * width)[:width - 1] + '│')
-            res.append('└' + '─' * width + '┘')
-            return '\n'.join(res)
+
+        async def updater():
+            def bordered(text): # Kudos to xKynn for this.
+                lines = text.splitlines()
+                width = max(len(s) for s in lines) + 2
+                res = ['┌' + '─' * width + '┐']
+                for s in lines:
+                    res.append('│ ' + (s + ' ' * width)[:width - 1] + '│')
+                res.append('└' + '─' * width + '┘')
+                return '\n'.join(res)
+
+            async def file_modifier(filename):
+                async with aiohttp.ClientSession(headers=api_headers, loop=self.loop) as sess:
+                    async with sess.get(f"{api_base_url}/{filename}") as resp:
+                        if ".json" in filename:
+                            code = await resp.read()
+                            code = code.decode()
+                        else:    
+                            code = await resp.text()
+                with open(filename, 'w', encoding='utf-8') as f:
+                    f.write(code)
+
+            def config_patcher(base_configs):
+                with open('config.json', 'r', encoding='utf-8') as f:
+                    configs = json.load(f)
+                if list(configs.keys()) != list(base_configs.keys()):
+                    keys = [key for key in list(base_configs.keys()) if key not in list(configs.keys())]
+                    for key in keys:
+                        configs[key] = base_configs[key]
+                    with open('config.json', 'w', encoding='utf-8') as f:
+                        f.write(json.dumps(configs, indent=3))
+                        
+            api_base_url = "http://api.github.com/repos/Hyperclaw79/PokeBall-SelfBot/contents"
+            if self.configs["update_checker"]:  # For those with error connecting to api.github.com
+                api_headers = {
+                    "Accept": "application/vnd.github.v3.raw+json",
+                    "User-Agent": f"Pokeball-Selfbot_{self.user}"
+                }
+                async with aiohttp.ClientSession(headers=api_headers, loop=self.loop) as sess:
+                    async with sess.get(f"{api_base_url}/_version.json") as resp:
+                        ver_data = await resp.read()
+                ver_data = json.loads(ver_data)    
+                vnum = int(ver_data["version"].split('v')[1].replace('.', ''))
+                lnum = int(self.version.split('v')[1].replace('.', ''))
+                if vnum > lnum:
+                    vtext = 'There is a new version available.\nDownload it for new updates and bug fixes.\n'
+                    vtext += f'Your version: {self.version}\nNew Version: {ver_data["version"]}\n'
+                    print(bordered(vtext))
+                    if self.configs["auto_update"]:
+                        print("Automatic updates are enabled.")
+                        await asyncio.sleep(2.0)
+                        print(f'Automatically updating to {ver_data["version"]}....')
+                        mod_files = [filename for filename in ver_data["modified_files"] if filename not in __file__ and filename != 'config.json']
+                        for _file in mod_files:
+                            await file_modifier(_file)
+                            await asyncio.sleep(1.0)
+                        if "config.json" in ver_data["modified_files"]:
+                            async with aiohttp.ClientSession(headers=api_headers, loop=self.loop) as sess:
+                                async with sess.get(f"{api_base_url}/config.json") as resp:
+                                    configs_data = await resp.read()
+                            base_configs = json.loads(configs_data)
+                            config_patcher(base_configs)
+                            await asyncio.sleep(1.0)
+                        if "pokeball.py" in ver_data["modified_files"]:
+                            await file_modifier(__file__)
+                        subprocess.run("run.bat")            
+
         self.sess = aiohttp.ClientSession(loop=self.loop)
-        if self.configs["update_checker"]:  # For those with error connecting to api.github.com
-            headers = {"Accept": "application/vnd.github.v3.raw+json"}
-            async with aiohttp.ClientSession(headers=headers, loop=self.loop) as sess:
-                async with sess.get("http://api.github.com/repos/Hyperclaw79/PokeBall-SelfBot/contents/_version.json") as resp:
-                    data = await resp.read()
-            data = json.loads(data)    
-            vnum = int(data["version"].split('v')[1].replace('.', ''))
-            lnum = int(self.version.split('v')[1].replace('.', ''))
-            if vnum > lnum:
-                vtext = 'There is a new version available.\nDownload it for new updates and bug fixes.\n'
-                vtext += f'Your version: {self.version}\nNew Version: {data["version"]}\n'
-                print(bordered(vtext))
+        await updater()    
         priorities = self.configs['priority']
         prio_list = '\n'.join([
             ', '.join(priorities[i:i+5]) for i in range(0, len(priorities), 5)
@@ -683,7 +732,7 @@ class PokeBall(discord.Client):
         except:
             whities = "None"
         print(
-            "\n---PokeBall SelfBot {self.version}----\n\n"
+            f"\n---PokeBall SelfBot {self.version}----\n\n"
             f"Bot name: {self.user}\n\n"
             f"Command Prefix: {self.configs['command_prefix']}\n\n"
             f"Priority:\n~~~~~~~~~\n{prio_list}\n\n"

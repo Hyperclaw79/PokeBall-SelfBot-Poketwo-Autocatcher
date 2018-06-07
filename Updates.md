@@ -108,3 +108,8 @@
 **6 June 2018**
 * Checking for updates can now be toggled off in the `config.json`.
   > Useful for those having issues connecting to api.github.com.
+
+**8 June 2018**
+* Fixed f-string in version display.
+* Slight semantic modifications in update checker.
+* Implementation of Automatic Updates. [Major]
