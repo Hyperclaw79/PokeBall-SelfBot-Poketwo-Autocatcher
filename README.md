@@ -160,6 +160,7 @@ You can request **new features** in the FeatHub.
 * Damned [Advanced]
 * Flamlier
 * NM135 [Advanced]
+* Rooster
 
 ## Donations
 * The public version of this selfbot doesn't contain the following to keep the bot usage to minimum and not break Pokecord bot:
