@@ -56,10 +56,10 @@ It is inspired by [PokecordCatcher](https://github.com/xKynn/PokecordCatcher) an
       >> Make sure it's exactly within one pair of `""`.
     > Users deploying it on server, can uncomment the lines 3 and 17 and use the token as an environment variable.   
 3. Then simply run `run.bat` to get your bot live.
-  > If you are on a mac or linux, directly launch `launcer.py` instead of running the bat file. And use `pip install -r requirements.txt` instead to setup.
+  > If you are on a mac or linux, directly launch `launcher.py` instead of running the bat file. And use `pip install -r requirements.txt` instead to setup.
 4. The autocatcher is **off** by default. To enable it, you need to send a message in Discord as `P^autocatcher on`.
   > `P^` is the default command_prefix for the selfbot. Feel free to change it. Note that, this is not the same as PokeCord's prefix.
-  > If you don't want to toggle it on every time after restart, change line 41 to `True` instead of `False`.
+  > If you don't want to toggle it on every time after restart, look for the line `self.autocatcher = False` under the `__init__()` function and change it to `True` instead of `False`.
 5. Most of the commands need you to catch a pokemon in the new guild with autocatcher on, at least once, followed by a restart.
   > There is a way to manually bypass this. You need to turn the Developer Mode on your Discord on, get the guild id and alter `guilds.json` to include the `,guild_id:"pokecord prefix in that guild"`.
 
@@ -161,6 +161,7 @@ You can request **new features** in the FeatHub.
 * Flamlier
 * NM135 [Advanced]
 * Rooster
+* L1ghtblade
 
 ## Donations
 * The public version of this selfbot doesn't contain the following to keep the bot usage to minimum and not break Pokecord bot:
