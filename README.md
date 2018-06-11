@@ -150,18 +150,23 @@ You can request **new features** in the FeatHub.
 * Rapptz for [Discord.py](https://github.com/Rapptz/discord.py)
 
 ### Donors
-* August.0 [Advanced]
-* SwiftBrass
-* Leschx [Advanced]
-* KappaBotter [Advanced]
-* BestGunner [Advanced]
-* Matt
-* DaddyNew
-* Damned [Advanced]
-* Flamlier
-* NM135 [Advanced]
-* Rooster
-* L1ghtblade
+
+
+| No.| Alias       | Version     |
+-----| ----------- | ----------  |
+| 1  |  August.0   | Advanced 💎 |
+| 2  | SwiftBrass  | Premium  💵 |
+| 3  | Leschx      | Advanced 💎 |
+| 4  | KappaBotter | Advanced 💎 |
+| 5  | BestGunner  | Advanced 💎 |
+| 6  | Matt        | Premium  💵 |
+| 7  | DaddyNew    | Premium  💵 |
+| 8  | Damned      | Advanced 💎 |
+| 9  | Flamlier    | Premium  💵 |
+| 10 | NM135       | Advanced 💎 |
+| 11 | Rooster     | Premium  💵 |
+| 12 | L1ghtblade  | Advanced 💎 |
+| 13 | ipwner      | Advanced 💎 |
 
 ## Donations
 * The public version of this selfbot doesn't contain the following to keep the bot usage to minimum and not break Pokecord bot:
