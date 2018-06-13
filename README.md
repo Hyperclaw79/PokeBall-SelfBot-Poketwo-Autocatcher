@@ -49,7 +49,7 @@ It is inspired by [PokecordCatcher](https://github.com/xKynn/PokecordCatcher) an
 * A discord account. (Preferably two - one main and one alt)
 
 ## Setup
-1. First run `setup.bat` to install the requirements.
+1. [First install Git for Windows](https://git-scm.com/download/win) and then run `setup.bat` to install the requirements.
 2. Then, add your bot token in the `config.json`'s `"token"` key. Refer the tutorial below to get the token.
     > The token should be withing the `""` like:
       >> `"token": "Mxy.23e2d3_2er3.sf4t4.....xyz"`
