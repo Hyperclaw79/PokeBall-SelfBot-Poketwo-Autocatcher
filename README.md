@@ -154,22 +154,23 @@ You can request **new features** in the FeatHub.
 
 | No.| Alias       | Version     |
 -----| ----------- | ----------  |
-| 1  |  August.0   | Advanced 💎 |
-| 2  | SwiftBrass  | Premium  💵 |
-| 3  | Leschx      | Advanced 💎 |
-| 4  | KappaBotter | Advanced 💎 |
-| 5  | BestGunner  | Advanced 💎 |
-| 6  | Matt        | Premium  💵 |
-| 7  | DaddyNew    | Premium  💵 |
-| 8  | Damned      | Advanced 💎 |
-| 9  | Flamlier    | Premium  💵 |
-| 10 | NM135       | Advanced 💎 |
-| 11 | Rooster     | Premium  💵 |
-| 12 | L1ghtblade  | Advanced 💎 |
-| 13 | ipwner      | Advanced 💎 |
-| 14 | Nick        | Premium  💵 |
-| 15 | Skiel       | Premium  💵 |
-| 16 | Robin       | Premium  💵 |
+| 1  |  August.0    | Advanced 💎 |
+| 2  | SwiftBrass   | Premium  💵 |
+| 3  | Leschx       | Advanced 💎 |
+| 4  | KappaBotter  | Advanced 💎 |
+| 5  | BestGunner   | Advanced 💎 |
+| 6  | Matt         | Premium  💵 |
+| 7  | DaddyNew     | Premium  💵 |
+| 8  | Damned       | Advanced 💎 |
+| 9  | Flamlier     | Premium  💵 |
+| 10 | NM135        | Advanced 💎 |
+| 11 | Rooster      | Premium  💵 |
+| 12 | L1ghtblade   | Advanced 💎 |
+| 13 | ipwner       | Advanced 💎 |
+| 14 | Nick         | Premium  💵 |
+| 15 | Skiel        | Premium  💵 |
+| 16 | Robin        | Premium  💵 |
+| 17 | ScriptKiddie | Advanced 💎 |
 
 ## Donations
 * The public version of this selfbot doesn't contain the following to keep the bot usage to minimum and not break Pokecord bot:
