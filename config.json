@@ -19,5 +19,7 @@
    "whitelist_guilds": [],
    "autolog": true,
    "update_checker": true,
-   "auto_update": true
+   "auto_update": true,
+   "autocatcher": true,
+   "priority_only": false
 }

@@ -1,4 +1,4 @@
 {
-	"version":"v3.2.5",
-	"modified_files": ["_version.json", "pokeball.py", "config.json"]
+	"version":"v3.3.0",
+	"modified_files": ["_version.json", "pokeball.py", "config.json", "pokenames.json"]
 }

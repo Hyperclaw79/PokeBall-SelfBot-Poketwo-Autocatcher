@@ -113,3 +113,14 @@
 * Fixed f-string in version display.
 * Slight semantic modifications in update checker.
 * Implementation of Automatic Updates. [Major]
+
+**13 June 2018**
+* Fixed hashkey for Spheal.
+* Autocatcher and Priority_only as `config.json` keys.
+* Replaced Clean_Trash with Mass_release. [Major]
+  > Syntax is `P^mass_release List_of_ids/Dupes`.
+* Fixed api.github.com bug. Now Update Checker should work fine.
+* Config Display now shows BL/WL Guild IDs too.
+* Proper Rate Limiting for Trade.
+* `Pokelog` now logs nicknames too.
+* `Junky_trash()` excludes nicknamed pokemons now.
