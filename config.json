@@ -20,6 +20,6 @@
    "autolog": true,
    "update_checker": true,
    "auto_update": true,
-   "autocatcher": true,
+   "autocatcher": false,
    "priority_only": false
 }
