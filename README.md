@@ -23,7 +23,10 @@ This specific selfbot was designed to automatically catch pokemon spawned on Dis
 It is inspired by [PokecordCatcher](https://github.com/xKynn/PokecordCatcher) and extends its features to more advanced version with better control.
 
 **Current Version**: `v3.3.0` (13th June 2018 )
-   > Keep a lookout for [Updates](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/Updates.md). 
+   > Keep a lookout for [Updates](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/Updates.md).
+
+  > **For now, the `autocatcher` is officially non-functional.**
+  Please use the other commands meanwhile. I highly suggest getting the Premium Version and using the Autodueler instead. With the introduction of `marketplace` on PokeCord, it's better to farm credits and buy the pokemons instead of relying on the spawns.
 
 ## Features
 1. Automatically catch a pokemon in whichever server you are in if the PokeCord bot spawns a pokemon.
@@ -171,6 +174,7 @@ You can request **new features** in the FeatHub.
 | 15 | Skiel        | Premium  💵 |
 | 16 | Robin        | Premium  💵 |
 | 17 | ScriptKiddie | Advanced 💎 |
+| 18 | Jakob        | Advanced 💎 |
 
 ## Donations
 * The public version of this selfbot doesn't contain the following to keep the bot usage to minimum and not break Pokecord bot:
