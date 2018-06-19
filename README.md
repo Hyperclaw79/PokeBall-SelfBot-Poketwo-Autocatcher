@@ -124,8 +124,11 @@ Example config:
 
 ## Disclaimer
 * The creators of this bot are not responsible for any actions you perform using it. Use it at you own risk.
-* Selfbots violate discord & PokeCord TOS and you can get banned. Be careful about how you use the bot.
+* Selfbots violate discord & PokeCord TOS and you will get banned if caught using them. Be careful about how you use the bot.
+  > The selfbot is intended to give you a boost and get the edge over your friends, not hoard 40K pokemon lol.
 * Do not use this in official PokeCord Discord server.... for obvious reasons.
+  > Similarly do not use in public servers which explicitly prohibit this.
+* The implications of ban might also affect other accounts which interact with this selfbot. Use with caution.  
 
 ## Contributions
 Refer to the new [CONTRIBUTION GUIDE](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/CONTRIBUTING.md).
