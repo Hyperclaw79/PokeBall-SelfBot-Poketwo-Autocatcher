@@ -25,11 +25,13 @@ It is inspired by [PokecordCatcher](https://github.com/xKynn/PokecordCatcher) an
 **Current Version**: `v3.3.0` (13th June 2018 )
    > Keep a lookout for [Updates](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/Updates.md).
 
-  > **For now, the `autocatcher` is officially non-functional.**
-  Please use the other commands meanwhile. I highly suggest getting the Premium Version and using the Autodueler instead. With the introduction of `marketplace` on PokeCord, it's better to farm credits and buy the pokemons instead of relying on the spawns.
+  > **The `autocatcher` is now officially fixed and is a Premium Version only feature.**
+  It was troublesome fixing this again and again as the open source code is easily readable and patched against. To avoid this in the future, autocatcher is now a Premium feature to make it harder to get. I know that most of you will hate this move, but it was necessary. You guys can continue using the other features like auto-trade and auto-release, etc. which do not really harm anyone.
+Thank you all for being patient and sticking around till now.
+The donations for Premium Version are open again. So if you want the autocatcher, DM me for the PayPal details.
 
 ## Features
-1. Automatically catch a pokemon in whichever server you are in if the PokeCord bot spawns a pokemon.
+1. Automatically catch a pokemon in whichever server you are in if the PokeCord bot spawns a pokemon. [Premium Only]
 2. Delay and catch rates to finesse the behaviour of the selfbot.
 3. A log command to log all your pokemon along with their numbers.
 4. A trade command to bulk trade the pokemon to your main account.
@@ -183,6 +185,7 @@ You can request **new features** in the FeatHub.
 
 ## Donations
 * The public version of this selfbot doesn't contain the following to keep the bot usage to minimum and not break Pokecord bot:
+  + Auto-Catcher [Major] 
   + Auto-Spammer [Major]
   + Trade Offer Generator
   + Auto-dueler for Credits farming [Major]
@@ -192,7 +195,7 @@ You can request **new features** in the FeatHub.
   + DM commands - some commands can be used by DMing the bot.
   > *These features are based upon multimode which involves having multiple selfbot accounts.*
 * To avail these features, contact me on Discord @**Hyperclaw79#3570** and I'll give you my PayPal id. 
-  > *Please ping me only for donations and not for support (unless you are already a donor). Currently the price is just $12. Better donate fast as the price will be bound to go up along with the demand.*
+  > *Please ping me only for donations and not for support (unless you are already a donor). Currently the price is just $25. Better donate fast as the price will be bound to go up along with the demand.*
 * The other **advantages** upon being a donor would be:
   + Be the first to avail any bug fixes and new updates.
   + A special mention of your username in this readme. *(optional)*
@@ -208,7 +211,7 @@ You can request **new features** in the FeatHub.
     + `Incubate` command to automatically level up all the pokemon in your fav list or list of ids, through the autospammer module. You don't need to check for the level of your pokemon and manually switch to the next one anymore.
     + `iter` command to chain a series of pokecord commands for a list of ids.
     + `sudo_exec` and `sudo_echo` commands for the master-slave control.
-  + The current price for this extension is just $8 and will change with demand, just like the premium version.  
+  + The current price for this extension is just $10 and will change with demand, just like the premium version.  
 * **Terms & Conditions apply**:
   + You shall receive the source code and deployment instructions after the payment has been acknowledged.
   + You shall not disclose the obtained code to anyone directly. Refer them to this repo instead.
