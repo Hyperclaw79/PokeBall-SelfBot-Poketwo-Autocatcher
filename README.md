@@ -187,6 +187,7 @@ You can request **new features** in the FeatHub.
 | 23 | Soldier40     | Premium  💵 |
 | 24 | Beanie        | Premium  💵 |
 | 25 | Pablo         | Premium  💵 |
+| 26 | Noel          | Premium  💵 |
 
 
 ## Donations
