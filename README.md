@@ -28,7 +28,7 @@ It is inspired by [PokecordCatcher](https://github.com/xKynn/PokecordCatcher) an
   > **The `autocatcher` is now officially fixed and is a Premium Version only feature.**
   It was troublesome fixing this again and again as the open source code is easily readable and patched against. To avoid this in the future, autocatcher is now a Premium feature to make it harder to get. I know that most of you will hate this move, but it was necessary. You guys can continue using the other features like auto-trade and auto-release, etc. which do not really harm anyone.
 Thank you all for being patient and sticking around till now.
-The donations for Premium Version are open again. So if you want the autocatcher, DM me for the PayPal details.
+The donations for Premium Version are open again. So if you want the autocatcher, DM me on Discord @ **Hyperclaw79#3570** for the PayPal details.
 
 ## Features
 1. Automatically catch a pokemon in whichever server you are in if the PokeCord bot spawns a pokemon. [Premium Only]
@@ -183,6 +183,11 @@ You can request **new features** in the FeatHub.
 | 19 | kReaz         | Advanced 💎 |
 | 20 | Khymaera      | Premium  💵 |
 | 21 | ClueSkull     | Premium  💵 |
+| 22 | Tortoises     | Premium  💵 |
+| 23 | Soldier40     | Premium  💵 |
+| 24 | Beanie        | Premium  💵 |
+| 25 | Pablo         | Premium  💵 |
+
 
 ## Donations
 * The public version of this selfbot doesn't contain the following to keep the bot usage to minimum and not break Pokecord bot:
