@@ -54,6 +54,7 @@ The donations for Premium Version are open again. So if you want the autocatcher
 * A discord account. (Preferably two - one main and one alt)
 
 ## Setup
+### Windows
 1. [First install Git for Windows](https://git-scm.com/download/win) and then run `setup.bat` to install the requirements.
 2. Then, add your bot token in the `config.json`'s `"token"` key. Refer the tutorial below to get the token.
     > The token should be withing the `""` like:
@@ -67,8 +68,10 @@ The donations for Premium Version are open again. So if you want the autocatcher
   > If you don't want to toggle it on every time after restart, look for the line `self.autocatcher = False` under the `__init__()` function and change it to `True` instead of `False`.
 5. Most of the commands need you to catch a pokemon in the new guild with autocatcher on, at least once, followed by a restart.
   > There is a way to manually bypass this. You need to turn the Developer Mode on your Discord on, get the guild id and alter `guilds.json` to include the `,guild_id:"pokecord prefix in that guild"`.
-
-
+###Linux
+1. Run "setup.sh" with "./setup.sh". Make sure to give permission to "setup.sh" and "run.sh" by "chmod +x [file name here]".
+2. Then follow step number "2" in the "Windows" section above.
+3. Finally, run "run.sh" to get your bot online and running. Now you can configure stuff and enjoy.
 ## Fine-Tuning
 * To find out how to get your token visit [Token Tutorial](https://github.com/TheRacingLion/Discord-SelfBot/wiki/Discord-Token-Tutorial).
 
