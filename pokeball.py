@@ -13,7 +13,7 @@ import hashlib
 
 class PokeBall(discord.Client):
     def __init__(self, config_path: str, guild_path: str, pokelist_path: str, pokenames_path: str, *args, **kwargs):
-        self.version = "v3.3.0"
+        self.version = "v3.3.2"
         self.config_path = config_path
         self.guild_path = guild_path
         self.pokelist_path = pokelist_path
@@ -545,11 +545,10 @@ class PokeBall(discord.Client):
         if pref and args:
             if "dupes" in (arg.lower() for arg in args):
                 junk = self.junky_trash()
-                pokes = sorted(junk, key=lambda x: int(x[1]), reverse=True)
-                numlist = [mon[1] for mon in pokes]
+                numbers = [mon[1] for mon in junk]
             else:
                 numbers = args
-            numlist = sorted(numbers, key=lambda x: int(x), reverse=True)
+            numlist = list(set(sorted(numbers, key=lambda x: int(x), reverse=True)))
             for numbers in numlist:
                 num_str = ' '.join(numbers)
                 await message.channel.send(f"{pref}release {num_str}")
