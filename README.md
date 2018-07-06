@@ -160,6 +160,11 @@ You can request **new features** in the FeatHub.
 * xKynn for the [PokeCordCatcher](https://github.com/xKynn/PokecordCatcher).
 * Rapptz for [Discord.py](https://github.com/Rapptz/discord.py)
 
+### Contributors
+* [ThePythonDoge](https://github.com/ThePythonDoge)
+
+* [4-mat](https://github.com/4-mat)
+
 ### Donors
 
 
