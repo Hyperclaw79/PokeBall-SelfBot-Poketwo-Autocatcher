@@ -196,6 +196,8 @@ You can request **new features** in the FeatHub.
 | 24 | Beanie        | Premium  💵 |
 | 25 | Pablo         | Premium  💵 |
 | 26 | Noel          | Premium  💵 |
+| 27 | Void          | Premium  💵 |
+| 28 | Kyros         | Premium  💵 |
 
 
 ## Donations
