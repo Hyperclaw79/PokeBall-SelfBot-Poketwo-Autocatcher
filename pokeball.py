@@ -713,7 +713,7 @@ class PokeBall(discord.Client):
                             await asyncio.sleep(1.0)
                         if "pokeball.py" in ver_data["modified_files"]:
                             await file_modifier("pokeball.py")
-                        subprocess.run("run.bat")            
+                        subprocess.run("run.bat") # Change this to run.sh if you're on a mac/linux
 
         self.sess = aiohttp.ClientSession(loop=self.loop)
         await updater()    
