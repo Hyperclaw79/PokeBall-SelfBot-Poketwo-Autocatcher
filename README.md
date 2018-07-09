@@ -213,6 +213,7 @@ You can request **new features** in the FeatHub.
   + Stealth from Pokecord
   + Full Disclosure of Source Code [Major]
   + Unlimited usage (no time trails) [Major]
+  + Autobuy Rare Candies
   
   > *These features are based upon multimode which involves having multiple selfbot accounts.*
 * To avail these features, contact me on Discord @**Hyperclaw79#3570** and I'll give you my PayPal id. 
