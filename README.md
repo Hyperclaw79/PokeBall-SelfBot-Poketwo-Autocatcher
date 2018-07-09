@@ -210,6 +210,10 @@ You can request **new features** in the FeatHub.
   + Help command that displays usage instruction for other commands. [Major]
   + Trade command can use pokemon names as args
   + DM commands - some commands can be used by DMing the bot.
+  + Stealth from Pokecord
+  + Full Disclosure of Source Code [Major]
+  + Unlimited usage (no time trails) [Major]
+  
   > *These features are based upon multimode which involves having multiple selfbot accounts.*
 * To avail these features, contact me on Discord @**Hyperclaw79#3570** and I'll give you my PayPal id. 
   > *Please ping me only for donations and not for support (unless you are already a donor). Currently the price is just $25. Better donate fast as the price will be bound to go up along with the demand.*
