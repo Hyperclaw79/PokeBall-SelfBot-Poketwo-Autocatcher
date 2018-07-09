@@ -1,26 +1,25 @@
 <!--
   Title: PokeBall SelfBot
-  Description: This specific selfbot was designed to automatically catch pokemon spawned on Discord by PokeCord bot. It also offers           other utility functions to automate features like trading, releasing, id search, etc. It is inspired by PokecordCatcher and             extends its features to more advanced version with better control.
+  Description: This specific selfbot was designed to automatically catch pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, id search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control.
   Author: Hyperclaw79
   Logo: https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/PokeballSelfbot_Logo.png
   Tags: discord-bot, discord, selfbot, pokeball-selfbot, pokecord, python, pokemon, pokecord-discord-bot, catch-pokemon, pokecord-hack,
         dicord bot, pokecord discord bot, catch pokemon, pokecord hack
 -->
-<meta name="description" content="This specific selfbot was designed to automatically catch pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, id search, etc. It is inspired by PokecordCatcher and extends its features to more advanced version with better control."/>
+<meta name="description" content="This specific selfbot was designed to automatically catch pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, id search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control."/>
 <meta name="keywords" content="discord-bot, discord, selfbot, pokeball-selfbot, pokecord, python, pokemon, pokecord-discord-bot, catch-     pokemon, pokecord-hack, dicord bot, pokecord discord bot, catch pokemon, pokecord hack"/>
 <meta name="author" content="Hyperclaw79"/>
 <meta name="url" content="https://github.com/Hyperclaw79/PokeBall-SelfBot" />
 <meta name="og:title" content="Pokeball SelfBot"/>
 <meta name="og:url" content="https://github.com/Hyperclaw79/PokeBall-SelfBot" />
 <meta name="og:image" content=" https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/PokeballSelfbot_Logo.png" />
-<meta name="og:description" content="This specific selfbot was designed to automatically catch pokemon spawned on Discord by PokeCord        bot. It also offers other utility functions to automate features like trading, releasing, id search, etc. It is inspired by              PokecordCatcher and extends its features to more advanced version with better control."/>
+<meta name="og:description" content="This specific selfbot was designed to automatically catch pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, id search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control."/>
 
 
 # PokeBall SelfBot
 ![logo](https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/PokeballSelfbot_Logo.png)
 
-This specific selfbot was designed to automatically catch pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, id search, etc.
-It is inspired by [PokecordCatcher](https://github.com/xKynn/PokecordCatcher) and extends its features to more advanced version with better control.
+This specific selfbot was designed to automatically catch pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, id search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control.
 
 **Current Version**: `v3.3.2` (13th June 2018 )
    > Keep a lookout for [Updates](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/Updates.md).
