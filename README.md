@@ -27,7 +27,7 @@ This specific selfbot was designed to automatically catch pokemon spawned on Dis
   > **The `autocatcher` is now officially fixed and is a Premium Version only feature.**
   It was troublesome fixing this again and again as the open source code is easily readable and patched against. To avoid this in the future, autocatcher is now a Premium feature to make it harder to get. I know that most of you will hate this move, but it was necessary. You guys can continue using the other features like auto-trade and auto-release, etc. which do not really harm anyone.
 Thank you all for being patient and sticking around till now.
-The donations for Premium Version are open again. So if you want the autocatcher, DM me on Discord @ **Hyperclaw79#3570** for the PayPal details.
+The donations for Premium Version are open again. So if you want the autocatcher, DM me on Discord @ **Hyperclaw79#3570** for the PayPal details. Scroll down to [Donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot#donations) for details.
 
 ## Features
 1. Automatically catch a pokemon in whichever server you are in if the PokeCord bot spawns a pokemon. [Premium Only]
@@ -197,6 +197,9 @@ You can request **new features** in the FeatHub.
 | 26 | Noel          | Premium  💵 |
 | 27 | Void          | Premium  💵 |
 | 28 | Kyros         | Premium  💵 |
+| 29 | Tri           | Premium  💵 |
+| 30 | Snorlax       | Premium  💵 |
+| 31 | Zope_RSM      | Premium  💵 |
 
 
 ## Donations
@@ -221,7 +224,7 @@ You can request **new features** in the FeatHub.
   + Be the first to avail any bug fixes and new updates.
   + A special mention of your username in this readme. *(optional)*
   + Bot related Support on Discord DMs. (Don't ask me how to install Python xD)
-    + >*This version is to suggested to be used after you've tried out the public version.*
+    + >~~*This version is to suggested to be used after you've tried out the public version.*~~
     + >*The support doesn't include how to setup the public bot. Use [GitHub Issues](https://github.com/Hyperclaw79/PokeBall-SelfBot/issues) for that one.
   + You can propose new features and I shall implement them *based on the plausibilty*.
 * **Advanced Extension**
