@@ -205,6 +205,8 @@ You can request **new features** in the FeatHub.
 | 30 | Snorlax       | Premium  💵 |
 | 31 | Zope_RSM      | Premium  💵 |
 | 32 | Inori         | Advanced 💎 |
+| 33 | Jessie        | Premium  💵 |
+| 34 | Fisa 51       | Premium  💵 |
 
 
 ## Donations
