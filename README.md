@@ -52,7 +52,7 @@ The donations for Premium Version are open again. So if you want the autocatcher
 16. Auto-updates available.
 
 ## Requirements
-* Python 3.6+
+* Python 3.6
 * A server/local sytem to host it.
 * A discord account. (Preferably two - one main and one alt)
 
