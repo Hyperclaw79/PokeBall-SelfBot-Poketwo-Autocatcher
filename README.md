@@ -204,7 +204,7 @@ You can request **new features** in the FeatHub.
 | 29 | Tri           | Premium  💵 |
 | 30 | Snorlax       | Premium  💵 |
 | 31 | Zope_RSM      | Premium  💵 |
-| 32 | Inori         | Premium  💵 |
+| 32 | Inori         | Advanced 💎 |
 
 
 ## Donations
