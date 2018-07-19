@@ -207,6 +207,9 @@ You can request **new features** in the FeatHub.
 | 32 | Inori         | Advanced 💎 |
 | 33 | Jessie        | Premium  💵 |
 | 34 | Fisa 51       | Premium  💵 |
+| 35 | Daddy         | Advanced 💎 |
+| 36 | Ariusll       | Advanced 💎 |
+| 37 | Obelisk       | Advanced 💎 |
 
 
 ## Donations
