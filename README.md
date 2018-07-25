@@ -210,6 +210,10 @@ You can request **new features** in the FeatHub.
 | 35 | Daddy         | Advanced 💎 |
 | 36 | Ariusll       | Advanced 💎 |
 | 37 | Obelisk       | Advanced 💎 |
+| 38 | NightX        | Premium  💵 |
+| 39 | Weapon X      | Premium  💵 |
+| 40 | Pokester      | Advanced 💎 |
+| 41 | Naruto0       | Premium  💵 |
 
 
 ## Donations
@@ -245,6 +249,7 @@ You can request **new features** in the FeatHub.
     + `Incubate` command to automatically level up all the pokemon in your fav list or list of ids, through the autospammer module. You don't need to check for the level of your pokemon and manually switch to the next one anymore.
     + `iter` command to chain a series of pokecord commands for a list of ids.
     + `sudo_exec` and `sudo_echo` commands for the master-slave control.
+    + `sudo_duel` command for launching multiple duels at once.
   + The current price for this extension is just $10 and will change with demand, just like the premium version.  
 * **Terms & Conditions apply**:
   + You shall receive the source code and deployment instructions after the payment has been acknowledged.
