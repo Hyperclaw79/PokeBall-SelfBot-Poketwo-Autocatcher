@@ -218,6 +218,7 @@ You can request **new features** in the FeatHub.
 | 40 | Pokester      | Advanced 💎 |
 | 41 | Naruto0       | Premium  💵 |
 | 42 | KaiDmore      | Advanced 💎 |
+| 43 | G.e.n.c.h     | Advanced 💎 |
 
 
 ## Donations
