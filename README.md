@@ -219,6 +219,8 @@ You can request **new features** in the FeatHub.
 | 41 | Naruto0       | Premium  💵 |
 | 42 | KaiDmore      | Advanced 💎 |
 | 43 | G.e.n.c.h     | Advanced 💎 |
+| 44 | Takeen        | Advanced 💎 |
+| 45 | NopeW         | Advanced 💎 |
 
 
 ## Donations
