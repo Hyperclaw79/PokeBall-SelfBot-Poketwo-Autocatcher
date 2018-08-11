@@ -222,6 +222,8 @@ You can request **new features** in the FeatHub.
 | 44 | Takeen        | Advanced 💎 |
 | 45 | NopeW         | Advanced 💎 |
 | 46 | Coyote        | Premium  💵 |
+| 47 | VA_Charm      | Premium  💵 |
+| 48 | TimeTitan     | Premium  💵 |
 
 
 ## Donations
