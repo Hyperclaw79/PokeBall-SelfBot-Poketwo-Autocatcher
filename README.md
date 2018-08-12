@@ -224,6 +224,7 @@ You can request **new features** in the FeatHub.
 | 46 | Coyote        | Premium  💵 |
 | 47 | VA_Charm      | Premium  💵 |
 | 48 | TimeTitan     | Premium  💵 |
+| 49 | Y !-          | Premium  💵 |
 
 
 ## Donations
