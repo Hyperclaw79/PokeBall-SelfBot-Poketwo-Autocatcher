@@ -225,6 +225,9 @@ You can request **new features** in the FeatHub.
 | 47 | VA_Charm      | Premium  💵 |
 | 48 | TimeTitan     | Premium  💵 |
 | 49 | Y !-          | Premium  💵 |
+| 50 | Anonymous     | Advanced 💎 |
+| 51 | XaoBlackbirdz | Premium  💵 |
+
 
 
 ## Donations
