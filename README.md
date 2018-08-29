@@ -229,6 +229,7 @@ You can request **new features** in the FeatHub.
 | 51 | XaoBlackbirdz | Premium  💵 |
 | 52 | MagicalChaos  | Advanced 💎 |
 | 53 | Dranzer       | Advanced 💎 |
+| 54 | GarryPeanut   | Premium  💵 |
 
 
 ## Donations
