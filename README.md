@@ -231,6 +231,10 @@ You can request **new features** in the FeatHub.
 | 53 | Dranzer       | Advanced 💎 |
 | 54 | Liemal        | Premium  💵 |
 | 55 | GarryPeanut   | Premium  💵 |
+| 56 | Ethanol       | Advanced 💎 |
+| 57 | DanceMusic    | Premium  💵 |
+| 58 | Gorgeous      | Premium  💵 |
+| 59 | RegisteredDad | Advanced 💎 |
 
 
 ## Donations
