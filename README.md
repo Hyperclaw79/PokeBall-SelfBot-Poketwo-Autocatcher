@@ -235,6 +235,8 @@ You can request **new features** in the FeatHub.
 | 57 | DanceMusic    | Premium  💵 |
 | 58 | Gorgeous      | Premium  💵 |
 | 59 | RegisteredDad | Advanced 💎 |
+| 60 | Plido         | Premium  💵 |
+| 61 | Taichi        | Premium  💵 |
 
 
 ## Donations
