@@ -237,6 +237,8 @@ You can request **new features** in the FeatHub.
 | 59 | RegisteredDad | Advanced 💎 |
 | 60 | Plido         | Premium  💵 |
 | 61 | Taichi        | Premium  💵 |
+| 62 | JBKuma        | Advanced 💎 |
+| 63 | ManlyDeer     | Advanced 💎 |
 
 
 ## Donations
