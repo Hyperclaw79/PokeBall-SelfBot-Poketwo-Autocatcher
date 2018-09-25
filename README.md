@@ -239,6 +239,8 @@ You can request **new features** in the FeatHub.
 | 61 | Taichi        | Premium  💵 |
 | 62 | JBKuma        | Advanced 💎 |
 | 63 | ManlyDeer     | Advanced 💎 |
+| 64 | Pikachiha     | Premium  💵 |
+| 65 | SatanicCat    | Premium  💵 |
 
 
 ## Donations
