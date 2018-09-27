@@ -241,6 +241,7 @@ You can request **new features** in the FeatHub.
 | 63 | ManlyDeer     | Advanced 💎 |
 | 64 | Pikachiha     | Premium  💵 |
 | 65 | SatanicCat    | Premium  💵 |
+| 66 | Vaderson      | Advanced 💎 |
 
 
 ## Donations
