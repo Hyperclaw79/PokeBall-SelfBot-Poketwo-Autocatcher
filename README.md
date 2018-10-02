@@ -244,6 +244,7 @@ You can request **new features** in the FeatHub.
 | 66 | Vaderson      | Advanced 💎 |
 | 67 | Mackaw        | Premium  💵 |
 | 68 | Caliber       | Premium  💵 |
+| 69 | Kayosu        | Premium  💵 |
 
 
 ## Donations
