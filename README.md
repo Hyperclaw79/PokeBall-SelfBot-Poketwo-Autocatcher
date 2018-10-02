@@ -242,6 +242,8 @@ You can request **new features** in the FeatHub.
 | 64 | Pikachiha     | Premium  💵 |
 | 65 | SatanicCat    | Premium  💵 |
 | 66 | Vaderson      | Advanced 💎 |
+| 67 | Mackaw        | Premium  💵 |
+| 68 | Caliber       | Premium  💵 |
 
 
 ## Donations
