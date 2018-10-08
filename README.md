@@ -245,6 +245,7 @@ You can request **new features** in the FeatHub.
 | 67 | Mackaw        | Premium  💵 |
 | 68 | Caliber       | Premium  💵 |
 | 69 | Kayosu        | Premium  💵 |
+| 70 | Garbage       | Premium  💵 |
 
 
 ## Donations
