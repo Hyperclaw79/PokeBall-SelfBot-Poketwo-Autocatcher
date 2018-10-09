@@ -1,25 +1,25 @@
 <!--
   Title: PokeBall SelfBot
-  Description: This specific selfbot was designed to automatically catch pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, id search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control.
+  Description: This specific selfbot was designed to automatically catch Pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, ID search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control.
   Author: Hyperclaw79
   Logo: https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/PokeballSelfbot_Logo.png
   Tags: discord-bot, discord, selfbot, pokeball-selfbot, pokecord, python, pokemon, pokecord-discord-bot, catch-pokemon, pokecord-hack,
         dicord bot, pokecord discord bot, catch pokemon, pokecord hack
 -->
-<meta name="description" content="This specific selfbot was designed to automatically catch pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, id search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control."/>
+<meta name="description" content="This specific selfbot was designed to automatically catch Pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, ID search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control."/>
 <meta name="keywords" content="discord-bot, discord, selfbot, pokeball-selfbot, pokecord, python, pokemon, pokecord-discord-bot, catch-     pokemon, pokecord-hack, dicord bot, pokecord discord bot, catch pokemon, pokecord hack"/>
 <meta name="author" content="Hyperclaw79"/>
 <meta name="url" content="https://github.com/Hyperclaw79/PokeBall-SelfBot" />
 <meta name="og:title" content="Pokeball SelfBot"/>
 <meta name="og:url" content="https://github.com/Hyperclaw79/PokeBall-SelfBot" />
 <meta name="og:image" content=" https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/PokeballSelfbot_Logo.png" />
-<meta name="og:description" content="This specific selfbot was designed to automatically catch pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, id search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control."/>
+<meta name="og:description" content="This specific selfbot was designed to automatically catch Pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, ID search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control."/>
 
 
 # PokeBall SelfBot
 ![logo](https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/PokeballSelfbot_Logo.png)
 
-This specific selfbot was designed to automatically catch pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, id search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control.
+This specific selfbot was designed to automatically catch Pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, ID search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control.
 
 
 ![Python Version](https://img.shields.io/badge/python-3.6-blue.svg?style=for-the-badge) ![Licensse](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge) ![Maintained?](https://img.shields.io/badge/Maintained%3F-Premium%20Version%2B%20only-red.svg?style=for-the-badge)
@@ -29,7 +29,7 @@ This specific selfbot was designed to automatically catch pokemon spawned on Dis
 
   > **The `autocatcher` is now officially fixed and is a Premium Version only feature.**
   It was troublesome fixing this again and again as the open source code is easily readable and patched against. To avoid this in the future, autocatcher is now a Premium feature to make it harder to get. I know that most of you will hate this move, but it was necessary. You guys can continue using the other features like auto-trade and auto-release, etc. which do not really harm anyone.
-Thank you all for being patient and sticking around till now.
+Thank you all for being patient and sticking around until now.
 
 > **The Public Version is now intended for testing only.**
 After the recent Pokecord updates, the selfbot commands are being flagged by pokecord and the account using it will most likely get reset. So use this only on your alts and to check how the bot is working. If you want a stealth mode which makes the selfbot commands un-flaggable, please switch to the Premium Version which has a mechanism to avoid this.
@@ -37,20 +37,20 @@ After the recent Pokecord updates, the selfbot commands are being flagged by pok
 The donations for Premium Version are open again. So if you want the autocatcher along with other amazing commands, DM me on Discord @ **Hyperclaw79#3570** for the PayPal details. Scroll down to [Donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot#donations) for details.
 
 ## Features
-1. Automatically catch a pokemon in whichever server you are in if the PokeCord bot spawns a pokemon. [Premium Only]
+1. Automatically catch a Pokemon in whichever server you are in if the PokeCord bot spawns a Pokemon. [Premium Only]
 2. Delay and catch rates to finesse the behaviour of the selfbot.
-3. A log command to log all your pokemon along with their numbers.
-4. A trade command to bulk trade the pokemon to your main account.
-5. Priority List to control the pokemon you catch and trade.
-6. Toggle catching of dupliactes.
-7. Mass release of thrash pokemon.
+3. A log command to log all your Pokemon along with their numbers.
+4. A trade command to bulk trade the Pokemon to your main account.
+5. Priority List to control the Pokemon you catch and trade.
+6. Toggle catching of duplicates.
+7. Mass release of thrash Pokemon.
 8. Toggle autocatching to use in Command_Only mode.
 9. Blacklist and Whitelist channels to control the scope of the selfbot. And a toggler function for the switch.
 10. Toggle priority_only mode.
 11. List out all the legendaries you've caught so far.
 12. A gift command to send credits. (isolated to prevent conflict with Trade)
 13. Blacklist/Whitelist toggle for entire guilds.
-14. Toggle Autolog after catching new pokemon.
+14. Toggle Autolog after catching new Pokemon.
 15. Case-insensitive Commands. (Args are still sensitive.)
 16. Auto-updates available.
 
@@ -72,8 +72,8 @@ The donations for Premium Version are open again. So if you want the autocatcher
 4. The autocatcher is **off** by default. To enable it, you need to send a message in Discord as `P^autocatcher on`.
   > `P^` is the default command_prefix for the selfbot. Feel free to change it. Note that, this is not the same as PokeCord's prefix.
   > If you don't want to toggle it on every time after restart, look for the line `self.autocatcher = False` under the `__init__()` function and change it to `True` instead of `False`.
-5. Most of the commands need you to catch a pokemon in the new guild with autocatcher on, at least once, followed by a restart.
-  > There is a way to manually bypass this. You need to turn the Developer Mode on your Discord on, get the guild id and alter `guilds.json` to include the `,guild_id:"pokecord prefix in that guild"`.
+5. Most of the commands need you to catch a Pokemon in the new guild with autocatcher on, at least once, followed by a restart.
+  > There is a way to manually bypass this. You need to turn the Developer Mode on your Discord on, get the guild ID and alter `guilds.json` to include the `,guild_id:"pokecord prefix in that guild"`.
 ### Linux
 1. First install git by doing "sudo apt install git-all", cd to directory, and then run "setup.sh" with "./setup.sh". Make sure to give permission to "setup.sh" and "run.sh" by "chmod +x [file name here]".
 2. Then follow step number "2" in the "Windows" section above.
@@ -84,32 +84,32 @@ The donations for Premium Version are open again. So if you want the autocatcher
 ### Configs explanations:
 
   * Keep the `catch rate` **low** and `delay` **high** for it to act normally.  
-  * `Priority` pokemon <u>bypass</u> catch rate.
-  If a priority pokemon is caught, it will be removed from priority list in the current session, manually remove it from config if you restart.
-  * Use the `Safe List` to prevent trading some pokemon to your main account in case you want them on the selfbot's account.  
+  * `Priority` Pokemon <u>bypass</u> catch rate.
+  If a priority Pokemon is caught, it will be removed from priority list in the current session, manually remove it from config if you restart.
+  * Use the `Safe List` to prevent trading some Pokemon to your main account in case you want them on the selfbot's account.  
   * `Catch Rate` is a percentage out of 100.  
   * `Delay` is in seconds.  
-  * `delay_on_priority` can be set to **true** or **false**, false means it won't wait and will instantly catch a pokemon if its in priority.
+  * `delay_on_priority` can be set to **true** or **false**, false means it won't wait and will instantly catch a Pokemon if it is in priority.
   * `restrict_duplicates` can be set to **false** to catch unlimited number of duplicates. If **true**, use `max_duplicates` to control the number of duplicates you can catch. 
-  * `blacklists` and `whitelists` can be filled with the channel ids to choose where the selfbot should work. You can use the `toggle_mode` command to choose which mode it should run in.
-  * `blacklist_guilds` and `whitelist_guilds` can be filled with the guild ids to filter entire guilds. You can use the `toggle_guildmode` command to choose which mode it should run in.
-    > Always keep the default value in the list. It is the id for Official PokeCord Server. 
-  * `avoid` can be filled with all the pokemons that shouldn't be caught automatically.
-  * `autolog` can be used to choose whether the `p!pokemon --name FreshlyCaughtPokemon` should be used immediately after catching a new pokemon. To be stealthy, use `false`.
+  * `blacklists` and `whitelists` can be filled with the channel IDs to choose where the selfbot should work. You can use the `toggle_mode` command to choose which mode it should run in.
+  * `blacklist_guilds` and `whitelist_guilds` can be filled with the guild IDs to filter entire guilds. You can use the `toggle_guildmode` command to choose which mode it should run in.
+    > Always keep the default value in the list. It is the ID for Official PokeCord Server. 
+  * `avoid` can be filled with all the Pokemon that shouldn't be caught automatically.
+  * `autolog` can be used to choose whether the `p!pokemon --name FreshlyCaughtPokemon` should be used immediately after catching a new Pokemon. To be stealthy, use `false`.
   * `update_checker` can be set to `false` if you don't wanna bother checking for new updates.
     > Highly unrecommended.
   * `auto_update` can be set to `false` to disable automatic update of code and other files.
     > You will need to manually re-clone the repo and make modifications in your config again if disabled.
       Auto-updater makes sure that your previous configs stay intact and only makes additions.  
 
-* Use the `pokelog` command before performing a trade in order to sync up all your newly caught pokemon.
-* Regularly run `pokelog` to keep the list synchronized. Especially, before `clean_trash` as it might result in releasing the wrong pokemon.
-* For args based trading/releasing, always provide the ids in a descending order.
+* Use the `pokelog` command before performing a trade in order to sync up all your newly caught Pokemon.
+* Regularly run `pokelog` to keep the list synchronized. Especially, before `clean_trash` as it might result in releasing the wrong Pokemon.
+* For args based trading/releasing, always provide the IDs in a descending order.
 * Preferably run this on an alt and then trade them to you main account.
-* To get channel ids, mention you channel in a message and add a `\` before the mention. The integer part of it is the channel id.
+* To get channel IDs, mention you channel in a message and add a `\` before the mention. The integer part of it is the channel ID.
     > For example:
       >> Sending `\#pokechannel` will give `<#1234>`.
-      >>> In  <#1234>, channel id is 1234.
+      >>> In  <#1234>, channel ID is 1234.
 
 Example config:
 ```json
@@ -168,8 +168,8 @@ You can request **new features** in the FeatHub.
 
 ### Contributors
 * [ThePythonDoge](https://github.com/ThePythonDoge)
-
 * [4-mat](https://github.com/4-mat)
+* [ajmeese7](https://github.com/ajmeese7)
 
 ### Donors
 
@@ -256,7 +256,7 @@ You can request **new features** in the FeatHub.
   + Auto-dueler for Credits farming [Major]
   + Logging catches to owner's DMs in multimode
   + Help command that displays usage instruction for other commands. [Major]
-  + Trade command can use pokemon names as args
+  + Trade command can use Pokemon names as args
   + DM commands - some commands can be used by DMing the bot.
   + Stealth from Pokecord
   + Full Disclosure of Source Code [Major]
@@ -264,7 +264,7 @@ You can request **new features** in the FeatHub.
   + Autobuy Rare Candies
   
   > *These features are based upon multimode which involves having multiple selfbot accounts.*
-* To avail these features, contact me on Discord @**Hyperclaw79#3570** and I'll give you my PayPal id. 
+* To avail these features, contact me on Discord @**Hyperclaw79#3570** and I'll give you my PayPal ID. 
   > *Please ping me only for donations and not for support (unless you are already a donor). Currently the price is just $25. Better donate fast as the price will be bound to go up along with the demand.*
 * The other **advantages** upon being a donor would be:
   + Be the first to avail any bug fixes and new updates.
@@ -277,9 +277,9 @@ You can request **new features** in the FeatHub.
   + The premium version also got an advanced extension which adds more game to the bot.
     It contains the following features:
     + This one works on a multi-user mode with 3+ bots. It follows a master-slave system where one master bot can trigger the commands on multiple slave selfbots.
-    + `Best_stats` command to check for the pokemon which has the best total stats or a specific stat like Speed, Attack among your fav list or list of ids. Pretty useful for the traders.
-    + `Incubate` command to automatically level up all the pokemon in your fav list or list of ids, through the autospammer module. You don't need to check for the level of your pokemon and manually switch to the next one anymore.
-    + `iter` command to chain a series of pokecord commands for a list of ids.
+    + `Best_stats` command to check for the Pokemon which has the best total stats or a specific stat like Speed, Attack among your fav list or list of IDs. Pretty useful for the traders.
+    + `Incubate` command to automatically level up all the Pokemon in your fav list or list of IDs, through the autospammer module. You don't need to check for the level of your Pokemon and manually switch to the next one anymore.
+    + `iter` command to chain a series of pokecord commands for a list of IDs.
     + `sudo_exec` and `sudo_echo` commands for the master-slave control.
     + `sudo_duel` command for launching multiple duels at once.
   + The current price for this extension is just $10 and will change with demand, just like the premium version.  
@@ -289,7 +289,7 @@ You can request **new features** in the FeatHub.
     > The obtained code is not open-source and MIT License doesn't apply to it.
   + Support is subject to my availability.
   + Not all requested features are possible to implement.
-  + Since Pokecord keeps updating, some of the older code might break. Stay patient till I send you a patch for it.
+  + Since Pokecord keeps updating, some of the older code might break. Stay patient until I send you a patch for it.
   + All donations are non-refundable.
   + Me or the contributors for this repo and not responsible for any legal suits.
 
@@ -305,6 +305,6 @@ Don't forget to let me know that you're the one who paid it. ;)
     + A 5% discount while donating in the future.
 * DM me on Discord with the name of the person you referred to and ask them to include your username too while contacting me about the donation.
 * You need to also Star this repo before referring to others.
-* Maximum number of stackable discounts would be 2, i.e., maximum possible discount would be 10%.
+* Maximum number of stackable discounts would be 2, i.e. maximum possible discount would be 10%.
 * The benefits are provided only **after** the referred person makes a donation.
 * The discount rate is subject to change based on the referral activity and donation price.
