@@ -246,6 +246,8 @@ You can request **new features** in the FeatHub.
 | 68 | Caliber       | Premium  💵 |
 | 69 | Kayosu        | Premium  💵 |
 | 70 | Garbage       | Premium  💵 |
+| 71 | KawfeeMan     | Premium  💵 |
+| 72 | Steppin       | Premium  💵 |
 
 
 ## Donations
