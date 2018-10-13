@@ -248,6 +248,7 @@ You can request **new features** in the FeatHub.
 | 70 | Garbage       | Premium  💵 |
 | 71 | KawfeeMan     | Premium  💵 |
 | 72 | Steppin       | Premium  💵 |
+| 73 | Clonemon      | Advanced 💎 |
 
 
 ## Donations
