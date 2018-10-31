@@ -251,6 +251,7 @@ You can request **new features** in the FeatHub.
 | 73 | Clonemon      | Advanced 💎 |
 | 74 | Whocome       | Premium  💵 |
 | 75 | Kazitov       | Premium  💵 |
+| 76 | Errorcast     | Premium  💵 |
 
 
 ## Donations
