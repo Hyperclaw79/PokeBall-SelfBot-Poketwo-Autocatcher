@@ -252,8 +252,10 @@ You can request **new features** in the FeatHub.
 | 74 | Whocome       | Premium  💵 |
 | 75 | Kazitov       | Premium  💵 |
 | 76 | Errorcast     | Premium  💵 |
-| 77 | Abopp         | Premium  💵
-| 78 | McFlippy      | Premium  💵
+| 77 | Abopp         | Premium  💵 |
+| 78 | McFlippy      | Premium  💵 |
+| 79 | Mr. Stealth   | Premium  💵 |
+| 80 | Jewsus        | Premium  💵 |
 
 
 ## Donations
