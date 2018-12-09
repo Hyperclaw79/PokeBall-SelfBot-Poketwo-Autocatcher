@@ -256,6 +256,7 @@ You can request **new features** in the FeatHub.
 | 78 | McFlippy      | Premium  💵 |
 | 79 | Mr. Stealth   | Premium  💵 |
 | 80 | Jewsus        | Premium  💵 |
+| 81 | ImageletC     | Premium  💵 |
 
 
 ## Donations
