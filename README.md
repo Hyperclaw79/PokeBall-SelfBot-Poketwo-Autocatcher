@@ -258,6 +258,7 @@ You can request **new features** in the FeatHub.
 | 80 | Jewsus        | Premium  💵 |
 | 81 | ImageletC     | Advanced 💎 |
 | 82 | Kanairo       | Premium  💵 |
+| 83 | Destiny Cave  | Premium  💵 |
 
 
 ## Donations
