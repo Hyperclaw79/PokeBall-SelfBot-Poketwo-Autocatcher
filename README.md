@@ -260,6 +260,7 @@ You can request **new features** in the FeatHub.
 | 82 | Kanairo       | Premium  💵 |
 | 83 | DestinyCave   | Premium  💵 |
 | 84 | Poombamom     | Premium  💵 |
+| 85 | Gentle7an     | Premium  💵 |
 
 
 ## Donations
