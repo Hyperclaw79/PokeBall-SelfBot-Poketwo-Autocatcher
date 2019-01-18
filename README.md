@@ -263,6 +263,8 @@ You can request **new features** in the FeatHub.
 | 85 | Gentle7an     | Premium  💵 |
 | 86 | SuTuMuKu      | Premium  💵 |
 | 87 | Pokechibi     | Premium  💵 |
+| 88 | Syerahn       | Premium  💵 |
+| 89 | Nausea3Max    | Premium  💵 |
 
 
 ## Donations
