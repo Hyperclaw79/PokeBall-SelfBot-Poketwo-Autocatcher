@@ -265,6 +265,7 @@ You can request **new features** in the FeatHub.
 | 87 | Pokechibi     | Premium  💵 |
 | 88 | Syerahn       | Premium  💵 |
 | 89 | Nausea3Max    | Premium  💵 |
+| 90 | Winterland    | Premium  💵 |
 
 
 ## Donations
