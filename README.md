@@ -266,6 +266,7 @@ You can request **new features** in the FeatHub.
 | 88 | Syerahn       | Premium  💵 |
 | 89 | Nausea3Max    | Premium  💵 |
 | 90 | Winterland    | Premium  💵 |
+| 91 | TelescopicGem | Premium  💵 |
 
 
 ## Donations
