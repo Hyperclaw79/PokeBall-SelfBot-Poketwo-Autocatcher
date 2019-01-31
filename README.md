@@ -267,6 +267,7 @@ You can request **new features** in the FeatHub.
 | 89 | Nausea3Max    | Premium  💵 |
 | 90 | Winterland    | Premium  💵 |
 | 91 | TelescopicGem | Premium  💵 |
+| 92 | DeathPaint    | Premium  💵 |
 
 
 ## Donations
