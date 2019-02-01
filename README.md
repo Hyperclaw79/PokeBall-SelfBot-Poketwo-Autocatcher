@@ -268,6 +268,7 @@ You can request **new features** in the FeatHub.
 | 90 | Winterland    | Premium  💵 |
 | 91 | TelescopicGem | Premium  💵 |
 | 92 | DeathPaint    | Premium  💵 |
+| 93 | FamilyFire%d3 | Advanced 💎 |
 
 
 ## Donations
