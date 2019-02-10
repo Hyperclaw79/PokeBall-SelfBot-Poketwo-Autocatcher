@@ -270,6 +270,7 @@ You can request **new features** in the FeatHub.
 | 92 | DeathPaint    | Premium  💵 |
 | 93 | FamilyFire%d3 | Advanced 💎 |
 | 94 | Kitsune       | Advanced 💎 |
+| 95 | Maukingino    | Premium  💵 |
 
 
 ## Donations
