@@ -272,6 +272,7 @@ You can request **new features** in the FeatHub.
 | 94 | Kitsune       | Advanced 💎 |
 | 95 | Maukingino    | Premium  💵 |
 | 96 | MortiemRickus | Advanced 💎 |
+| 97 | Waterie       | Premium  💵 |
 
 
 ## Donations
