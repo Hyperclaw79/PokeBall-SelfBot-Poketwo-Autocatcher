@@ -273,6 +273,7 @@ You can request **new features** in the FeatHub.
 | 95 | Maukingino    | Premium  💵 |
 | 96 | MortiemRickus | Advanced 💎 |
 | 97 | Waterie       | Premium  💵 |
+| 98 | ForgetfulVoid | Premium  💵 |
 
 
 ## Donations
