@@ -274,7 +274,8 @@ You can request **new features** in the FeatHub.
 | 96 | MortiemRickus | Advanced 💎 |
 | 97 | Waterie       | Premium  💵 |
 | 98 | ForgetfulVoid | Premium  💵 |
-
+| 99 | Sayruhruruh69 | Premium  💵 |
+ 
 
 ## Donations
 * The public version of this selfbot doesn't contain the following to keep the bot usage to minimum and not break Pokecord bot:
