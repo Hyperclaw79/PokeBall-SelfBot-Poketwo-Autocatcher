@@ -276,6 +276,7 @@ You can request **new features** in the FeatHub.
 | 98 | ForgetfulVoid | Premium  💵 |
 | 99 | Sayruhruruh69 | Premium  💵 |
 | 100 | PandaCoffee  | Premium  💵 |
+| 101 | Sensei       | Premium  💵 |
  
 
 ## Donations
