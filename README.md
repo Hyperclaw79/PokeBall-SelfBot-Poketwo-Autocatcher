@@ -278,7 +278,7 @@ You can request **new features** in the FeatHub.
 | 100 | PandaCoffee  | Premium  💵 |
 | 101 | Sensei       | Premium  💵 |
 | 102 | Spongebob    | Premium  💵 |
- 
+| 103 | XZuluXed     | Premium  💵 |
 
 ## Donations
 * The public version of this selfbot doesn't contain the following to keep the bot usage to minimum and not break Pokecord bot:
