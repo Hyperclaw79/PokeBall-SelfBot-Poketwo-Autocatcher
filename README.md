@@ -282,7 +282,7 @@ You can request **new features** in the FeatHub.
 | 104 | TrickySleeve | Premium  💵 |
 | 105 | Ao-sama      | Premium  💵 |
 | 106 | IntrudePoop  | Premium  💵 |
-
+| 107 | Toyleg       | Premium  💵 |
 
 ## Donations
 * The public version of this selfbot doesn't contain the following to keep the bot usage to minimum and not break Pokecord bot:
