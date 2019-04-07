@@ -283,6 +283,8 @@ You can request **new features** in the FeatHub.
 | 105 | Ao-sama      | Premium  💵 |
 | 106 | IntrudePoop  | Premium  💵 |
 | 107 | Toyleg       | Premium  💵 |
+| 108 | JohnnySins   | Premium  💵 |
+| 109 | UnknownKanji | Premium  💵 |
 
 ## Donations
 * The public version of this selfbot doesn't contain the following to keep the bot usage to minimum and not break Pokecord bot:
