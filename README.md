@@ -288,6 +288,7 @@ You can request **new features** in the FeatHub.
 | 108 | JohnnySins   | Premium  💵 |
 | 109 | UnknownKanji | Premium  💵 |
 | 110 | AnoOtoko     | Premium  💵 |
+| 111 | DoperPop     | Premium  💵 |
 
 
 ## Donations
