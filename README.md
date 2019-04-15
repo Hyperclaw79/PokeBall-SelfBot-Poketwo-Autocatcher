@@ -34,7 +34,9 @@ Thank you all for being patient and sticking around until now.
 > **The Public Version is now intended for testing only.**
 After the recent Pokecord updates, the selfbot commands are being flagged by pokecord and the account using it will most likely get reset. So use this only on your alts and to check how the bot is working. If you want a stealth mode which makes the selfbot commands un-flaggable, please switch to the Premium Version which has a mechanism to avoid this.
 
-The donations for Premium Version are open again. So if you want the autocatcher along with other amazing commands, DM me on Discord @ **Hyperclaw79#3476** for the PayPal details. Scroll down to [Donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot#donations) for details.
+The donations for Premium Version are open again.
+Scroll down to [Donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot#donations) for details.
+So if you want the autocatcher along with other amazing commands, DM me on Discord @ **Hyperclaw79#3476** for the PayPal details after reading the donations section.
 
 ## Features
 1. Automatically catch a Pokemon in whichever server you are in if the PokeCord bot spawns a Pokemon. [Premium Only]
