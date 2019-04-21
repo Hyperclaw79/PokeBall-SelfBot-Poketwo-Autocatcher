@@ -289,6 +289,7 @@ You can request **new features** in the FeatHub.
 | 109 | UnknownKanji | Premium  💵 |
 | 110 | AnoOtoko     | Premium  💵 |
 | 111 | DoperPop     | Premium  💵 |
+| 112 | WoodenCandle | Premium  💵 |
 
 
 ## Donations
