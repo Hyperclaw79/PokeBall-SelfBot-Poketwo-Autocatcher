@@ -287,7 +287,7 @@ You can request **new features** in the FeatHub.
 | 107 | Toyleg       | Premium  💵 |
 | 108 | JohnnySins   | Premium  💵 |
 | 109 | UnknownKanji | Premium  💵 |
-| 110 | AnoOtoko     | Premium  💵 |
+| 110 | AnoOtoko     | Advanced 💎 |
 | 111 | DoperPop     | Premium  💵 |
 | 112 | WoodenCandle | Premium  💵 |
 
@@ -306,6 +306,7 @@ You can request **new features** in the FeatHub.
   + Full Disclosure of Source Code [Major]
   + Unlimited usage (no time trails) [Major]
   + Autobuy Rare Candies
+  + Autoclaim newly caught Pokemon on pokedex
   
   > *These features are based upon multimode which involves having multiple selfbot accounts.*
 * To avail these features, contact me on Discord @**Hyperclaw79#3570** and I'll give you my PayPal ID. 
