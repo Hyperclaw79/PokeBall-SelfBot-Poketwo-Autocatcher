@@ -291,6 +291,7 @@ You can request **new features** in the FeatHub.
 | 110 | AnoOtoko     | Advanced 💎 |
 | 111 | DoperPop     | Premium  💵 |
 | 112 | WoodenCandle | Premium  💵 |
+| 113 | Tylimb       | Premium  💵 |
 
 
 ## Donations
