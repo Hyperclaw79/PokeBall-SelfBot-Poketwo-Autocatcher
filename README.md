@@ -166,7 +166,6 @@ You can request **new features** in the FeatHub.
 
 ## Acknowledgements
 ### Creators
-* xKynn for the [PokeCordCatcher](https://github.com/xKynn/PokecordCatcher).
 * Rapptz for [Discord.py](https://github.com/Rapptz/discord.py)
 
 ### Contributors
