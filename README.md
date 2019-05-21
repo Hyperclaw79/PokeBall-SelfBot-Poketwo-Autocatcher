@@ -292,6 +292,7 @@ You can request **new features** in the FeatHub.
 | 112 | WoodenCandle | Premium  💵 |
 | 113 | Tylimb       | Premium  💵 |
 | 114 | C3H6N6O6     | Premium  💵 |
+| 115 | Armadillo    | Premium  💵 |
 
 
 ## Donations
