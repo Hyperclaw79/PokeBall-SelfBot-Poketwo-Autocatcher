@@ -293,7 +293,7 @@ You can request **new features** in the FeatHub.
 | 113 | Tylimb       | Premium  💵 |
 | 114 | C3H6N6O6     | Premium  💵 |
 | 115 | Armadillo    | Premium  💵 |
-
+| 116 | DrumyZart    | Premium  💵 |
 
 ## Donations
 * The public version of this selfbot doesn't contain the following to keep the bot usage to minimum and not break Pokecord bot:
