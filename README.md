@@ -297,6 +297,7 @@ You can request **new features** in the FeatHub.
 | 117 | Tornado      | Advanced 💎 |
 | 118 | CoffeeAids   | Premium  💵 |
 | 119 | LongNeccing  | Premium  💵 |
+| 120 | CountJesus   | Premium  💵 |
 
 
 ## Donations
