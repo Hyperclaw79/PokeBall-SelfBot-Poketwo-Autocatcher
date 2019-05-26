@@ -298,6 +298,7 @@ You can request **new features** in the FeatHub.
 | 118 | CoffeeAids   | Premium  💵 |
 | 119 | LongNeccing  | Premium  💵 |
 | 120 | CountJesus   | Premium  💵 |
+| 121 | WonderJames  | Premium  💵 |
 
 
 ## Donations
