@@ -300,6 +300,7 @@ You can request **new features** in the FeatHub.
 | 120 | CountJesus   | Premium  💵 |
 | 121 | WonderJames  | Premium  💵 |
 | 122 | GrassySitmu  | Premium  💵 |
+| 123 | CherryMaddi  | Premium  💵 |
 
 
 ## Donations
