@@ -25,7 +25,7 @@ This specific selfbot was designed to automatically catch Pokemon spawned on Dis
 ![Python Version](https://img.shields.io/badge/python-3.6-blue.svg?style=for-the-badge) ![Licensse](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge) ![Maintained?](https://img.shields.io/badge/Maintained%3F-Premium%20Version%2B%20only-red.svg?style=for-the-badge)
 
 **Current Version**: `v3.3.2` (13th June 2018)
-**Premium Version**: `v5.3.6` (09th May 2019)
+**Premium Version**: `v5.3.7` (09th May 2019)
    > Keep a lookout for [Updates](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/Updates.md).
 
   > **The `autocatcher` is now officially fixed and is a Premium Version only feature.**
