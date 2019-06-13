@@ -302,6 +302,7 @@ You can request **new features** in the FeatHub.
 | 122 | GrassySitmu  | Premium  💵 |
 | 123 | CherryMaddi  | Premium  💵 |
 | 124 | ThunderDoggo | Advanced 💎 |
+| 125 | TheGrimer    | Premium  💵 |
 
 
 ## Donations
