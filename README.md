@@ -303,7 +303,7 @@ You can request **new features** in the FeatHub.
 | 123 | CherryMaddi  | Premium  💵 |
 | 124 | ThunderDoggo | Advanced 💎 |
 | 125 | TheGrimer    | Premium  💵 |
-| 126 | MandyBatson  | Premium  💵 |
+| 126 | MandyBatson  | Advanced 💎 |
 | 127 | OddlySane    | Premium  💵 |
 
 
