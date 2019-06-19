@@ -305,6 +305,7 @@ You can request **new features** in the FeatHub.
 | 125 | TheGrimer    | Premium  💵 |
 | 126 | MandyBatson  | Advanced 💎 |
 | 127 | OddlySane    | Premium  💵 |
+| 128 | XSciFi       | Premium  💵 |
 
 
 ## Donations
