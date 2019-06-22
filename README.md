@@ -306,6 +306,7 @@ You can request **new features** in the FeatHub.
 | 126 | MandyBatson  | Advanced 💎 |
 | 127 | OddlySane    | Premium  💵 |
 | 128 | XSciFi       | Premium  💵 |
+| 129 | Spring783    | Premium  💵 |
 
 
 ## Donations
