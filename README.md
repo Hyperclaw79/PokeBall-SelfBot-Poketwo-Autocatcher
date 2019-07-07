@@ -309,7 +309,7 @@ You can request **new features** in the FeatHub.
 | 129 | Spring783    | Premium  💵 |
 | 130 | Squealer     | Premium  💵 |
 | 131 | CabelHabibi  | Advanced 💎 |
-| 132 | GaspinBrave  | Premium  💵 |
+| 132 | GaspinBrave  | Advanced 💎 |
 
 
 ## Donations
