@@ -310,6 +310,7 @@ You can request **new features** in the FeatHub.
 | 130 | Squealer     | Premium  💵 |
 | 131 | CabelHabibi  | Advanced 💎 |
 | 132 | GaspinBrave  | Advanced 💎 |
+| 133 | PorkLoaf     | Premium  💵 |
 
 
 ## Donations
