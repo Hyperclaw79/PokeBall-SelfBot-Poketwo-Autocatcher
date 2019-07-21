@@ -311,6 +311,7 @@ You can request **new features** in the FeatHub.
 | 131 | CabelHabibi  | Advanced 💎 |
 | 132 | GaspinBrave  | Advanced 💎 |
 | 133 | PorkLoaf     | Premium  💵 |
+| 134 | SlimeDesuKa  | Premium  💵 |
 
 
 ## Donations
