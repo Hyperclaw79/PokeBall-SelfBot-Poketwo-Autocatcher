@@ -312,6 +312,7 @@ You can request **new features** in the FeatHub.
 | 132 | GaspinBrave  | Advanced 💎 |
 | 133 | PorkLoaf     | Premium  💵 |
 | 134 | SlimeDesuKa  | Premium  💵 |
+| 135 | GunnedParent | Premium  💵 |
 
 
 ## Donations
