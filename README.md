@@ -313,6 +313,7 @@ You can request **new features** in the FeatHub.
 | 133 | PorkLoaf     | Premium  💵 |
 | 134 | SlimeDesuKa  | Premium  💵 |
 | 135 | GunnedParent | Premium  💵 |
+| 136 | Snapcraft    | Premium  💵 |
 
 
 ## Donations
