@@ -37,7 +37,7 @@ After the recent Pokecord updates, the selfbot commands are being flagged by pok
 
 The donations for Premium Version are open again.
 Scroll down to [Donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot#donations) for details.
-So if you want the autocatcher along with other amazing commands, DM me on Discord @ **Hyperclaw79#3476** for the PayPal details after reading the donations section.
+So if you want the autocatcher along with other amazing commands, DM me on Discord @ **Hyperclaw79#3476** for the PayPal details **after** reading the [donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/README.md#donations).
 
 ## Features
 1. Automatically catch a Pokemon in whichever server you are in if the PokeCord bot spawns a Pokemon. [Premium Only]
