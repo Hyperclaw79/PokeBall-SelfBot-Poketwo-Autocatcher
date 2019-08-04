@@ -314,6 +314,7 @@ You can request **new features** in the FeatHub.
 | 134 | SlimeDesuKa  | Premium  💵 |
 | 135 | GunnedParent | Premium  💵 |
 | 136 | Snapcraft    | Premium  💵 |
+| 137 | PaperAngel   | Premium  💵 |
 
 
 ## Donations
