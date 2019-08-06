@@ -39,6 +39,10 @@ The donations for Premium Version are open again.
 Scroll down to [Donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot#donations) for details.
 So if you want the autocatcher along with other amazing commands, DM me on Discord @ **Hyperclaw79#3476** for the PayPal details **after** reading the [donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/README.md#donations).
 
+> **Since some of you can't understand something this obvious, I'll state it bluntly.
+Contact me on discord only if you want to purchase the Premium Version. If you can't have the patience to read a few lines in a readme, I can't waste my time trying to repeat the instructions about when to contact me.**
+
+
 ## Features
 1. Automatically catch a Pokemon in whichever server you are in if the PokeCord bot spawns a Pokemon. [Premium Only]
 2. Delay and catch rates to finesse the behaviour of the selfbot.
@@ -336,6 +340,7 @@ You can request **new features** in the FeatHub.
   > *These features are based upon multimode which involves having multiple selfbot accounts.*
 * To avail these features, contact me on Discord @**Hyperclaw79#3476** and I'll give you my PayPal ID. 
   > *Please ping me only for donations and not for support (unless you are already a donor). Currently the price is just $25. Better donate fast as the price will be bound to go up along with the demand.*
+  > *In your DM message, use the keyword `#Premium` to let me know that you've read the Readme.*
 * The other **advantages** upon being a donor would be:
   + Be the first to avail any bug fixes and new updates.
   + A special mention of your username in this readme. *(optional)*
