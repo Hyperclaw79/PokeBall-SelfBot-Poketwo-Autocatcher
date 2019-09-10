@@ -319,6 +319,7 @@ You can request **new features** in the FeatHub.
 | 135 | GunnedParent | Premium  💵 |
 | 136 | Snapcraft    | Premium  💵 |
 | 137 | PaperAngel   | Premium  💵 |
+| 138 | JSGodRB      | Premium  💵 |
 
 
 ## Donations
