@@ -21,13 +21,12 @@
 
 This specific selfbot was designed to automatically catch Pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, ID search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control.
 
+![It actually works lol](https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/Pokeball%20Selfbot.gif)
 
 ![Python Version](https://img.shields.io/badge/python-3.6-blue.svg?style=for-the-badge) ![Licensse](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge) ![Maintained?](https://img.shields.io/badge/Maintained%3F-Premium%20Version%2B%20only-red.svg?style=for-the-badge)
 
 **Current Version**: `v3.3.2` (13th June 2018)
 **Premium Version**: `v5.3.8` (09th August 2019)
-   > Keep a lookout for [Updates](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/Updates.md).
-
   > **The `autocatcher` is now officially fixed and is a Premium Version only feature.**
   It was troublesome fixing this again and again as the open source code is easily readable and patched against. To avoid this in the future, autocatcher is now a Premium feature to make it harder to get. I know that most of you will hate this move, but it was necessary. You guys can continue using the other features like auto-trade and auto-release, etc. which do not really harm anyone.
 Thank you all for being patient and sticking around until now.
@@ -37,7 +36,7 @@ After the recent Pokecord updates, the selfbot commands are being flagged by pok
 
 The donations for Premium Version are open again.
 Scroll down to [Donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot#donations) for details.
-So if you want the autocatcher along with other amazing commands, DM me on Discord @ **Hyperclaw79#3476** for the PayPal details **after** reading the [donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/README.md#donations).
+So if you want the autocatcher along with other amazing commands, DM me on Discord for the PayPal details after reading the [donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/README.md#donations).
 
 > **Since some of you can't understand something this obvious, I'll state it bluntly.
 Contact me on discord only if you want to purchase the Premium Version. If you can't have the patience to read a few lines in a readme, I can't waste my time trying to repeat the instructions about when to contact me.**
@@ -377,11 +376,10 @@ You can request **new features** in the FeatHub.
 Don't forget to let me know that you're the one who paid it. ;)
 
 ## Referrals
-* If you refer this to another person and they successfully donate to this repo, you will get the option to choose *one* of the following benefits:
-    + Trade Offer Generator module for free.
-    + A 5% discount while donating in the future.
+* If you refer this to another person and they successfully purchase the Premium Version or above, you will get:
+    + A 5% discount per referral while donating in the future.
 * DM me on Discord with the name of the person you referred to and ask them to include your username too while contacting me about the donation.
 * You need to also Star this repo before referring to others.
-* Maximum number of stackable discounts would be 2, i.e. maximum possible discount would be 10%.
+* Maximum number of stackable discounts would be 4, i.e. maximum possible discount would be 20%.
 * The benefits are provided only **after** the referred person makes a donation.
 * The discount rate is subject to change based on the referral activity and donation price.
