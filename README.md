@@ -320,6 +320,7 @@ You can request **new features** in the FeatHub.
 | 137 | PaperAngel   | Premium  💵 |
 | 138 | JSGodRB      | Premium  💵 |
 | 139 | PoochyBella  | Premium  💵 |
+| 140 | Plajuda      | Premium  💵 |
 
 
 ## Donations
