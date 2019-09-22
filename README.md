@@ -26,7 +26,7 @@ This specific selfbot was designed to automatically catch Pokemon spawned on Dis
 ![Python Version](https://img.shields.io/badge/python-3.6-blue.svg?style=for-the-badge) ![Licensse](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge) ![Maintained?](https://img.shields.io/badge/Maintained%3F-Premium%20Version%2B%20only-red.svg?style=for-the-badge)
 
 **Current Version**: `v3.3.2` (13th June 2018)
-**Premium Version**: `v5.3.8` (09th August 2019)
+**Premium Version**: `v5.3.9` (22nd September 2019)
   > **The `autocatcher` is now officially fixed and is a Premium Version only feature.**
   It was troublesome fixing this again and again as the open source code is easily readable and patched against. To avoid this in the future, autocatcher is now a Premium feature to make it harder to get. I know that most of you will hate this move, but it was necessary. You guys can continue using the other features like auto-trade and auto-release, etc. which do not really harm anyone.
 Thank you all for being patient and sticking around until now.
