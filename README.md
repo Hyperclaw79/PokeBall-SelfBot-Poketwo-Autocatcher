@@ -321,7 +321,7 @@ You can request **new features** in the FeatHub.
 | 138 | JSGodRB      | Premium  💵 |
 | 139 | PoochyBella  | Premium  💵 |
 | 140 | Plajuda      | Premium  💵 |
-| 141 | Ouldm@n      | Premium  💵 |
+| 141 | Ouldm@n      | Advanced 💎 |
 
 
 ## Donations
