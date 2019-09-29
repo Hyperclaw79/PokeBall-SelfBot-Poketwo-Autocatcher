@@ -322,6 +322,7 @@ You can request **new features** in the FeatHub.
 | 139 | PoochyBella  | Premium  💵 |
 | 140 | Plajuda      | Premium  💵 |
 | 141 | Ouldm@n      | Advanced 💎 |
+| 142 | Hazukashi    | Premium  💵 |
 
 
 ## Donations
