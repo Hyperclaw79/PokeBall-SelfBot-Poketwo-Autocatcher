@@ -323,6 +323,7 @@ You can request **new features** in the FeatHub.
 | 140 | Plajuda      | Premium  💵 |
 | 141 | Ouldm@n      | Advanced 💎 |
 | 142 | Hazukashi    | Premium  💵 |
+| 143 | PotatoDude   | Advanced 💎 |
 
 
 ## Donations
