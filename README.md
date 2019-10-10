@@ -324,6 +324,7 @@ You can request **new features** in the FeatHub.
 | 141 | Ouldm@n      | Advanced 💎 |
 | 142 | Hazukashi    | Premium  💵 |
 | 143 | PotatoDude   | Advanced 💎 |
+| 144 | Moesin       | Premium  💵 |
 
 
 ## Donations
