@@ -326,6 +326,7 @@ You can request **new features** in the FeatHub.
 | 143 | PotatoDude   | Advanced 💎 |
 | 144 | Moesin       | Premium  💵 |
 | 145 | BurningHen   | Premium  💵 |
+| 146 | Hollowetsu   | Advanced 💎 |
 
 
 ## Donations
