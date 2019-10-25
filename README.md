@@ -327,6 +327,8 @@ You can request **new features** in the FeatHub.
 | 144 | Moesin       | Premium  💵 |
 | 145 | BurningHen   | Premium  💵 |
 | 146 | Hollowetsu   | Advanced 💎 |
+| 147 | YiteRabt.py  | Advanced 💎 |
+| 148 | MarcStark    | Premium  💵 |
 
 
 ## Donations
