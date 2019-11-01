@@ -330,6 +330,7 @@ You can request **new features** in the FeatHub.
 | 147 | YiteRabt.py  | Advanced 💎 |
 | 148 | MarcStark    | Premium  💵 |
 | 149 | AvengersIW   | Premium  💵 |
+| 150 | NoWinchester | Premium  💵 |
 
 
 ## Donations
