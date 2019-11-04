@@ -332,6 +332,7 @@ You can request **new features** in the FeatHub.
 | 149 | AvengersIW   | Premium  💵 |
 | 150 | NoWinchester | Premium  💵 |
 | 151 | Rivery       | Advanced 💎 |
+| 152 | RayXX        | Premium  💵 |
 
 
 ## Donations
