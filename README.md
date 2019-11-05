@@ -333,6 +333,7 @@ You can request **new features** in the FeatHub.
 | 150 | NoWinchester | Premium  💵 |
 | 151 | Rivery       | Advanced 💎 |
 | 152 | RayXX        | Premium  💵 |
+| 153 | AC2AB2BC2    | Advanced 💎 |
 
 
 ## Donations
