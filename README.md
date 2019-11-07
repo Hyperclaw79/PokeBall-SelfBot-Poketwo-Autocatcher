@@ -334,6 +334,7 @@ You can request **new features** in the FeatHub.
 | 151 | Rivery       | Advanced 💎 |
 | 152 | RayXX        | Premium  💵 |
 | 153 | AC2AB2BC2    | Advanced 💎 |
+| 154 | Favonius     | Premium  💵 |
 
 
 ## Donations
