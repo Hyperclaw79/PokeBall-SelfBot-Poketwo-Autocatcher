@@ -147,6 +147,69 @@ Example config:
   > Similarly do not use in public servers which explicitly prohibit this.
 * The implications of ban might also affect other accounts which interact with this selfbot. Use with caution.  
 
+
+## Donations
+* The public version of this selfbot doesn't contain the following to keep the bot usage to minimum and not break Pokecord bot:
+  + Auto-Catcher [Major] 
+  + Auto-Spammer [Major]
+  + Trade Offer Generator
+  + Auto-dueler for Credits farming [Major]
+  + Logging catches to owner's DMs in multimode
+  + Help command that displays usage instruction for other commands. [Major]
+  + Trade command can use Pokemon names as args
+  + DM commands - some commands can be used by DMing the bot.
+  + Stealth from Pokecord
+  + Full Disclosure of Source Code [Major]
+  + Unlimited usage (no time trails) [Major]
+  + Autobuy Rare Candies
+  + Autoclaim newly caught Pokemon on pokedex
+  
+  > *These features are based upon multimode which involves having multiple selfbot accounts.*
+* To avail these features, contact me on Discord @**Hyperclaw79#3476** and I'll give you my PayPal ID. 
+  > *Please ping me only for donations and not for support (unless you are already a donor). Currently the price is just $25. Better donate fast as the price will be bound to go up along with the demand.*
+  > *In your DM message, use the keyword `#Premium` to let me know that you've read the Readme.*
+* The other **advantages** upon being a donor would be:
+  + Be the first to avail any bug fixes and new updates.
+  + A special mention of your username in this readme. *(optional)*
+  + Bot related Support on Discord DMs. (Don't ask me how to install Python xD)
+    + >~~*This version is to suggested to be used after you've tried out the public version.*~~
+    + >*The support doesn't include how to setup the public bot. Use [GitHub Issues](https://github.com/Hyperclaw79/PokeBall-SelfBot/issues) for that one.
+  + You can propose new features and I shall implement them *based on the plausibilty*.
+* **Advanced Extension**
+  + The premium version also got an advanced extension which adds more game to the bot.
+    It contains the following features:
+    + This one works on a multi-user mode with 3+ bots. It follows a master-slave system where one master bot can trigger the commands on multiple slave selfbots.
+    + `Best_stats` command to check for the Pokemon which has the best total stats or a specific stat like Speed, Attack among your fav list or list of IDs. Pretty useful for the traders.
+    + `Incubate` command to automatically level up all the Pokemon in your fav list or list of IDs, through the autospammer module. You don't need to check for the level of your Pokemon and manually switch to the next one anymore.
+    + `iter` command to chain a series of pokecord commands for a list of IDs.
+    + `sudo_exec` and `sudo_echo` commands for the master-slave control.
+    + `sudo_duel` command for launching multiple duels at once.
+  + The current price for this extension is just $10 and will change with demand, just like the premium version.  
+* **Terms & Conditions apply**:
+  + You shall receive the source code and deployment instructions after the payment has been acknowledged.
+  + You shall not disclose the obtained code to anyone directly. Refer them to this repo instead.
+    > The obtained code is not open-source and MIT License doesn't apply to it.
+  + Support is subject to my availability.
+  + Not all requested features are possible to implement.
+  + Since Pokecord keeps updating, some of the older code might break. Stay patient until I send you a patch for it.
+  + All donations are non-refundable.
+  + Me or the contributors for this repo and not responsible for any legal suits.
+
+* If you'd like to simply donate to support the cause instead of buying the Premium Version, you can always send me your support. Click that image below.
+
+  <a href="https://www.paypal.me/hyperclaw79"><img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/pikadonor.png" width="100" height="100" alt="Feature Requests"/></a>
+
+Don't forget to let me know that you're the one who paid it. ;)
+
+## Referrals
+* If you refer this to another person and they successfully purchase the Premium Version or above, you will get:
+    + A 5% discount per referral while donating in the future.
+* DM me on Discord with the name of the person you referred to and ask them to include your username too while contacting me about the donation.
+* You need to also Star this repo before referring to others.
+* Maximum number of stackable discounts would be 4, i.e. maximum possible discount would be 20%.
+* The benefits are provided only **after** the referred person makes a donation.
+* The discount rate is subject to change based on the referral activity and donation price.
+
 ## Contributions
 Refer to the new [CONTRIBUTION GUIDE](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/CONTRIBUTING.md).
 Also, refer to [Issue Template](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/.github/ISSUE_TEMPLATE/basic-issue-template.md) and [PR Template](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/PULL_REQUEST_TEMPLATE.md).
@@ -166,6 +229,7 @@ Best ways to contribute apart from Issues and PRs:
 You can request **new features** in the FeatHub.
 
   <a href="http://feathub.com/Hyperclaw79/PokeBall-SelfBot"><img src="https://cdn.rawgit.com/Hyperclaw79/PokeBall-SelfBot/8da8c6dd/pika%2B1.png" width="100" height="100" alt="Feature Requests"/></a>
+
 
 ## Acknowledgements
 ### Creators
@@ -339,64 +403,3 @@ You can request **new features** in the FeatHub.
 | 156 | SeasameSt    | Premium  💵 |
 
 
-## Donations
-* The public version of this selfbot doesn't contain the following to keep the bot usage to minimum and not break Pokecord bot:
-  + Auto-Catcher [Major] 
-  + Auto-Spammer [Major]
-  + Trade Offer Generator
-  + Auto-dueler for Credits farming [Major]
-  + Logging catches to owner's DMs in multimode
-  + Help command that displays usage instruction for other commands. [Major]
-  + Trade command can use Pokemon names as args
-  + DM commands - some commands can be used by DMing the bot.
-  + Stealth from Pokecord
-  + Full Disclosure of Source Code [Major]
-  + Unlimited usage (no time trails) [Major]
-  + Autobuy Rare Candies
-  + Autoclaim newly caught Pokemon on pokedex
-  
-  > *These features are based upon multimode which involves having multiple selfbot accounts.*
-* To avail these features, contact me on Discord @**Hyperclaw79#3476** and I'll give you my PayPal ID. 
-  > *Please ping me only for donations and not for support (unless you are already a donor). Currently the price is just $25. Better donate fast as the price will be bound to go up along with the demand.*
-  > *In your DM message, use the keyword `#Premium` to let me know that you've read the Readme.*
-* The other **advantages** upon being a donor would be:
-  + Be the first to avail any bug fixes and new updates.
-  + A special mention of your username in this readme. *(optional)*
-  + Bot related Support on Discord DMs. (Don't ask me how to install Python xD)
-    + >~~*This version is to suggested to be used after you've tried out the public version.*~~
-    + >*The support doesn't include how to setup the public bot. Use [GitHub Issues](https://github.com/Hyperclaw79/PokeBall-SelfBot/issues) for that one.
-  + You can propose new features and I shall implement them *based on the plausibilty*.
-* **Advanced Extension**
-  + The premium version also got an advanced extension which adds more game to the bot.
-    It contains the following features:
-    + This one works on a multi-user mode with 3+ bots. It follows a master-slave system where one master bot can trigger the commands on multiple slave selfbots.
-    + `Best_stats` command to check for the Pokemon which has the best total stats or a specific stat like Speed, Attack among your fav list or list of IDs. Pretty useful for the traders.
-    + `Incubate` command to automatically level up all the Pokemon in your fav list or list of IDs, through the autospammer module. You don't need to check for the level of your Pokemon and manually switch to the next one anymore.
-    + `iter` command to chain a series of pokecord commands for a list of IDs.
-    + `sudo_exec` and `sudo_echo` commands for the master-slave control.
-    + `sudo_duel` command for launching multiple duels at once.
-  + The current price for this extension is just $10 and will change with demand, just like the premium version.  
-* **Terms & Conditions apply**:
-  + You shall receive the source code and deployment instructions after the payment has been acknowledged.
-  + You shall not disclose the obtained code to anyone directly. Refer them to this repo instead.
-    > The obtained code is not open-source and MIT License doesn't apply to it.
-  + Support is subject to my availability.
-  + Not all requested features are possible to implement.
-  + Since Pokecord keeps updating, some of the older code might break. Stay patient until I send you a patch for it.
-  + All donations are non-refundable.
-  + Me or the contributors for this repo and not responsible for any legal suits.
-
-* If you'd like to simply donate to support the cause instead of buying the Premium Version, you can always send me your support. Click that image below.
-
-  <a href="https://www.paypal.me/hyperclaw79"><img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/pikadonor.png" width="100" height="100" alt="Feature Requests"/></a>
-
-Don't forget to let me know that you're the one who paid it. ;)
-
-## Referrals
-* If you refer this to another person and they successfully purchase the Premium Version or above, you will get:
-    + A 5% discount per referral while donating in the future.
-* DM me on Discord with the name of the person you referred to and ask them to include your username too while contacting me about the donation.
-* You need to also Star this repo before referring to others.
-* Maximum number of stackable discounts would be 4, i.e. maximum possible discount would be 20%.
-* The benefits are provided only **after** the referred person makes a donation.
-* The discount rate is subject to change based on the referral activity and donation price.
