@@ -23,7 +23,7 @@ This specific selfbot was designed to automatically catch Pokemon spawned on Dis
 
 ![It actually works lol](https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/Pokeball%20Selfbot.gif)
 
-![Python Version](https://img.shields.io/badge/python-3.6-blue.svg?style=for-the-badge) ![Licensse](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge) ![Maintained?](https://img.shields.io/badge/Maintained%3F-Premium%20Version%2B%20only-red.svg?style=for-the-badge)
+![Python Version](https://img.shields.io/badge/python-3.6-blue.svg?style=for-the-badge) ![License](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge) ![Maintained?](https://img.shields.io/badge/Maintained%3F-Premium%20Version%2B%20only-red.svg?style=for-the-badge) ![Donor Count](https://img.shields.io/badge/Donations%20Count-156-yellow?style=for-the-badge)
 
 **Current Version**: `v3.3.2` (13th June 2018)
 **Premium Version**: `v5.4.0` (2nd October 2019)
