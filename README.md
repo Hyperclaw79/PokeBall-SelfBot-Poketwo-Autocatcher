@@ -400,6 +400,6 @@ You can request **new features** in the FeatHub.
 | 153 | AC2AB2BC2    | Advanced 💎 |
 | 154 | Favonius     | Premium  💵 |
 | 155 | DoggoFuji    | Premium  💵 |
-| 156 | SeasameSt    | Premium  💵 |
+| 156 | SeasameSt    | Advanced 💎 |
 
 
