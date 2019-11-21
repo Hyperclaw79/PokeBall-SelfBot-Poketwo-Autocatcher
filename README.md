@@ -396,7 +396,7 @@ You can request **new features** in the FeatHub.
 | 149 | AvengersIW   | Premium  💵 |
 | 150 | NoWinchester | Premium  💵 |
 | 151 | Rivery       | Advanced 💎 |
-| 152 | RayXX        | Premium  💵 |
+| 152 | RayXX        | Advanced 💎 |
 | 153 | AC2AB2BC2    | Advanced 💎 |
 | 154 | Favonius     | Premium  💵 |
 | 155 | DoggoFuji    | Premium  💵 |
