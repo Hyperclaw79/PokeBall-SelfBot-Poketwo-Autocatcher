@@ -401,5 +401,5 @@ You can request **new features** in the FeatHub.
 | 154 | Favonius     | Premium  💵 |
 | 155 | DoggoFuji    | Premium  💵 |
 | 156 | SeasameSt    | Advanced 💎 |
-
+| 157 | Pathiple     | Advanced 💎 |
 
