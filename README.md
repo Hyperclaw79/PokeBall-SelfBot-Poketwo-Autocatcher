@@ -402,6 +402,6 @@ You can request **new features** in the FeatHub.
 | 155 | DoggoFuji    | Premium  💵 |
 | 156 | SeasameSt    | Advanced 💎 |
 | 157 | Pathiple     | Advanced 💎 |
-| 158 | Appyster     | Premium  💵 |
+| 158 | Appyster     | Advanced 💎 |
 | 159 | Mr.Xiaomi    | Premium  💵 |
 
