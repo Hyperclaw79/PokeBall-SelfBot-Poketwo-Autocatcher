@@ -404,4 +404,5 @@ You can request **new features** in the FeatHub.
 | 157 | Pathiple     | Advanced 💎 |
 | 158 | Appyster     | Advanced 💎 |
 | 159 | Mr.Xiaomi    | Premium  💵 |
+| 160 | Reeling      | Premium  💵 |
 
