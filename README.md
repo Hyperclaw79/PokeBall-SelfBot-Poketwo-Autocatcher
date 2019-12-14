@@ -406,4 +406,5 @@ You can request **new features** in the FeatHub.
 | 159 | Mr.Xiaomi    | Premium  💵 |
 | 160 | Reeling      | Premium  💵 |
 | 161 | Fanooth      | Advanced 💎 |
+| 162 | AnnoDomini   | Premium  💵 |
 
