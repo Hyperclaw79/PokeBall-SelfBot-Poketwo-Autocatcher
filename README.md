@@ -408,4 +408,5 @@ You can request **new features** in the FeatHub.
 | 161 | Fanooth      | Advanced 💎 |
 | 162 | AnnoDomini   | Premium  💵 |
 | 163 | Fempasta     | Premium  💵 |
+| 164 | Mandela      | Advanced 💎 |
 
