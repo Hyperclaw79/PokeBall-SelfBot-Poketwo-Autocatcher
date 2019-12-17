@@ -410,4 +410,5 @@ You can request **new features** in the FeatHub.
 | 163 | Fempasta     | Premium  💵 |
 | 164 | Mandela      | Advanced 💎 |
 | 165 | Vidfilext    | Premium  💵 |
+| 166 | Commercial   | Premium  💵 |
 
