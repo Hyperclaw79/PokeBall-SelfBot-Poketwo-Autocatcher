@@ -17,13 +17,12 @@
 
 
 # PokeBall SelfBot
+![Python Version](https://img.shields.io/badge/python-3.6-blue.svg?style=for-the-badge) ![License](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge) ![Maintained?](https://img.shields.io/badge/Maintained%3F-Premium%20Version%2B%20only-red.svg?style=for-the-badge) ![Donor Count](https://img.shields.io/badge/Donations%20Count-166-yellow?style=for-the-badge)
 ![logo](https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/PokeballSelfbot_Logo.png)
 
 This specific selfbot was designed to automatically catch Pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, ID search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control.
 
 ![It actually works lol](https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/Pokeball%20Selfbot.gif)
-
-![Python Version](https://img.shields.io/badge/python-3.6-blue.svg?style=for-the-badge) ![License](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge) ![Maintained?](https://img.shields.io/badge/Maintained%3F-Premium%20Version%2B%20only-red.svg?style=for-the-badge) ![Donor Count](https://img.shields.io/badge/Donations%20Count-156-yellow?style=for-the-badge)
 
 **Current Version**: `v3.3.2` (13th June 2018)
 **Premium Version**: `v5.5.0` (18th December 2019)
@@ -38,9 +37,11 @@ The donations for Premium Version are open again.
 Scroll down to [Donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot#donations) for details.
 So if you want the autocatcher along with other amazing commands, DM me on Discord for the PayPal details after reading the [donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/README.md#donations).
 
-> **Since some of you can't understand something this obvious, I'll state it bluntly.
-Contact me on discord only if you want to purchase the Premium Version. If you can't have the patience to read a few lines in a readme, I can't waste my time trying to repeat the instructions about when to contact me.**
+## Christmas Waiver Giveaway!
+<a href="https://giv.gg/4QkOTi"><img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/santa%20pikachu.png" width="200" height="200" alt="Feature Requests"/></a>
 
+Giving off a waiver of $5 USD to 5 lucky winner on Christmas Eve!
+You can participate [here](https://giv.gg/4QkOTi)!
 
 ## Features
 1. Automatically catch a Pokemon in whichever server you are in if the PokeCord bot spawns a Pokemon. [Premium Only]
