@@ -37,12 +37,6 @@ The donations for Premium Version are open again.
 Scroll down to [Donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot#donations) for details.
 So if you want the autocatcher along with other amazing commands, DM me on Discord for the PayPal details after reading the [donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/README.md#donations).
 
-## Christmas Waiver Giveaway!
-<a href="https://giv.gg/4QkOTi"><img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/santa%20pikachu.png" width="200" height="200" alt="Feature Requests"/></a>
-
-Giving off a waiver of $5 USD to 5 lucky winner on Christmas Eve!
-You can participate [here](https://giv.gg/4QkOTi)!
-
 ## Features
 1. Automatically catch a Pokemon in whichever server you are in if the PokeCord bot spawns a Pokemon. [Premium Only]
 2. Delay and catch rates to finesse the behaviour of the selfbot.
