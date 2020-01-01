@@ -406,4 +406,5 @@ You can request **new features** in the FeatHub.
 | 164 | Mandela      | Advanced 💎 |
 | 165 | Vidfilext    | Premium  💵 |
 | 166 | Commercial   | Premium  💵 |
+| 167 | Rudolph      | Premium  💵 |
 
