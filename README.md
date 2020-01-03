@@ -407,4 +407,5 @@ You can request **new features** in the FeatHub.
 | 165 | Vidfilext    | Premium  💵 |
 | 166 | Commercial   | Premium  💵 |
 | 167 | Rudolph      | Advanced 💎 |
+| 168 | DeltaSilver  | Advanced 💎 |
 
