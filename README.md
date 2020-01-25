@@ -409,5 +409,7 @@ You can request **new features** in the FeatHub.
 | 167 | Rudolph      | Advanced 💎 |
 | 168 | DeltaSilver  | Advanced 💎 |
 | 169 | DunkinDonut  | Premium  💵 |
+| 170 | VeryGlobal   | Premium  💵 |
+| 171 | EchoBirb     | Premium  💵 |
 
 
