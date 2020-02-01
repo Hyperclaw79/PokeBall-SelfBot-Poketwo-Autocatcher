@@ -412,5 +412,5 @@ You can request **new features** in the FeatHub.
 | 170 | VeryGlobal   | Premium  💵 |
 | 171 | EchoBirb     | Premium  💵 |
 | 172 | Owopunch     | Advanced 💎 |
-
+| 173 | Duokami      | Advanced 💎 |
 
