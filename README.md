@@ -394,7 +394,7 @@ You can request **new features** in the FeatHub.
 | 152 | RayXX        | Advanced 💎 |
 | 153 | AC2AB2BC2    | Advanced 💎 |
 | 154 | Favonius     | Premium  💵 |
-| 155 | DoggoFuji    | Premium  💵 |
+| 155 | DoggoFuji    | Advanced 💎 |
 | 156 | SeasameSt    | Advanced 💎 |
 | 157 | Pathiple     | Advanced 💎 |
 | 158 | Appyster     | Advanced 💎 |
