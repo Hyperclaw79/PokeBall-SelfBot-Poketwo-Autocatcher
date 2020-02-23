@@ -415,4 +415,5 @@ You can request **new features** in the FeatHub.
 | 173 | Duokami      | Advanced 💎 |
 | 174 | ChingChongXP | Advanced 💎 |
 | 175 | MinionLove   | Premium  💵 |
+| 176 | Jojopanzee   | Premium  💵 |
 
