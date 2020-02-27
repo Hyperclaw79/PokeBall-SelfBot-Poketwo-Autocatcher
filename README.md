@@ -4,10 +4,11 @@
   Author: Hyperclaw79
   Logo: https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/PokeballSelfbot_Logo.png
   Tags: discord-bot, discord, selfbot, pokeball-selfbot, pokecord, python, pokemon, pokecord-discord-bot, catch-pokemon, pokecord-hack,
-        dicord bot, pokecord discord bot, catch pokemon, pokecord hack
+        discord bot, pokecord discord bot, catch pokemon, pokecord hack, discord-bot, pokecord-bot, autocatcher, premium, auto-trade,
+        donations, pokecord-catcher, pokecord-autocatcher, pokecord-selfbot
 -->
 <meta name="description" content="This specific selfbot was designed to automatically catch Pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, ID search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control."/>
-<meta name="keywords" content="discord-bot, discord, selfbot, pokeball-selfbot, pokecord, python, pokemon, pokecord-discord-bot, catch-     pokemon, pokecord-hack, dicord bot, pokecord discord bot, catch pokemon, pokecord hack"/>
+<meta name="keywords" content="discord-bot, discord, selfbot, pokeball-selfbot, pokecord, python, pokemon, pokecord-discord-bot, catch-pokemon, pokecord-hack, discord bot, pokecord discord bot, catch pokemon, pokecord hack, discord-bot, pokecord-bot, autocatcher, premium, auto-trade, donations, pokecord-catcher, pokecord-autocatcher, pokecord-selfbot"/>
 <meta name="author" content="Hyperclaw79"/>
 <meta name="url" content="https://github.com/Hyperclaw79/PokeBall-SelfBot" />
 <meta name="og:title" content="Pokeball SelfBot"/>
@@ -17,7 +18,7 @@
 
 
 # PokeBall SelfBot
-![Python Version](https://img.shields.io/badge/python-3.6-blue.svg?style=for-the-badge) ![License](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge) ![Maintained?](https://img.shields.io/badge/Maintained%3F-Premium%20Version%2B%20only-red.svg?style=for-the-badge) ![Donor Count](https://img.shields.io/badge/Donations%20Count-175-yellow?style=for-the-badge)
+![Python Version](https://img.shields.io/badge/python-3.6-blue.svg?style=for-the-badge) ![License](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge) ![Maintained?](https://img.shields.io/badge/Maintained%3F-Premium%20Version%2B%20only-red.svg?style=for-the-badge) ![Donor Count](https://img.shields.io/badge/Donations%20Count-176-yellow?style=for-the-badge)
 ![logo](https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/PokeballSelfbot_Logo.png)
 
 This specific selfbot was designed to automatically catch Pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, ID search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control.
