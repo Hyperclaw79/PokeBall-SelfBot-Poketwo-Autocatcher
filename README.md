@@ -421,4 +421,6 @@ You can request **new features** in the FeatHub.
 | 178 | TangentBeta  | Premium  💵 |
 | 179 | Wresort      | Advanced 💎 |
 | 180 | SlothLot3000 | Premium  💵 |
+| 181 | NoticeMe∆    | Premium  💵 |
+
 
