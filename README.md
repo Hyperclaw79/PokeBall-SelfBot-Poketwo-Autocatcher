@@ -423,5 +423,5 @@ You can request **new features** in the FeatHub.
 | 180 | SlothLot3000 | Premium  💵 |
 | 181 | NoticeMe∆    | Premium  💵 |
 | 182 | KrissArcbine | Premium  💵 |
-
+| 183 | UhohWeDidIt  | Advanced 💎 |
 
