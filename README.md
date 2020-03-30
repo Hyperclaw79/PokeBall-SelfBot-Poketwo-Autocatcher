@@ -27,7 +27,7 @@ This specific selfbot was designed to automatically catch Pokemon spawned on Dis
 
 **Current Version**: `v3.3.2` (13th June 2018)
 
-**Premium Version**: `v5.8.0` (26th March 2020) (Patched spammer and made other hidden changes)
+**Premium Version**: `v5.8.1` (26th March 2020) (Patched spammer, added a hidden feature and patched duels)
   > **The `autocatcher` is now officially fixed and is a Premium Version only feature.**
   It was troublesome fixing this again and again as the open source code is easily readable and patched against. To avoid this in the future, autocatcher is now a Premium feature to make it harder to get. I know that most of you will hate this move, but it was necessary. You guys can continue using the other features like auto-trade and auto-release, etc. which do not really harm anyone.
 Thank you all for being patient and sticking around until now.
@@ -46,7 +46,7 @@ So if you want the autocatcher along with other amazing commands, DM me on Disco
 4. A trade command to bulk trade the Pokemon to your main account.
 5. Priority List to control the Pokemon you catch and trade.
 6. Toggle catching of duplicates.
-7. Mass release of thrash Pokemon.
+7. Mass release of thrash Pokemon. (Limited)
 8. Toggle autocatching to use in Command_Only mode.
 9. Blacklist and Whitelist channels to control the scope of the selfbot. And a toggler function for the switch.
 10. Toggle priority_only mode.
@@ -149,7 +149,7 @@ Example config:
 * The public version of this selfbot doesn't contain the following to keep the bot usage to minimum and not break Pokecord bot:
   + Auto-Catcher [Major] 
   + Auto-Spammer [Major]
-  + Trade Offer Generator
+  + Mass seller [with IV lock and more options]
   + Auto-dueler for Credits farming [Major]
   + Logging catches to owner's DMs in multimode
   + Help command that displays usage instruction for other commands. [Major]
@@ -160,6 +160,7 @@ Example config:
   + Unlimited usage (no time trails) [Major]
   + Autobuy Rare Candies
   + Autoclaim newly caught Pokemon on pokedex
+  + Autofav pokemons with total IV above desired IV.
   
   > *These features are based upon multimode which involves having multiple selfbot accounts.*
 * To avail these features, contact me on Discord @**Hyperclaw79#3476** and I'll give you my PayPal ID. 
@@ -176,7 +177,7 @@ Example config:
   + The premium version also got an advanced extension which adds more game to the bot.
     It contains the following features:
     + This one works on a multi-user mode with 3+ bots. It follows a master-slave system where one master bot can trigger the commands on multiple slave selfbots.
-    + `Best_stats` command to check for the Pokemon which has the best total stats or a specific stat like Speed, Attack among your fav list or list of IDs. Pretty useful for the traders.
+    + `Best_stats` command to check for the Pokemon which has the best total stats or a specific stat, like Speed, Attack, etc., among your fav list or list of IDs. Pretty useful for the traders.
     + `Incubate` command to automatically level up all the Pokemon in your fav list or list of IDs, through the autospammer module. You don't need to check for the level of your Pokemon and manually switch to the next one anymore.
     + `iter` command to chain a series of pokecord commands for a list of IDs.
     + `sudo_exec` and `sudo_echo` commands for the master-slave control.
