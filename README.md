@@ -440,5 +440,5 @@ You can request **new features** in the FeatHub.
 | 195 | Senior1Crab  | Premium  💵 |
 | 196 | PawsOfDeath  | Premium  💵 |
 | 197 | Bmw1Series   | Advanced 💎 |
-| 198 | VideoOff     | Premium  💵 |
+| 198 | VideoOff     | Advanced 💎 |
 
