@@ -15,6 +15,7 @@
 <meta name="og:url" content="https://github.com/Hyperclaw79/PokeBall-SelfBot" />
 <meta name="og:image" content=" https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/PokeballSelfbot_Logo.png" />
 <meta name="og:description" content="This specific selfbot was designed to automatically catch Pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, ID search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control."/>
+<meta name="google-site-verification" content="EEaJ4rxZqFULJehFinFFOpxt75EdXvYh-bE2t3FoADA" />
 
 
 # PokeBall SelfBot
