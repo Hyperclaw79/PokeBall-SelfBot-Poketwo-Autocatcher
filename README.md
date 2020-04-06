@@ -118,7 +118,7 @@ So if you want the autocatcher along with other amazing commands, DM me on Disco
 Example config:
 ```json
 {
-  "token": "Mxy.23e2d3_2er3.sf4t4.....xyz",
+  "token": "Mxy.Njk2NDI2NTc2OTI5MjI2ODMy.XotiBg.WkrFmOwZ_CA9HI8cWxsk_XpQXEI.....xyz",
   "command_prefix": "P^",
   "priority": ["Groudon", "Geodude"],
   "avoid": ["Croagunk", "Trubbish"],
