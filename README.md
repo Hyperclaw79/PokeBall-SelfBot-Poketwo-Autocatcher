@@ -165,8 +165,8 @@ Example config:
   
   > *These features are based upon multimode which involves having multiple selfbot accounts.*
 * To avail these features, contact me on Discord @**Hyperclaw79#3476** and I'll give you my PayPal ID. 
-  > *Please ping me only for donations and not for support (unless you are already a donor). Currently the price is just $25. Better donate fast as the price will be bound to go up along with the demand.*
-  > *In your DM message, use the keyword `#Premium` to let me know that you've read the Readme.*
+  *Please ping me only for donations and not for support (unless you are already a donor). Currently the price is just $25. Better donate fast as the price will be bound to go up along with the demand.*
+  *In your DM message, use the keyword `#Premium` to let me know that you've read the Readme.*
 * The other **advantages** upon being a donor would be:
   + Be the first to avail any bug fixes and new updates.
   + A special mention of your username in this readme. *(optional)*
