@@ -437,7 +437,7 @@ You can request **new features** in the FeatHub.
 | 191 | Grandevor    | Premium  💵 |
 | 192 | GuiltyClark  | Premium  💵 |
 | 193 | AoNoMaou     | Premium  💵 |
-| 194 | NextGenStark | Premium  💵 |
+| 194 | Anthonie#8407(232167484940091402) | Scammer! |
 | 195 | Senior1Crab  | Premium  💵 |
 | 196 | PawsOfDeath  | Premium  💵 |
 | 197 | Bmw1Series   | Advanced 💎 |
