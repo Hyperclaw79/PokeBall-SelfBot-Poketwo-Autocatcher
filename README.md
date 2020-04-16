@@ -19,7 +19,7 @@
 
 
 # PokeBall SelfBot
-![Python Version](https://img.shields.io/badge/python-3.7-blue.svg?style=for-the-badge) ![License](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge) ![Maintained?](https://img.shields.io/badge/Maintained%3F-Premium%20Version%2B%20only-red.svg?style=for-the-badge) ![Donor Count](https://img.shields.io/badge/Donations%20Count-207-yellow?style=for-the-badge)
+![Python Version](https://img.shields.io/badge/python-3.7-blue.svg?style=for-the-badge) ![License](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge) ![Maintained?](https://img.shields.io/badge/Maintained%3F-Premium%20Version%2B%20only-red.svg?style=for-the-badge) ![Donor Count](https://img.shields.io/badge/Donations%20Count-208-yellow?style=for-the-badge)
 <img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/finalLogo.png" width="500" />
 
 This specific selfbot was designed to automatically catch Pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, ID search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control.
@@ -451,3 +451,4 @@ You can request **new features** in the FeatHub.
 | 205 | ScreamAww    | Premium  💵 |
 | 206 | SisMac       | Premium  💵 |
 | 207 | HighOne      | Premium  💵 |
+| 208 | SupCage      | Premium  💵 |
