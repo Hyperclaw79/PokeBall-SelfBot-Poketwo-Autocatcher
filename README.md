@@ -457,3 +457,4 @@ You can request **new features** in the FeatHub.
 | 211 | Coewl069     | Premium  💵 |
 | 212 | LuvTrio      | Premium  💵 |
 | 213 | Wraserface   | Premium  💵 |
+| 214 | RackShaper   | Premium  💵 |
