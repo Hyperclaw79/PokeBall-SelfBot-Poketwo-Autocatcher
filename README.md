@@ -450,11 +450,11 @@ You can request **new features** in the FeatHub.
 | 204 | ZebraYen     | Premium  💵 |
 | 205 | ScreamAww    | Premium  💵 |
 | 206 | SisMac       | Premium  💵 |
-| 207 | HighOne      | Premium  💵 |
+| 207 | Lowten#4918(174171205115445248) | Scammer! |
 | 208 | SupCage      | Premium  💵 |
 | 209 | GreekCake    | Premium  💵 |
 | 210 | UntightMan   | Premium  💵 |
-| 211 | 𝓜𝓻𝓒𝓮𝓻𝓫𝓮𝓻𝓾𝓼#0666(607806601105113110) | Scammer |
+| 211 | 𝓜𝓻𝓒𝓮𝓻𝓫𝓮𝓻𝓾𝓼#0666(607806601105113110) | Scammer! |
 | 212 | LuvTrio      | Premium  💵 |
 | 213 | Wraserface   | Premium  💵 |
 | 214 | RackShaper   | Premium  💵 |
