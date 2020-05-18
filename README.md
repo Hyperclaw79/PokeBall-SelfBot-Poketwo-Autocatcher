@@ -473,5 +473,5 @@ You can request **new features** in the FeatHub.
 | 226 | LittleAlpha  | Premium  💵 |
 | 227 | Rezzerez     | Premium  💵 |
 | 228 | 200IQPlays   | Premium  💵 |
-| 229 | Progressive  | Premium  💵 |
+| 229 | Progressive  | Advanced 💎 |
 | 230 | Naxillous    | Premium  💵 |
