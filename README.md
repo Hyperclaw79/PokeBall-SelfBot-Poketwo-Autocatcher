@@ -240,6 +240,9 @@ You can request **new features** in the FeatHub.
 * [4-mat](https://github.com/4-mat)
 * [ajmeese7](https://github.com/ajmeese7)
 
+### Testimonials
+![testimonial](https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot-Pokecord-Automation/master/assets/testimonial.gif)
+
 ### Donors
 
 
