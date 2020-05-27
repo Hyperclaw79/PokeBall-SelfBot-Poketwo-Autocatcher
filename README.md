@@ -482,6 +482,6 @@ You can request **new features** in the FeatHub.
 | 232 | VeryCoronic  | Premium  💵 |
 | 233 | DonaldTrump  | Advanced 💎 |
 | 234 | AlphaMan     | Premium  💵 |
-| 235 | ResumeJ      | Premium  💵 |
+| 235 | ResumeJ      | Advanced 💎 |
 | 236 | Beefolution  | Premium  💵 |
 | 237 | Modeloff     | Premium  💵 |
