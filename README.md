@@ -19,7 +19,7 @@
 
 
 # PokeBall SelfBot
-![Python Version](https://img.shields.io/badge/python-3.7-blue.svg?style=for-the-badge) ![License](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge) ![Maintained?](https://img.shields.io/badge/Maintained%3F-Premium%20Version%2B%20only-red.svg?style=for-the-badge) ![Donor Count](https://img.shields.io/badge/Donations%20Count-240-yellow?style=for-the-badge)
+![Python Version](https://img.shields.io/badge/python-3.7-blue.svg?style=for-the-badge) ![License](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge) ![Maintained?](https://img.shields.io/badge/Maintained%3F-On%20Indefinite%20Hold-red.svg?style=for-the-badge) ![Donor Count](https://img.shields.io/badge/Donations%20Count-240-yellow?style=for-the-badge)
 <img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/finalLogo.png" width="500" />
 
 This specific selfbot was designed to automatically catch Pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, ID search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control.
@@ -36,7 +36,9 @@ Thank you all for being patient and sticking around until now.
 > **The Public Version is now intended for testing only.**
 After the recent Pokecord updates, the selfbot commands are being flagged by pokecord and the account using it will most likely get reset. So use this only on your alts and to check how the bot is working. If you want a stealth mode which makes the selfbot commands un-flaggable, please switch to the Premium Version which has a mechanism to avoid this.
 
-The donations for Premium Version are open again.
+~~The donations for Premium Version are open again.~~
+In light of the latest news of pokecord being shutdown, this project will also be kept on hold until a possible revival of pokecord.
+Thank you all for the donations and the stars up till now.
 Scroll down to [Donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot#donations) for details.
 So if you want the autocatcher along with other amazing commands, DM me on Discord for the PayPal details after reading the [donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/README.md#donations).
 
