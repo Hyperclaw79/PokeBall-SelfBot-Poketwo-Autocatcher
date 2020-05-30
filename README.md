@@ -37,8 +37,10 @@ Thank you all for being patient and sticking around until now.
 After the recent Pokecord updates, the selfbot commands are being flagged by pokecord and the account using it will most likely get reset. So use this only on your alts and to check how the bot is working. If you want a stealth mode which makes the selfbot commands un-flaggable, please switch to the Premium Version which has a mechanism to avoid this.
 
 ~~The donations for Premium Version are open again.~~
-In light of the latest news of pokecord being shutdown, this project will also be kept on hold until a possible revival of pokecord.
-Thank you all for the donations and the stars up till now.
+
+**In light of the latest news of pokecord being shutdown, this project will also be kept on hold until a possible revival of pokecord.
+Thank you all for the donations and the stars up till now.**
+
 Scroll down to [Donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot#donations) for details.
 So if you want the autocatcher along with other amazing commands, DM me on Discord for the PayPal details after reading the [donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/README.md#donations).
 
