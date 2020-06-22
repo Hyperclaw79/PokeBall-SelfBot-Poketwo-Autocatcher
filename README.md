@@ -494,3 +494,4 @@ You can request **new features** in the FeatHub.
 | 239 | Scarlet5     | Advanced 💎 |
 | 240 | MarkNecker   | Premium  💵 |
 | 241 | Kuzu3.14     | Premium  💵 |
+| 242 | Dipotassium  | Advanced 💎 |
