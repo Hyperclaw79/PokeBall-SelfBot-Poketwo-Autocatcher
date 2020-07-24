@@ -39,7 +39,7 @@ After the recent Pokecord updates, the selfbot commands are being flagged by pok
 ~~In light of the latest news of pokecord being shutdown, this project will also be kept on hold until a possible revival of pokecord.
 Thank you all for the donations and the stars up till now.~~
 
-The new clone of Pokecord, i.e., Pokécord#1930 seems to be the successor for pokecord. Changes have been to made to now work towards this bot. The autocatching and logging also works perfectly for PokeTwo bot.
+The new clone of Pokecord, i.e., PokéRealm seems to be the successor for pokecord. Changes have been to made to now work towards this bot. The autocatching and logging also works perfectly for PokeTwo bot.
 The donations for Premium Version are open again.
 
 Scroll down to [Donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot#donations) for details.
