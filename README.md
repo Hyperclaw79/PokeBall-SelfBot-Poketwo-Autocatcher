@@ -508,3 +508,6 @@ You can request **new features** in the FeatHub.
 | 253 | Takoyaki     | Premium  💵 |
 | 254 | Celestial    | Premium  💵 |
 | 255 | NekoRamen    | Premium  💵 |
+
+
+Best automation bot to catch pokemon
