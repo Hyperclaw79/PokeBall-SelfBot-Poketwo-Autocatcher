@@ -28,7 +28,7 @@ This specific selfbot was designed to automatically catch Pokemon spawned on Dis
 
 **Current Version**: `v3.3.2` (13th June 2018)
 
-**Premium Version**: `v6.2.2` (22th August 2020) (Prefix is now case insensitive, added poketwo hashes for alolans)
+**Premium Version**: `v7.0.0` (30th October 2020) (Autocatcher uses Artificial Intelligence now!)
   > **The `autocatcher` is now officially fixed and is a Premium Version only feature.**
   It was troublesome fixing this again and again as the open source code is easily readable and patched against. To avoid this in the future, autocatcher is now a Premium feature to make it harder to get. I know that most of you will hate this move, but it was necessary. You guys can continue using the other features like auto-trade and auto-release, etc. which do not really harm anyone.
 Thank you all for being patient and sticking around until now.
@@ -36,10 +36,9 @@ Thank you all for being patient and sticking around until now.
 > **The Public Version is now intended for testing only.**
 After the recent Pokecord updates, the selfbot commands are being flagged by pokecord and the account using it will most likely get reset. So use this only on your alts and to check how the bot is working. If you want a stealth mode which makes the selfbot commands un-flaggable, please switch to the Premium Version which has a mechanism to avoid this.
 
-~~In light of the latest news of pokecord being shutdown, this project will also be kept on hold until a possible revival of pokecord.
-Thank you all for the donations and the stars up till now.~~
+**After the recent changes in PokeRealm and PokeTwo, hashes will definitely fail. Pleased to announce that this is the only selfbot which employes the power of Artificial Intelligence to detect pokemons!**
+> Has as astounding accuracy of 99% on PokeTwo spawns which are impossible to be caught by any other selfbot. PokeRealm spawns can be captured as well with the same code.
 
-The new clone of Pokecord, i.e., PokéRealm seems to be the successor for pokecord. Changes have been to made to now work towards this bot. ~~The autocatching and logging also works perfectly for PokeTwo bot.~~
 The donations for Premium Version are open again.
 
 Scroll down to [Donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot#donations) for details.
