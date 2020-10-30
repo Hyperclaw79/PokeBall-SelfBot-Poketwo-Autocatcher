@@ -24,7 +24,7 @@
 
 This specific selfbot was designed to automatically catch Pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, ID search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control.
 
-![It actually works lol](https://github.com/Hyperclaw79/PokeBall-SelfBot-Pokecord-Automation/raw/new-gif/assets/New%20Pokeball%20Selfbot.gif)
+![It actually works lol](https://github.com/Hyperclaw79/PokeBall-SelfBot-Pokecord-Automation/raw/master/assets/New%20Pokeball%20Selfbot.gif)
 
 **Current Version**: `v3.3.2` (13th June 2018)
 
