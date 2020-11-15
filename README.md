@@ -243,6 +243,7 @@ You can request **new features** in the FeatHub.
 * [ThePythonDoge](https://github.com/ThePythonDoge)
 * [4-mat](https://github.com/4-mat)
 * [ajmeese7](https://github.com/ajmeese7)
+* [KKonas](https://github.com/Kkonas)
 
 ### Testimonials
 ![testimonial](https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot-Pokecord-Automation/master/assets/testimonial.gif)
