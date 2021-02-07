@@ -1,30 +1,28 @@
 <!--
-  Title: PokeBall SelfBot
-  Description: This specific selfbot was designed to automatically catch Pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, ID search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control.
+  Title: PokeBall SelfBot Poketwo Automation
+  Description: This specific selfbot was designed to automatically catch Pokemon spawned on Discord by PokeTwo bot. It also offers other utility functions to automate features like trading, releasing, ID search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control.
   Author: Hyperclaw79
-  Logo: https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/PokeballSelfbot_Logo.png
-  Tags: discord-bot, discord, selfbot, pokeball-selfbot, pokecord, python, pokemon, pokecord-discord-bot, catch-pokemon, pokecord-hack,
-        discord bot, pokecord discord bot, catch pokemon, pokecord hack, discord-bot, pokecord-bot, autocatcher, premium, auto-trade,
-        donations, pokecord-catcher, pokecord-autocatcher, pokecord-selfbot
+  Logo: https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation/master/assets/PokeballSelfbot_Logo.png
+  Tags: poketwo hack, poketwo-bot, poketwo-autocatcher, poketwo-discord-bot, poketwo-selfbot, poketwo discord bot, poketwo-catcher, poketwo-hack, autocatcher, pokecord hack, pokecord-hack, discord, catch pokemon, pokecord discord bot, pokecord-discord-bot, discord bot, pokecord-bot, pokeball-selfbot, catch-pokemon, donations, pokecord, discord-bot, pokecord-selfbot, selfbot, pokecord-catcher, python, pokemon, auto-trade, premium, pokecord-autocatcher
 -->
-<meta name="description" content="This specific selfbot was designed to automatically catch Pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, ID search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control."/>
-<meta name="keywords" content="discord-bot, discord, selfbot, pokeball-selfbot, pokecord, python, pokemon, pokecord-discord-bot, catch-pokemon, pokecord-hack, discord bot, pokecord discord bot, catch pokemon, pokecord hack, discord-bot, pokecord-bot, autocatcher, premium, auto-trade, donations, pokecord-catcher, pokecord-autocatcher, pokecord-selfbot"/>
+<meta name="description" content="This specific selfbot was designed to automatically catch Pokemon spawned on Discord by PokeTwo bot. It also offers other utility functions to automate features like trading, releasing, ID search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control."/>
+<meta name="keywords" content="poketwo hack, poketwo-bot, poketwo-autocatcher, poketwo-discord-bot, poketwo-selfbot, poketwo discord bot, poketwo-catcher, poketwo-hack, autocatcher, pokecord hack, pokecord-hack, discord, catch pokemon, pokecord discord bot, pokecord-discord-bot, discord bot, pokecord-bot, pokeball-selfbot, catch-pokemon, donations, pokecord, discord-bot, pokecord-selfbot, selfbot, pokecord-catcher, python, pokemon, auto-trade, premium, pokecord-autocatcher"/>
 <meta name="author" content="Hyperclaw79"/>
-<meta name="url" content="https://github.com/Hyperclaw79/PokeBall-SelfBot" />
+<meta name="url" content="https://github.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation" />
 <meta name="og:title" content="Pokeball SelfBot"/>
-<meta name="og:url" content="https://github.com/Hyperclaw79/PokeBall-SelfBot" />
-<meta name="og:image" content=" https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/PokeballSelfbot_Logo.png" />
-<meta name="og:description" content="This specific selfbot was designed to automatically catch Pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, ID search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control."/>
+<meta name="og:url" content="https://github.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation" />
+<meta name="og:image" content=" https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation/master/assets/PokeballSelfbot_Logo.png" />
+<meta name="og:description" content="This specific selfbot was designed to automatically catch Pokemon spawned on Discord by PokeTwo bot. It also offers other utility functions to automate features like trading, releasing, ID search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control."/>
 <meta name="google-site-verification" content="EEaJ4rxZqFULJehFinFFOpxt75EdXvYh-bE2t3FoADA" />
 
 
 # PokeBall SelfBot
 ![Python Version](https://img.shields.io/badge/python-3.8-blue.svg?style=for-the-badge) ![License](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge) ![Maintained?](https://img.shields.io/badge/Maintained%3F-Premium%20Version+-red.svg?style=for-the-badge) ![Donor Count](https://img.shields.io/badge/Donations%20Count-272-yellow?style=for-the-badge)
-<img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/finalLogo.png" width="500" />
+<img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation/master/assets/finalLogo.png" width="500" />
 
-This specific selfbot was designed to automatically catch Pokemon spawned on Discord by PokeCord bot. It also offers other utility functions to automate features like trading, releasing, ID search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control.
+This specific selfbot was designed to automatically catch Pokemon spawned on Discord by PokeTwo bot. It also offers other utility functions to automate features like trading, releasing, ID search, etc. Apart from autocatching, the bot extends its features to more advanced version with better control.
 
-![It actually works lol](https://github.com/Hyperclaw79/PokeBall-SelfBot-Pokecord-Automation/raw/master/assets/New%20Pokeball%20Selfbot.gif)
+![It actually works lol](https://github.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation/raw/master/assets/New%20Pokeball%20Selfbot.gif)
 
 **Current Version**: `v3.3.2` (13th June 2018)
 
@@ -42,7 +40,7 @@ After the recent Pokecord updates, the selfbot commands are being flagged by pok
 The donations for Premium Version are open again.
 
 Scroll down to [Donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot#donations) for details.
-So if you want the autocatcher along with other amazing commands, DM me on Discord for the PayPal details after reading the [donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/README.md#donations).
+So if you want the autocatcher along with other amazing commands, DM me on Discord for the PayPal details after reading the [donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation/blob/master/README.md#donations).
 
 ## Features
 1. Automatically catch a Pokemon in whichever server you are in if the PokeCord bot spawns a Pokemon. [Premium Only]
@@ -143,15 +141,15 @@ Example config:
 
 ## Disclaimer
 * The creators of this bot are not responsible for any actions you perform using it. Use it at you own risk.
-* Selfbots violate discord & PokeCord TOS and you will get banned if caught using them. Be careful about how you use the bot.
+* Selfbots violate discord & PokeTwo TOS and you will get banned if caught using them. Be careful about how you use the bot.
   > The selfbot is intended to give you a boost and get the edge over your friends, not hoard 40K pokemon lol.
-* Do not use this in official PokeCord Discord server.... for obvious reasons.
+* Do not use this in official PokeTwo Discord server.... for obvious reasons.
   > Similarly do not use in public servers which explicitly prohibit this.
 * The implications of ban might also affect other accounts which interact with this selfbot. Use with caution.  
 
 
 ## Donations
-* The public version of this selfbot doesn't contain the following to keep the bot usage to minimum and not break Pokecord bot:
+* The public version of this selfbot doesn't contain the following to keep the bot usage to minimum and not break Poketwo bot:
   + Auto-Catcher [Major] 
   + Auto-Spammer [Major]
   + Mass seller [with IV lock and more options]
@@ -160,7 +158,7 @@ Example config:
   + Help command that displays usage instruction for other commands. [Major]
   + Trade command can use Pokemon names as args
   + DM commands - some commands can be used by DMing the bot.
-  + Stealth from Pokecord
+  + Stealth from Poketwo
   + Full Disclosure of Source Code [Major]
   + Unlimited usage (no time trails) [Major]
   + Autobuy Rare Candies
@@ -177,7 +175,7 @@ Example config:
   + A special mention of your username in this readme. *(optional)*
   + Bot related Support on Discord DMs. (Don't ask me how to install Python xD)
     + >~~*This version is to suggested to be used after you've tried out the public version.*~~
-    + >*The support doesn't include how to setup the public bot. Use [GitHub Issues](https://github.com/Hyperclaw79/PokeBall-SelfBot/issues) for that one.
+    + >*The support doesn't include how to setup the public bot. Use [GitHub Issues](https://github.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation/issues) for that one.
   + You can propose new features and I shall implement them *based on the plausibilty*.
 * **Advanced Extension**
   + The premium version also got an advanced extension which adds more game to the bot.
@@ -185,7 +183,7 @@ Example config:
     + This one works on a multi-user mode with 3+ bots. It follows a master-slave system where one master bot can trigger the commands on multiple slave selfbots.
     + `Best_stats` command to check for the Pokemon which has the best total stats or a specific stat, like Speed, Attack, etc., among your fav list or list of IDs. Pretty useful for the traders.
     + `Incubate` command to automatically level up all the Pokemon in your fav list or list of IDs, through the autospammer module. You don't need to check for the level of your Pokemon and manually switch to the next one anymore.
-    + `iter` command to chain a series of pokecord commands for a list of IDs.
+    + `iter` command to chain a series of poketwo commands for a list of IDs.
     + `sudo_exec` and `sudo_echo` commands for the master-slave control.
     + `sudo_duel` command for launching multiple duels at once.
   + The current price for this extension is just $10 and will change with demand, just like the premium version.  
@@ -195,13 +193,13 @@ Example config:
     > The obtained code is not open-source and MIT License doesn't apply to it.
   + Support is subject to my availability.
   + Not all requested features are possible to implement.
-  + Since Pokecord keeps updating, some of the older code might break. Stay patient until I send you a patch for it.
+  + Since Poketwo keeps updating, some of the older code might break. Stay patient until I send you a patch for it.
   + All donations are non-refundable.
   + Me or the contributors for this repo and not responsible for any legal suits.
 
 * If you'd like to simply donate to support the cause instead of buying the Premium Version, you can always send me your support. Click that image below.
 
-  <a href="https://www.paypal.me/hyperclaw79"><img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/pikadonor.png" width="100" height="100" alt="Feature Requests"/></a>
+  <a href="https://www.paypal.me/hyperclaw79"><img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation/master/assets/pikadonor.png" width="100" height="100" alt="Feature Requests"/></a>
 
 Don't forget to let me know that you're the one who paid it. ;)
 
@@ -215,24 +213,24 @@ Don't forget to let me know that you're the one who paid it. ;)
 * The discount rate is subject to change based on the referral activity and donation price.
 
 ## Contributions
-Refer to the new [CONTRIBUTION GUIDE](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/CONTRIBUTING.md).
-Also, refer to [Issue Template](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/.github/ISSUE_TEMPLATE/basic-issue-template.md) and [PR Template](https://github.com/Hyperclaw79/PokeBall-SelfBot/blob/master/PULL_REQUEST_TEMPLATE.md).
+Refer to the new [CONTRIBUTION GUIDE](https://github.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation/blob/master/CONTRIBUTING.md).
+Also, refer to [Issue Template](https://github.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation/blob/master/.github/ISSUE_TEMPLATE/basic-issue-template.md) and [PR Template](https://github.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation/blob/master/PULL_REQUEST_TEMPLATE.md).
 
 Best ways to contribute apart from Issues and PRs:
 + **Donations**
 
-  <a href="http://paypal.me/Hyperclaw79"><img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/pikadonor.png" width="100" height="100" alt="Feature Requests"/></a>
+  <a href="http://paypal.me/Hyperclaw79"><img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation/master/assets/pikadonor.png" width="100" height="100" alt="Feature Requests"/></a>
 
 + **Starring the Repo**
 
-  <img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot/master/assets/pikastar.png" width="100" height="100" alt="Feature Requests"/>
+  <img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation/master/assets/pikastar.png" width="100" height="100" alt="Feature Requests"/>
 
 + **Referrals**
 
 ## Feature Requests
 You can request **new features** in the FeatHub.
 
-  <a href="http://feathub.com/Hyperclaw79/PokeBall-SelfBot"><img src="https://cdn.rawgit.com/Hyperclaw79/PokeBall-SelfBot/8da8c6dd/pika%2B1.png" width="100" height="100" alt="Feature Requests"/></a>
+  <a href="http://feathub.com/Hyperclaw79/PokeBall-SelfBot"><img src="https://cdn.rawgit.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation/8da8c6dd/pika%2B1.png" width="100" height="100" alt="Feature Requests"/></a>
 
 
 ## Acknowledgements
@@ -246,7 +244,7 @@ You can request **new features** in the FeatHub.
 * [KKonas](https://github.com/Kkonas)
 
 ### Testimonials
-![testimonial](https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot-Pokecord-Automation/master/assets/testimonial.gif)
+![testimonial](https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation/master/assets/testimonial.gif)
 
 ### Donors
 
