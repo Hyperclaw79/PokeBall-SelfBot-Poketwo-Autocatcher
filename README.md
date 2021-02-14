@@ -26,7 +26,7 @@ This specific selfbot was designed to automatically catch Pokemon spawned on Dis
 
 **Current Version**: `v3.3.2` (13th June 2018)
 
-**Premium Version**: `v7.0.0` (30th October 2020) (Autocatcher uses Artificial Intelligence now!)
+**Premium Version**: `v8.0.0` (14th February 2021) (Massively Refactored Version with performance boosts, added features and bug fixes!)
   > **The `autocatcher` is now officially fixed and is a Premium Version only feature.**
   It was troublesome fixing this again and again as the open source code is easily readable and patched against. To avoid this in the future, autocatcher is now a Premium feature to make it harder to get. I know that most of you will hate this move, but it was necessary. You guys can continue using the other features like auto-trade and auto-release, etc. which do not really harm anyone.
 Thank you all for being patient and sticking around until now.
@@ -153,7 +153,6 @@ Example config:
   + Auto-Catcher [Major] 
   + Auto-Spammer [Major]
   + Mass seller [with IV lock and more options]
-  + Auto-dueler for Credits farming [Major]
   + Logging catches to owner's DMs in multimode
   + Help command that displays usage instruction for other commands. [Major]
   + Trade command can use Pokemon names as args
@@ -162,9 +161,9 @@ Example config:
   + Full Disclosure of Source Code [Major]
   + Unlimited usage (no time trails) [Major]
   + Autobuy Rare Candies
-  + Autoclaim newly caught Pokemon on pokedex
   + Autofav pokemons with total IV above desired IV.
   + Autosleep
+  + All commands are now compatible with PokeTwo
   
   > *These features are based upon multimode which involves having multiple selfbot accounts.*
 * To avail these features, contact me on Discord @**Hyperclaw79#3476** and I'll give you my PayPal ID. 
@@ -177,7 +176,7 @@ Example config:
     + >~~*This version is to suggested to be used after you've tried out the public version.*~~
     + >*The support doesn't include how to setup the public bot. Use [GitHub Issues](https://github.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation/issues) for that one.
   + You can propose new features and I shall implement them *based on the plausibilty*.
-* **Advanced Extension**
+* **Advanced Extension** [Temporarily on Hold]
   + The premium version also got an advanced extension which adds more game to the bot.
     It contains the following features:
     + This one works on a multi-user mode with 3+ bots. It follows a master-slave system where one master bot can trigger the commands on multiple slave selfbots.
