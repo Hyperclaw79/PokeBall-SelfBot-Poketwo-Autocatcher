@@ -166,8 +166,13 @@ Example config:
   + Autofav pokemons with total IV above desired IV.
   + Autosleep
   + All commands are now compatible with PokeTwo
-  
   > *These features are based upon multimode which involves having multiple selfbot accounts.*
+  
+  <h2> Check out the promo video: </h2>
+  <a href="http://www.youtube.com/watch?v=m3-HTCoIpLg">
+    <img src="https://i.ytimg.com/vi/m3-HTCoIpLg/maxresdefault.jpg" width="480" />
+  </a>
+  
 * To avail these features, contact me on Discord @**Hyperclaw79#3476** and I'll give you my PayPal ID. 
   *Please ping me only for donations and not for support (unless you are already a donor). Currently the price is just $25. Better donate fast as the price will be bound to go up along with the demand.*
   *In your DM message, use the keyword `#Premium` to let me know that you've read the Readme.*
