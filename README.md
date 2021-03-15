@@ -28,7 +28,7 @@ This specific selfbot was designed to automatically catch Pokemon spawned on Dis
 
 **Current Version**: `v3.3.2` (13th June 2018)
 
-**Premium Version**: `v8.0.5` (08th March 2021) (Massively Refactored Version with performance boosts, added features and bug fixes!)
+**Premium Version**: `v8.1.0` (15th March 2021) (Market Sniper, Flipper & Price Monitor, Easy Configs editor)
   > **The `autocatcher` is now officially fixed and is a Premium Version only feature.**
   It was troublesome fixing this again and again as the open source code is easily readable and patched against. To avoid this in the future, autocatcher is now a Premium feature to make it harder to get. I know that most of you will hate this move, but it was necessary. You guys can continue using the other features like auto-trade and auto-release, etc. which do not really harm anyone.
 Thank you all for being patient and sticking around until now.
@@ -166,6 +166,10 @@ Example config:
   + Autofav pokemons with total IV above desired IV.
   + Autosleep
   + All commands are now compatible with PokeTwo
+  + Maket Sniper - Be the fastest sniper of the poketwo market with customizable interval. [Major]
+  + Market Flipper - quickly flip the prices of a pokemon in the market
+  + Stocks - Track and Plot price fluctuations of a pokemon
+  + Easy to customize configs editor
   > *These features are based upon multimode which involves having multiple selfbot accounts.*
   
   <h2> Check out the promo video: </h2>
