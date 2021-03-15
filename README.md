@@ -166,9 +166,10 @@ Example config:
   + Autofav pokemons with total IV above desired IV.
   + Autosleep
   + All commands are now compatible with PokeTwo
-  + Maket Sniper - Be the fastest sniper of the poketwo market with customizable interval.
+  + Maket Sniper - Be the fastest sniper of the poketwo market with customizable interval. [Major]
   + Market Flipper - quickly flip the prices of a pokemon in the market
   + Stocks - Track and Plot price fluctuations of a pokemon
+  + Easy to customize configs editor
   > *These features are based upon multimode which involves having multiple selfbot accounts.*
   
   <h2> Check out the promo video: </h2>
