@@ -1,8 +1,8 @@
 {
 	"version":"v3.3.2",
-	"premium_version": "v8.1.0",
+	"premium_version": "v8.2.0",
 	"updates": [
-		"Market Sniper, Flipper and Stocks Monitor.\n(Need to run Setup.bat again)",
-		"User friendly configs editor.\n(Replace all the files except config.json and pokeball.db)"
+		"Improved Market Sniper",
+		"Better AI model for detecting pokemons.\n(Replace all the files except config.json and pokeball.db)"
 	]
 }
