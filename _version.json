@@ -1,8 +1,8 @@
 {
 	"version":"v3.3.2",
-	"premium_version": "v8.2.0",
+	"premium_version": "v8.2.1",
 	"updates": [
-		"Improved Market Sniper",
-		"Better AI model for detecting pokemons.\n(Replace all the files except config.json and pokeball.db)"
+		"Reworked Market Sniper",
+		"Fixed bug in Let_others_catch"
 	]
 }
