@@ -28,7 +28,7 @@ This specific selfbot was designed to automatically catch Pokemon spawned on Dis
 
 **Current Version**: `v3.3.2` (13th June 2018)
 
-**Premium Version**: `v8.2.1` (27th March 2021) (Reworked Market Sniper, Misc. bug fixes)
+**Premium Version**: `v8.2.2` (13th April 2021) (Autostart snipe and spam after autosleep, multiple bug fixes)
   > **The `autocatcher` is now officially fixed and is a Premium Version only feature.**
   It was troublesome fixing this again and again as the open source code is easily readable and patched against. To avoid this in the future, autocatcher is now a Premium feature to make it harder to get. I know that most of you will hate this move, but it was necessary. You guys can continue using the other features like auto-trade and auto-release, etc. which do not really harm anyone.
 Thank you all for being patient and sticking around until now.
