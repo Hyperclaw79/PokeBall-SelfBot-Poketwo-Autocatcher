@@ -1,8 +1,8 @@
 {
 	"version":"v3.3.2",
-	"premium_version": "v8.2.2",
+	"premium_version": "v8.2.3",
 	"updates": [
-		"Autostart Snipe and Spam properly after waking up from autosleep",
-		"Multiple bug fixes (Replace all the files except config.json and pokeball.db)"
+		"Update-friendly override capability for autocatcher and commands (DM me if you need custom changes)",
+		"Fixed duplicate instanced of autosleep (Replace pokeball.py and everything in the Scripts folder)"
 	]
 }
