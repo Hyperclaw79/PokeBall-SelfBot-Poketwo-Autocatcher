@@ -177,8 +177,11 @@ Example config:
     <img src="https://i.ytimg.com/vi/m3-HTCoIpLg/maxresdefault.jpg" width="480" />
   </a>
   
-* To avail these features, contact me on Discord @**Hyperclaw79#3476** and I'll give you my PayPal ID. 
-  *Please ping me only for donations and not for support (unless you are already a donor). Currently the price is just $25. Better donate fast as the price will be bound to go up along with the demand.*
+* To avail these features, contact me on Discord and I'll give you my PayPal ID. 
+ 
+ ![image](https://user-images.githubusercontent.com/29298411/116793736-241ccf80-aae6-11eb-8c96-01fa0bb847c5.png)
+  
+* Please ping me only for donations and not for support (unless you are already a donor). Currently the price is just $25. Better donate fast as the price will be bound to go up along with the demand.*
   *In your DM message, use the keyword `#Premium` to let me know that you've read the Readme.*
 * The other **advantages** upon being a donor would be:
   + Be the first to avail any bug fixes and new updates.
@@ -187,15 +190,13 @@ Example config:
     + >~~*This version is to suggested to be used after you've tried out the public version.*~~
     + >*The support doesn't include how to setup the public bot. Use [GitHub Issues](https://github.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation/issues) for that one.
   + You can propose new features and I shall implement them *based on the plausibilty*.
-* **Advanced Extension** [Temporarily on Hold]
+* **Advanced Extension**
   + The premium version also got an advanced extension which adds more game to the bot.
     It contains the following features:
     + This one works on a multi-user mode with 3+ bots. It follows a master-slave system where one master bot can trigger the commands on multiple slave selfbots.
-    + `Best_stats` command to check for the Pokemon which has the best total stats or a specific stat, like Speed, Attack, etc., among your fav list or list of IDs. Pretty useful for the traders.
     + `Incubate` command to automatically level up all the Pokemon in your fav list or list of IDs, through the autospammer module. You don't need to check for the level of your Pokemon and manually switch to the next one anymore.
-    + `iter` command to chain a series of poketwo commands for a list of IDs.
+    + `chain` command to chain a series of poketwo commands for a list of IDs.
     + `sudo_exec` and `sudo_echo` commands for the master-slave control.
-    + `sudo_duel` command for launching multiple duels at once.
   + The current price for this extension is just $10 and will change with demand, just like the premium version.  
 * **Terms & Conditions apply**:
   + You shall receive the source code and deployment instructions after the payment has been acknowledged.
