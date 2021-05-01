@@ -1,8 +1,8 @@
 {
 	"version":"v3.3.2",
-	"premium_version": "v8.2.3",
+	"premium_version": "v8.2.4",
 	"updates": [
-		"Update-friendly override capability for autocatcher and commands (DM me if you need custom changes)",
-		"Fixed duplicate instanced of autosleep (Replace pokeball.py and everything in the Scripts folder)"
+		"Added the Stats Module and the Commands command",
+		"Hotfix for selfbots breaking due to discord's API changes\n(Replace pokeball.py and everything in the Scripts folder)"
 	]
 }
