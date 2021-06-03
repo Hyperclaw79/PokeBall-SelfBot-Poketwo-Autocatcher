@@ -28,16 +28,14 @@ This specific selfbot was designed to automatically catch Pokemon spawned on Dis
 
 **Current Version**: `v3.3.2` (13th June 2018)
 
-**Premium Version**: `v8.2.4` (01st May 2021) (Added Stats Module, Hotfix for unresponsive bot)
-  > **The `autocatcher` is now officially fixed and is a Premium Version only feature.**
-  It was troublesome fixing this again and again as the open source code is easily readable and patched against. To avoid this in the future, autocatcher is now a Premium feature to make it harder to get. I know that most of you will hate this move, but it was necessary. You guys can continue using the other features like auto-trade and auto-release, etc. which do not really harm anyone.
-Thank you all for being patient and sticking around until now.
+**Premium Version**: `v8.3.0` (03rd June 2021) (Added Gen 8 detection, Autolock to prevent captchas, Performance boost & Bug Fixes)
+
+> **The `autocatcher` is a Premium Version only feature, it will now work in this public version.**
 
 > **The Public Version is now intended for testing only.**
-After the recent Pokecord updates, the selfbot commands are being flagged by pokecord and the account using it will most likely get reset. So use this only on your alts and to check how the bot is working. If you want a stealth mode which makes the selfbot commands un-flaggable, please switch to the Premium Version which has a mechanism to avoid this.
+After the recent Poketwo updates, the selfbot commands might get flagged by poketwo and the account using it will most likely get reset. So use this only on your alts and to check how the bot is working. If you want a stealth mode which makes the selfbot commands un-flaggable, please switch to the Premium Version which has a mechanism to avoid this.
 
-**After the recent changes in PokeRealm and PokeTwo, hashes will definitely fail. Pleased to announce that this is the only selfbot which employes the power of Artificial Intelligence to detect pokemons!**
-> Has as astounding accuracy of 99% on PokeTwo spawns which are impossible to be caught by any other selfbot. PokeRealm spawns can be captured as well with the same code.
+**Pokeball now detects Gen 8 Pokemons as well!**
 
 The donations for Premium Version are open again.
 
@@ -170,6 +168,7 @@ Example config:
   + Market Flipper - quickly flip the prices of a pokemon in the market
   + Stocks - Track and Plot price fluctuations of a pokemon
   + Easy to customize configs editor
+  + Autolock to prevent hitting captchas, with a wake up command.
   > *These features are based upon multimode which involves having multiple selfbot accounts.*
   
   <h2> Check out the promo video: </h2>
