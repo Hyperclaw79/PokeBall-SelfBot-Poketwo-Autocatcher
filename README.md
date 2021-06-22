@@ -578,5 +578,5 @@ You can request **new features** in the FeatHub.
 | 314 | Pikarsa      | Premium  💵 |
 | 315 | Blacknight   | Premium  💵 |
 | 316 | Lumine       | Premium  💵 |
-| 317 | PartnerKilla | Premium  💵 |
+| 317 | PartnerKilla | Advanced 💎 |
 | 318 | Bloberry     | Premium  💵 |
