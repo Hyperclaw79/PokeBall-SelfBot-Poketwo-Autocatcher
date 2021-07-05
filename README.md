@@ -28,7 +28,7 @@ This specific selfbot was designed to automatically catch Pokemon spawned on Dis
 
 **Current Version**: `v3.3.2` (13th June 2018)
 
-**Premium Version**: `v8.3.0` (11th June 2021) (Added Gen 8 detection (+galarians), Autolock to prevent captchas, Performance boost & Bug Fixes)
+**Premium Version**: `v8.3.2` (05th July 2021) (Major Refactoring, More readable code, Performance boost & Bug Fixes)
 
 > **The `autocatcher` is a Premium Version only feature, it will now work in this public version.**
 
