@@ -1,11 +1,8 @@
 {
 	"version":"v3.3.2",
-	"premium_version": "v8.3.0",
+	"premium_version": "v8.3.2",
 	"updates": [
-		"Added support for Gen 8 pokemons",
-		"Autolock to prevent captchas, with a manual wake up command (P^verified)",
-		"Huge refactor for performance improvements and bug fixes",
-		"Faster Spammer",
-		"More contribution-friendly mode."
+		"Huge refactor for performance improvements and bug fixes\n(Update all files except config.json and pokeball.db)",
+		"Improved Code Readability"
 	]
 }
