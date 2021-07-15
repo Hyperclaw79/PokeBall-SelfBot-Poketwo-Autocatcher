@@ -179,9 +179,13 @@ Example config:
 * To avail these features, contact me on Discord and I'll give you my PayPal ID. 
  
  ![image](https://user-images.githubusercontent.com/29298411/116793736-241ccf80-aae6-11eb-8c96-01fa0bb847c5.png)
-  
+ 
 * Please ping me only for donations and not for support (unless you are already a donor). Currently the price is just $25. Better donate fast as the price will be bound to go up along with the demand.*
   *In your DM message, use the keyword `#Premium` to let me know that you've read the Readme.*
+
+:bangbang: | The only way to get it is to directly purchase it from me. There are imposters selling old and modified code and it might even contain viruses and such. Don't get fooled and regret it later.
+:---: | :---
+
 * The other **advantages** upon being a donor would be:
   + Be the first to avail any bug fixes and new updates.
   + A special mention of your username in this readme. *(optional)*
