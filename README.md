@@ -176,7 +176,7 @@ Example config:
     <img src="https://i.ytimg.com/vi/m3-HTCoIpLg/maxresdefault.jpg" width="480" />
   </a>
   
-* To avail these features, contact me via mail and I'll give you my PayPal ID. 
+* To avail these features, contact me via [mail](mailto://harshith.thota7@gmail.com) and I'll give you my PayPal ID. 
  
 * Please ping me only for donations and not for support (unless you are already a donor). Currently the price is just $25.
 Better donate fast as the price will be bound to go up along with the demand.*
