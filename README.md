@@ -17,7 +17,7 @@
 
 
 # PokeBall SelfBot
-![Python Version](https://img.shields.io/badge/python-3.8-blue.svg?style=for-the-badge) ![License](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge) ![Maintained?](https://img.shields.io/badge/Maintained%3F-Premium%20Version+-red.svg?style=for-the-badge) ![Donor Count](https://img.shields.io/badge/Donations%20Count-324-yellow?style=for-the-badge)
+![Python Version](https://img.shields.io/badge/python-3.8-blue.svg?style=for-the-badge) ![License](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge) ![Maintained?](https://img.shields.io/badge/Maintained%3F-Premium%20Version+-red.svg?style=for-the-badge) ![Donor Count](https://img.shields.io/badge/Donations%20Count-328-yellow?style=for-the-badge)
 <a href="http://www.youtube.com/watch?v=m3-HTCoIpLg">
   <img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation/master/assets/finalLogo.png" width="500" />
 </a>
@@ -28,7 +28,7 @@ This specific selfbot was designed to automatically catch Pokemon spawned on Dis
 
 **Current Version**: `v3.3.2` (13th June 2018)
 
-**Premium Version**: `v8.3.2` (05th July 2021) (Major Refactoring, More readable code, Performance boost & Bug Fixes)
+**Premium Version**: `v8.3.3` (13th September 2021) (Migrated to Discord.py-self)
 
 > **The `autocatcher` is a Premium Version only feature, it will now work in this public version.**
 
@@ -176,12 +176,12 @@ Example config:
     <img src="https://i.ytimg.com/vi/m3-HTCoIpLg/maxresdefault.jpg" width="480" />
   </a>
   
-* To avail these features, contact me on Discord and I'll give you my PayPal ID. 
+* To avail these features, contact me via mail and I'll give you my PayPal ID. 
  
- ![image](https://user-images.githubusercontent.com/29298411/116793736-241ccf80-aae6-11eb-8c96-01fa0bb847c5.png)
- 
-* Please ping me only for donations and not for support (unless you are already a donor). Currently the price is just $25. Better donate fast as the price will be bound to go up along with the demand.*
-  *In your DM message, use the keyword `#Premium` to let me know that you've read the Readme.*
+* Please ping me only for donations and not for support (unless you are already a donor). Currently the price is just $25.
+Better donate fast as the price will be bound to go up along with the demand.*
+  
+  *In your mail, use the keyword `#Premium` to let me know that you've read the Readme.*
 
 :bangbang: | The only way to get it is to directly purchase it from me. There are imposters selling old and modified code and it might even contain viruses and such. Don't get fooled and regret it later.
 :---: | :---
@@ -189,9 +189,9 @@ Example config:
 * The other **advantages** upon being a donor would be:
   + Be the first to avail any bug fixes and new updates.
   + A special mention of your username in this readme. *(optional)*
-  + Bot related Support on Discord DMs. (Don't ask me how to install Python xD)
+    + Bot related Support on Discord DMs. [on hold, use mail for now]
     + >~~*This version is to suggested to be used after you've tried out the public version.*~~
-    + >*The support doesn't include how to setup the public bot. Use [GitHub Issues](https://github.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation/issues) for that one.
+    + >*The support doesn't include how to setup the public bot. Use [GitHub Issues](https://github.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation/issues) for that one.*
   + You can propose new features and I shall implement them *based on the plausibilty*.
 * **Advanced Extension**
   + The premium version also got an advanced extension which adds more game to the bot.
@@ -200,7 +200,8 @@ Example config:
     + `Incubate` command to automatically level up all the Pokemon in your fav list or list of IDs, through the autospammer module. You don't need to check for the level of your Pokemon and manually switch to the next one anymore.
     + `chain` command to chain a series of poketwo commands for a list of IDs.
     + `sudo_exec` and `sudo_echo` commands for the master-slave control.
-  + The current price for this extension is just $10 and will change with demand, just like the premium version.  
+  + The current price for this extension is just $10 and will change with demand, just like the premium version.
+
 * **Terms & Conditions apply**:
   + You shall receive the source code and deployment instructions after the payment has been acknowledged.
   + You shall not disclose the obtained code to anyone directly. Refer them to this repo instead.
@@ -590,3 +591,7 @@ You can request **new features** in the FeatHub.
 | 322 | OGPokeMaster | Premium  💵 |
 | 323 | Demonin      | Premium  💵 |
 | 324 | Eeva         | Premium  💵 |
+| 325 | LaGracefully | Premium  💵 |
+| 326 | Qwertyman    | Premium  💵 |
+| 327 | KanyeBar     | Premium  💵 |
+| 328 | ChezzyGiff   | Premium  💵 |
