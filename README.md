@@ -17,7 +17,7 @@
 
 
 # PokeBall SelfBot
-![Python Version](https://img.shields.io/badge/python-3.8-blue.svg?style=for-the-badge) ![License](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge) ![Maintained?](https://img.shields.io/badge/Maintained%3F-Premium%20Version+-red.svg?style=for-the-badge) ![Donor Count](https://img.shields.io/badge/Donations%20Count-335-yellow?style=for-the-badge)
+![Python Version](https://img.shields.io/badge/python-3.8-blue.svg?style=for-the-badge) ![License](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge) ![Maintained?](https://img.shields.io/badge/Maintained%3F-Premium%20Version+-red.svg?style=for-the-badge) ![Donor Count](https://img.shields.io/badge/Donations%20Count-336-yellow?style=for-the-badge)
 <a href="http://www.youtube.com/watch?v=m3-HTCoIpLg">
   <img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation/master/assets/finalLogo.png" width="500" />
 </a>
@@ -602,3 +602,4 @@ You can request **new features** in the FeatHub.
 | 333 | PraDave      | Premium  💵 |
 | 334 | Dylleran     | Premium  💵 |
 | 335 | Coomaye      | Premium  💵 |
+| 336 | Jotrack      | Premium  💵 |
