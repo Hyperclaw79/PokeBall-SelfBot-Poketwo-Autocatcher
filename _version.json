@@ -1,7 +1,7 @@
 {
 	"version":"v3.3.2",
-	"premium_version": "v8.4.0",
+	"premium_version": "v8.4.1",
 	"updates": [
-		"Replaced non-functional discord Embeds with plain content.\n(Update all files except config.json and pokeball.db)"
+		"Fixed broken paginated commands like Help, Legendary, etc.\n(Update all files except config.json and pokeball.db)"
 	]
 }
