@@ -614,3 +614,8 @@ You can request **new features** in the FeatHub.
 | 345 | DomiZac      | Premium  💵 |
 | 346 | ChadPrad     | Premium  💵 |
 | 347 | LigoFueng    | Premium  💵 |
+| 348 | Aerosol      | Premium  💵 |
+| 349 | ChadPrad     | Premium  💵 |
+| 350 | Maxessler    | Premium  💵 |
+| 351 | RonanSpirit  | Premium  💵 |
+| 352 | ASawRayan    | Premium  💵 |
