@@ -43,7 +43,7 @@ Scroll down to [Donations section](https://github.com/Hyperclaw79/PokeBall-SelfB
 So if you want the autocatcher along with other amazing commands, DM me on Discord for the PayPal details after reading the [donations section](https://github.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation/blob/master/README.md#donations).
 
 ## Features
-1. Automatically catch a Pokemon in whichever server you are in if the PokeCord bot spawns a Pokemon. [Premium Only]
+1. Automatically catch a Pokemon in whichever server you are in if the Poketwo bot spawns a Pokemon. [Premium Only]
 2. Delay and catch rates to finesse the behaviour of the selfbot.
 3. A log command to log all your Pokemon along with their numbers.
 4. A trade command to bulk trade the Pokemon to your main account.
@@ -76,10 +76,10 @@ So if you want the autocatcher along with other amazing commands, DM me on Disco
 3. Then simply run `run.bat` to get your bot live.
   > If you are on a mac, directly launch `launcher.py` instead of running the bat file. And use `pip install -r requirements.txt` instead to setup.
 4. The autocatcher is **off** by default. To enable it, you need to send a message in Discord as `P^autocatcher on`.
-  > `P^` is the default command_prefix for the selfbot. Feel free to change it. Note that, this is not the same as PokeCord's prefix.
+  > `P^` is the default command_prefix for the selfbot. Feel free to change it. Note that, this is not the same as Poketwo's prefix.
   > If you don't want to toggle it on every time after restart, look for the line `self.autocatcher = False` under the `__init__()` function and change it to `True` instead of `False`.
 5. Most of the commands need you to catch a Pokemon in the new guild with autocatcher on, at least once, followed by a restart.
-  > There is a way to manually bypass this. You need to turn the Developer Mode on your Discord on, get the guild ID and alter `guilds.json` to include the `,guild_id:"pokecord prefix in that guild"`.
+  > There is a way to manually bypass this. You need to turn the Developer Mode on your Discord on, get the guild ID and alter `guilds.json` to include the `,guild_id:"poketwo prefix in that guild"`.
 ### Linux
 1. First install git by doing "sudo apt install git-all", cd to directory, and then run "setup.sh" with "./setup.sh". Make sure to give permission to "setup.sh" and "run.sh" by "chmod +x [file name here]".
 2. Then follow step number "2" in the "Windows" section above.
@@ -99,7 +99,7 @@ So if you want the autocatcher along with other amazing commands, DM me on Disco
   * `restrict_duplicates` can be set to **false** to catch unlimited number of duplicates. If **true**, use `max_duplicates` to control the number of duplicates you can catch. 
   * `blacklists` and `whitelists` can be filled with the channel IDs to choose where the selfbot should work. You can use the `toggle_mode` command to choose which mode it should run in.
   * `blacklist_guilds` and `whitelist_guilds` can be filled with the guild IDs to filter entire guilds. You can use the `toggle_guildmode` command to choose which mode it should run in.
-    > Always keep the default value in the list. It is the ID for Official PokeCord Server. 
+    > Always keep the default value in the list. It is the ID for Official Poketwo Server. 
   * `avoid` can be filled with all the Pokemon that shouldn't be caught automatically.
   * `autolog` can be used to choose whether the `p!pokemon --name FreshlyCaughtPokemon` should be used immediately after catching a new Pokemon. To be stealthy, use `false`.
   * `update_checker` can be set to `false` if you don't wanna bother checking for new updates.
