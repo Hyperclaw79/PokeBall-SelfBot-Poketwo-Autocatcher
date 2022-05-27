@@ -17,7 +17,7 @@
 
 
 # PokeBall SelfBot
-![Python Version](https://img.shields.io/badge/python-3.8-blue.svg?style=for-the-badge) ![License](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge) ![Maintained?](https://img.shields.io/badge/Maintained%3F-Premium%20Version+-red.svg?style=for-the-badge) ![Donor Count](https://img.shields.io/badge/Donations%20Count-357-yellow?style=for-the-badge)
+![Python Version](https://img.shields.io/badge/python-3.8-blue.svg?style=for-the-badge) ![License](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge) ![Maintained?](https://img.shields.io/badge/Maintained%3F-Premium%20Version+-red.svg?style=for-the-badge) ![Donor Count](https://img.shields.io/badge/Donations%20Count-360-yellow?style=for-the-badge)
 <a href="http://www.youtube.com/watch?v=m3-HTCoIpLg">
   <img src="https://raw.githubusercontent.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation/master/assets/finalLogo.png" width="500" />
 </a>
@@ -176,7 +176,7 @@ Example config:
     <img src="https://i.ytimg.com/vi/m3-HTCoIpLg/maxresdefault.jpg" width="480" />
   </a>
   
-* To avail these features, contact me via [mail](mailto://harshith.thota7@gmail.com) and I'll give you my PayPal ID. 
+* To avail these features, contact me via [mail](mailto:harshith.thota7@gmail.com) and I'll give you my PayPal ID. 
  
 * Please ping me only for donations and not for support (unless you are already a donor). Currently the price is just $25.
 Better donate fast as the price will be bound to go up along with the demand.*
@@ -624,3 +624,6 @@ You can request **new features** in the FeatHub.
 | 355 | Arifree      | Premium  💵 |
 | 356 | Alith        | Premium  💵 |
 | 357 | CableBrowser | Premium  💵 |
+| 358 | Matthald     | Premium  💵 |
+| 359 | ThibBru      | Premium  💵 |
+| 360 | ShushPlox    | Premium  💵 |
