@@ -627,3 +627,4 @@ You can request **new features** in the FeatHub.
 | 358 | Matthald     | Premium  💵 |
 | 359 | ThibBru      | Premium  💵 |
 | 360 | ShushPlox    | Premium  💵 |
+| XXX | louisbenson05@hotmail.com | Unauthorised |
