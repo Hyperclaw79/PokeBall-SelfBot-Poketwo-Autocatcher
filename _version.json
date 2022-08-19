@@ -1,7 +1,7 @@
 {
 	"version":"v3.3.2",
-	"premium_version": "v8.4.1",
+	"premium_version": "v8.5.0",
 	"updates": [
-		"Fixed broken paginated commands like Help, Legendary, etc.\n(Update all files except config.json and pokeball.db)"
+		"Added support for Buttons and switched poketwo prefix to mentioning Poketwo.\n(Update all files except config.json and pokeball.db)\n(You need to run setup.bat again.)"
 	]
 }
