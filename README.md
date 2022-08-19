@@ -28,7 +28,7 @@ This specific selfbot was designed to automatically catch Pokemon spawned on Dis
 
 **Current Version**: `v3.3.2` (13th June 2018)
 
-**Premium Version**: `v8.4.1` (15th April 2022) (Fixed broken paginated commands.)
+**Premium Version**: `v8.5.0` (19th August 2022) (Added support for Buttons and Poketwo mention as prefix)
 
 > **The `autocatcher` is a Premium Version only feature, it will now work in this public version.**
 
