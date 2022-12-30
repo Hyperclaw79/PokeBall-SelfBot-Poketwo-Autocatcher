@@ -243,9 +243,9 @@ Best ways to contribute apart from Issues and PRs:
 + **Referrals**
 
 ## Feature Requests
-You can request **new features** in the FeatHub.
+You can request **new features** using the Discussion page.
 
-  <a href="http://feathub.com/Hyperclaw79/PokeBall-SelfBot"><img src="https://cdn.rawgit.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation/8da8c6dd/pika%2B1.png" width="100" height="100" alt="Feature Requests"/></a>
+  <a href="https://github.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Autocatcher/discussions/new"><img src="https://cdn.rawgit.com/Hyperclaw79/PokeBall-SelfBot-Poketwo-Automation/8da8c6dd/pika%2B1.png" width="100" height="100" alt="Feature Requests"/></a>
 
 
 ## Acknowledgements
