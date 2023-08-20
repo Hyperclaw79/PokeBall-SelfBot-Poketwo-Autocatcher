@@ -466,10 +466,9 @@ class PokeBall(discord.Client):
                     embed = discord.Embed(title="Search Results", description="\u200B", color=15728640)
                     if results == "\u200B":
                         continue
-                    else:
-                        for result in results[i:i+10]:
-                            embed.add_field(name=result[0], value=f"**ID**: {result[1]}\n**LEVEL**: {result[2]}", inline=False)
-                        embeds.append(embed)
+                    for result in results[i:i+10]:
+                        embed.add_field(name=result[0], value=f"**ID**: {result[1]}\n**LEVEL**: {result[2]}", inline=False)
+                    embeds.append(embed)
                 try:
                     base = await message.channel.send(content=None, embed=embeds[0])
                     pager = Paginator(message, base, embeds, self)
@@ -492,11 +491,9 @@ class PokeBall(discord.Client):
 
     async def cmd_duplicates(self, message, args=[]):
         pokemons = [pokemon.split(' -> ')[0] for pokemon in self.pokelist]
-        limit = 2
-        if args:
-            limit = int(args[0])
+        limit = int(args[0]) if args else 2
         dups = {dup for dup in pokemons if pokemons.count(dup) >= limit}
-        if len(dups) == 0:
+        if not dups:
             await message.channel.send("There is no pokemon with so many duplicates. Try a smaller number.")
             return
         dups = list(dups)
@@ -653,8 +650,7 @@ class PokeBall(discord.Client):
                 lines = text.splitlines()
                 width = max(len(s) for s in lines) + 2
                 res = ['┌' + '─' * width + '┐']
-                for s in lines:
-                    res.append('│ ' + (s + ' ' * width)[:width - 1] + '│')
+                res.extend('│ ' + (s + ' ' * width)[:width - 1] + '│' for s in lines)
                 res.append('└' + '─' * width + '┘')
                 return '\n'.join(res)
 
